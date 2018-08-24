@@ -1,3 +1,5 @@
+# EXECUTE IT: assets/data/Apex/ExportData.bat
+
 # Prepare data
 echo "Please wait (1/4)..."
 sfdx force:apex:execute -f assets/data/Apex/ExportData.txt > /dev/null
