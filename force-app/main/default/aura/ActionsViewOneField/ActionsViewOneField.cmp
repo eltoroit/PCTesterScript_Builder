@@ -1,0 +1,15 @@
+<aura:component>
+    <aura:attribute name="value" type="String" access="private" />
+    <aura:attribute name="class" type="String" access="private" />
+    <aura:attribute name="fieldName" type="String" access="private" />
+
+    <aura:attribute name="action" type="Action__c" />
+    <aura:attribute name="field" type="Object" />
+
+    <aura:handler name="init" value="this" action="{!c.doInit}" />
+
+    <tr>
+        <th class="sideHeader">{!v.fieldName}</th>
+        <td class="{!v.class}">{!v.value}</td>
+    </tr>
+</aura:component>

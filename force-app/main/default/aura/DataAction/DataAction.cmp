@@ -1,0 +1,73 @@
+<aura:component>
+    <aura:attribute name="action" type="Object" default="{}" access="private" />
+    <aura:attribute name="fullRecord" type="Object" default="{}" access="private" />
+    <aura:attribute name="fieldsShown" type="List" default="[]" access="private" />
+    <aura:attribute name="recordError" type="Object" default="" access="private" />
+    <aura:attribute name="isEditing" type="Boolean" default="false" access="private" />
+    <aura:attribute name="selectedEvents" type="List" default="[]" access="private" />
+
+
+    <aura:attribute name="idx" type="Integer" />
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="fields" type="Object" default="{}" />
+    <aura:attribute name="EventsPerAllActions" type="Object" />
+    <aura:attribute name="allEvents" type="List" default="[]" />
+    <aura:attribute name="isMoveUp" type="Boolean" default="false" />
+    <aura:attribute name="isMoveDown" type="Boolean" default="false" />
+
+    <aura:handler name="init" value="this" action="{!c.doInit}" />
+    <aura:registerEvent name="reorder" type="c:DataActionEvent" />
+    <aura:registerEvent name="refresh" type="c:DataActionEvent" />
+    <aura:registerEvent name="register" type="c:DataActionEvent" />
+    <aura:registerEvent name="saveEvents" type="c:DataActionEvent" />
+
+    <force:recordData aura:id="recordManager" recordId="{!v.recordId}" layoutType="FULL" targetRecord="{!v.fullRecord}"
+        targetFields="{!v.action}" targetError="{!v.recordError}" mode="EDIT" recordUpdated="{!c.handleRecordUpdated}"
+    />
+
+    <!-- Display Lightning Data Service errors, if any -->
+    <aura:if isTrue="{!not(empty(v.recordError))}">
+        <div class="recordError">
+            <ui:message title="Error" severity="error" closable="true">
+                {!v.recordError}
+            </ui:message>
+        </div>
+    </aura:if>
+
+    <lightning:card>
+        <aura:set attribute="title">
+            <span>
+                <lightning:badge label="{!(v.idx+1) + '. ' + v.action.Name}" />
+                <lightning:badge label="{!v.action.Operation__c}" />
+                <lightning:badge label="{!v.action.AppName__c}" />
+            </span>
+        </aura:set>
+        <aura:set attribute="actions">
+            <div>
+                {!v.action.Order__c}
+                <lightning:buttonIcon iconName="utility:check" variant="{!v.action.Enabled__c ? 'brand' : 'border'}"
+                    onclick="{!c.changeEnabled}" />
+                <lightning:buttonIcon iconName="utility:arrowup" variant="border" onclick="{!c.moveUp}" disabled="{!!v.isMoveUp}"
+                />
+                <lightning:buttonIcon iconName="utility:arrowdown" variant="border" onclick="{!c.moveDown}" disabled="{!!v.isMoveDown}"
+                />
+                <lightning:buttonIcon iconName="utility:preview" variant="neutral" onclick="{!c.viewRecord}" />
+                <lightning:buttonIcon iconName="utility:edit" variant="brand" onclick="{!c.editRecord}" class="{! v.isEditing ? 'slds-hide' : ''}"
+                />
+                <lightning:buttonIcon iconName="utility:save" variant="brand" onclick="{!c.saveRecord}" class="{! !v.isEditing ? 'slds-hide' : ''}"
+                />
+                <lightning:buttonIcon iconName="utility:add" variant="brand" onclick="{!c.addRecord}" />
+            </div>
+        </aura:set>
+        <p class="slds-p-around_small">
+            <table border="1">
+                <aura:iteration items="{!v.fieldsShown}" var="item">
+                    <c:DataActionField action="{!v.action}" field="{!item}" isEditing="{!v.isEditing}" />
+                </aura:iteration>
+            </table>
+            <!-- lightning:dualListbox aura:id="events" name="multipleOptions" label="Select Options" sourceLabel="Available"
+                selectedLabel="Selected" options="{!v.allEvents}" value="{!v.selectedEvents}" /-->
+            <!-- class="{! !v.isEditing ? 'slds-hide' : ''}" -->
+        </p>
+    </lightning:card>
+</aura:component>

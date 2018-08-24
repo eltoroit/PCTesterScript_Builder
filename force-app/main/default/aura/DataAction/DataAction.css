@@ -1,0 +1,33 @@
+.THIS .slds-truncate {
+    overflow: visible;
+}
+
+.THIS .slds-badge {
+    font-size: 1rem;
+    letter-spacing: inherit;
+    font-weight: bolder;
+    text-transform: none;
+}
+
+.THIS th {
+    background-color: rgba(192, 192, 192, 0.25);
+}
+
+.THIS th, .THIS td, .THIS table {
+    padding: 5px;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+.THIS .sideHeader {
+    width: 150px;
+}
+
+.THIS .sideMissing {
+    background-color: yellow;
+}
+
+.THIS .sideMissingOptional {
+    background-color: silver;
+}
+

@@ -1,0 +1,21 @@
+<aura:component>
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="editForm" type="Object" />
+    <aura:attribute name="modalWindow" type="Object" />
+    <aura:attribute name="isForm" type="Boolean" required="true" />
+
+    <aura:method name="saveRecord" action="{!c.saveRecord}" />
+
+    <aura:if isTrue="{!v.isForm}">
+        <force:recordEdit aura:id="edit" recordId="{!v.recordId}" onSaveSuccess="{!c.closeModal}"
+        />
+        <!-- c:ActionsCreate recordId="{!v.recordId}" isModal="true" /-->
+
+
+        <aura:set attribute="else">
+            <lightning:button label="cancel" variant="bare" onclick="{!c.closeModal}" />
+            <lightning:button type="submit" label="Save" variant="brand" onclick="{!c.saveClick}"
+            />
+        </aura:set>
+    </aura:if>
+</aura:component>

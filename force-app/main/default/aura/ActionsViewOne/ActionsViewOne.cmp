@@ -1,0 +1,74 @@
+<aura:component>
+    <lightning:overlayLibrary aura:id="overlayLib" />
+
+    <aura:attribute name="fieldsShown" type="List" default="[]" access="private" />
+
+    <aura:attribute name="idx" type="Integer" />
+    <aura:attribute name="action" type="Action__c" />
+    <aura:attribute name="isMoveUp" type="Boolean" default="false" />
+    <aura:attribute name="isMoveDown" type="Action__c" default="false" />
+    <aura:attribute name="fields" type="Object" default="{}" />
+
+    <aura:handler name="init" value="this" action="{!c.doInit}" />
+    <aura:registerEvent name="actionEvent" type="c:ActionViewerEvent" />
+
+    <lightning:card>
+        <aura:set attribute="title">
+            <span>
+                <lightning:badge label="{!(v.idx+1) + '. ' + v.action.Name}" />
+                <lightning:badge label="{!v.action.Operation__c}" />
+                <lightning:badge label="{!v.action.AppName__c}" />
+            </span>
+        </aura:set>
+        <aura:set attribute="actions">
+            <lightning:buttonIcon iconName="utility:check" variant="{!v.action.Enabled__c ? 'brand' : 'border'}"
+                onclick="{!c.changeEnabled}" />
+            <lightning:buttonIcon iconName="utility:arrowup" variant="border" onclick="{!c.moveUp}" disabled="{!!v.isMoveUp}"
+            />
+            <lightning:buttonIcon iconName="utility:arrowdown" variant="border" onclick="{!c.moveDown}" disabled="{!!v.isMoveDown}"
+            />
+            <lightning:button label="View" iconName="utility:preview" iconPosition="left" variant="brand" onclick="{!c.viewRecord}"
+            />
+            <lightning:button label="Edit" iconName="utility:edit" iconPosition="left" variant="brand" onclick="{!c.editRecord}"
+            />
+            <lightning:button label="TEST" variant="destructive" onclick="{!c.test}" />
+
+        </aura:set>
+        <p class="slds-p-around_small">
+            <table border="1">
+                <aura:iteration items="{!v.fieldsShown}" var="item">
+                    <c:ActionsViewOneField action="{!v.action}" field="{!item}" />
+                </aura:iteration>
+            </table>
+        </p>
+
+    </lightning:card>
+</aura:component>
+<!--
+    <tr>
+        <th>AppName__c</th>
+        <td>{!v.action.AppName__c}</td>
+    </tr>
+    <tr>
+        <th>Operation__c</th>
+        <td>{!v.action.Operation__c}</td>
+    </tr>
+-->
+<!--
+        <p class="slds-p-around_small">
+            <table>
+                <tr>
+                    <th>Action__c</th>
+                    <th>Event__c</th>
+                    <th>Event__r.Name</th>
+                </tr>
+                <aura:iteration items="{!v.action.Actions_X_Events__r}" var="event">
+                    <tr>
+                        <td>{!event.Action__c}</td>
+                        <td>{!event.Event__c}</td>
+                        <td>{!event.Event__r.Name}</td>
+                    </tr>
+                </aura:iteration>
+            </table>
+        </p>
+    -->

@@ -1,0 +1,7 @@
+.THIS .slds-tabs_default, .THIS .slds-tabs--default {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.THIS .slds-tabs_default__nav, .THIS .slds-tabs--default__nav {
+    background-color: rgb(255, 255, 255);
+}

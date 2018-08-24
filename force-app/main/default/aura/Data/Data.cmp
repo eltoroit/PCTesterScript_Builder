@@ -1,0 +1,42 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"
+    access="global">
+    <c:ETLC_PleaseWait />
+    <c:ETLC_ApexBridge aura:id="ApexBridge" />
+
+    <aura:attribute name="events" type="List" access="PRIVATE" />
+    <aura:attribute name="actions" type="List" access="PRIVATE" />
+    <aura:attribute name="eventId" type="String" access="PRIVATE" />
+    <aura:attribute name="mapLds" type="Object" access="PRIVATE" />
+    <aura:attribute name="EventsPerAllActions" type="Object" access="PRIVATE" />
+
+    <aura:attribute name="fields" type="Object" default="{}" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="reorder" event="c:DataActionEvent" action="{!c.reorder}" />
+    <aura:handler name="refresh" event="c:DataActionEvent" action="{!c.refresh}" />
+    <aura:handler name="register" event="c:DataActionEvent" action="{!c.registerLds}" />
+    <aura:handler name="saveEvents" event="c:DataActionEvent" action="{!c.saveEvents}" />
+
+    <div class="slds-p-top_small">
+        <lightning:card title="Events" iconName="utility:search">
+            <aura:set attribute="actions">
+                <lightning:input type="toggle" label="Show All fields" name="showAllFields" />
+            </aura:set>
+            <p class="slds-p-around_small">
+                <lightning:select name="eventId" label="Select an event:" aura:id="eventId" value="{!v.eventId}" onchange="{!c.onEventChange}">
+                    <aura:iteration items="{!v.events}" var="event">
+                        <option text="{!event.Name}" value="{!event.Id}" />
+                    </aura:iteration>
+                </lightning:select>
+            </p>
+        </lightning:card>
+    </div>
+
+    <div class="slds-p-top_small">
+        <aura:iteration items="{!v.actions}" var="action" indexVar="idx">
+            <c:DataAction recordId="{!action.Id}" idx="{!idx}" isMoveUp="{!idx>0}" isMoveDown="{!(idx+1) &lt; v.actions.length}"
+                fields="{!v.fields}" reorder="{!c.reorder}" allEvents="{!v.events}" EventsPerAllActions="{!v.EventsPerAllActions}"
+            />
+        </aura:iteration>
+    </div>
+</aura:component>

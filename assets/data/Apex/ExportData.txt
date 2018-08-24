@@ -1,0 +1,11 @@
+/*
+REM sfdx force:data:tree:export -d assets/data -q "SELECT Id, Name, Action__c, Action__r.Name,  Action__r.appname__c,  Action__r.ExtID__c,  Action__r.command__c,  Action__r.enabled__c,  Action__r.errormessage__c,  Action__r.fix__c,  Action__r.expected__c,  Action__r.message__c,  Action__r.operation__c,  Action__r.order__c,  Action__r.room__c, Event__c, Event__r.Name, Event__r. ExtID__c, Event__r.active__c FROM Event_X_Action__c"
+sfdx force:apex:execute -f assets/data/Apex/ExportData.txt
+sfdx force:data:soql:query -r csv -q "SELECT id, ownerid, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, appname__c, command__c, enabled__c, errormessage__c, expected__c, extid__c, fix__c, message__c, operation__c, order__c FROM Action__c" > assets/data/Action.csv
+sfdx force:data:soql:query -r csv -q "SELECT id, ownerid, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, active__c, extid__c FROM Event__c" > assets/data/Event.csv
+sfdx force:data:soql:query -r csv -q "SELECT id, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, event__c, action__c, uniquekey__c FROM Event_X_Action__c" > assets/data/Event_X_Action.csv
+sfdx force:data:soql:query -r csv -q "SELECT id, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, action__c, key__c, value__c, path__c FROM JSON_Action__c" > assets/data/JSON_Action.csv
+Util.updateRecords();
+*/
+Util.renumber();
+Util.SOQLsToBackup();

@@ -1,0 +1,24 @@
+<aura:component>
+    <aura:attribute name="value" type="String" access="private" />
+    <aura:attribute name="class" type="String" access="private" />
+    <aura:attribute name="fieldName" type="String" access="private" />
+
+    <aura:attribute name="field" type="Object" />
+    <aura:attribute name="action" type="Action__c" />
+    <aura:attribute name="isEditing" type="Boolean" default="false" />
+
+    <aura:handler name="init" value="this" action="{!c.doInit}" />
+    <aura:handler name="change" value="{!v.value}" action="{!c.changeValue}" />
+
+    <tr>
+        <th class="sideHeader">{!v.fieldName}</th>
+        <td class="{!v.class}">
+            <span class="{! !v.isEditing ? 'slds-hide' : ''}">
+                <ui:inputText value="{!v.value}" />
+            </span>
+            <span class="{! v.isEditing ? 'slds-hide' : ''}">
+                {!v.value}
+            </span>
+        </td>
+    </tr>
+</aura:component>
