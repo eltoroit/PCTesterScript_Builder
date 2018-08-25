@@ -1,4 +1,4 @@
-    public with sharing class ActionsView extends ETLC_ApexBridge_Abstract {
+public with sharing class ActionsView extends ETLC_ApexBridge_Abstract {
     public override void process(ETLC_ApexBridge_Request request, ETLC_ApexBridge_Response response) {
         if (request.method == 'getEvents') {
             response.output = ETLC_ApexBridge_Abstract.encodeData(getEvents(request));
@@ -28,7 +28,8 @@
         List<Action__c> actions = [
             SELECT ID, Name, AppName__c, Command__c, Enabled__c, ErrorMessage__c, Fix__c, Expected__c, 
             Message__c, Operation__c, Order__c, ExtId__c, 
-            (SELECT Event__c, Event__r.Name FROM Actions_X_Events__r) 
+            (SELECT Id, Name, Event__c, Event__r.Name FROM Actions_X_Events__r),
+            (SELECT Id, Name, Action__c, Key__c, Path__c, Value__c FROM JSON_Actions__r)
             FROM Action__c 
             WHERE ID IN (SELECT Action__c FROM Event_X_Action__c WHERE Event__c = :eventId)
             ORDER BY Order__c ASC

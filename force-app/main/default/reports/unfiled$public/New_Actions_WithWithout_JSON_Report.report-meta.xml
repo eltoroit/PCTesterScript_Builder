@@ -1,66 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>CUST_NAME</field>
+        <field>Action__c$Name</field>
     </columns>
     <columns>
-        <field>Action__c.AppName__c</field>
+        <field>Action__c$AppName__c</field>
     </columns>
     <columns>
-        <field>Action__c.Operation__c</field>
+        <field>Action__c$Command__c</field>
     </columns>
     <columns>
-        <field>Action__c.Command__c</field>
+        <field>Action__c$ErrorMessage__c</field>
     </columns>
     <columns>
-        <field>Action__c.Expected__c</field>
+        <field>Action__c$Expected__c</field>
     </columns>
     <columns>
-        <field>Action__c.Fix__c</field>
+        <field>Action__c$Fix__c</field>
     </columns>
     <columns>
-        <field>Action__c.Message__c</field>
+        <field>Action__c$Message__c</field>
     </columns>
     <columns>
-        <field>Action__c.ErrorMessage__c</field>
+        <field>Action__c$Operation__c</field>
     </columns>
     <columns>
-        <field>Action__c.Order__c</field>
+        <field>Action__c.JSON_Actions__r$Key__c</field>
     </columns>
     <columns>
-        <field>Action__c.Enabled__c</field>
+        <field>Action__c.JSON_Actions__r$Value__c</field>
     </columns>
     <columns>
-        <field>Action__c.ExtId__c</field>
+        <field>Action__c.JSON_Actions__r$Path__c</field>
+    </columns>
+    <columns>
+        <field>Action__c$Order__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>Action__c.Enabled__c</column>
+            <column>Action__c$Enabled__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
     </filter>
-    <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>FK_NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>View Actions By Event</name>
+    <format>Tabular</format>
+    <name>New Actions With/Without JSON Report</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntityCustomEntity$Action__c$Event_X_Action__c@Event_X_Action__c.Event__c</reportType>
+    <reportType>Actions_With_Without_JSON__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Action__c.Order__c</sortColumn>
+    <sortColumn>Action__c$Order__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <dateColumn>Action__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

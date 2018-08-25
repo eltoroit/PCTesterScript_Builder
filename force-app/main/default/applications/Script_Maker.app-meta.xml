@@ -5,13 +5,15 @@
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
     <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Script Maker</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
     <tabs>Data</tabs>
     <tabs>Custom</tabs>
-    <tabs>Action__c</tabs>
     <tabs>Event__c</tabs>
+    <tabs>Action__c</tabs>
     <tabs>JSON_Action__c</tabs>
     <tabs>standard-report</tabs>
     <uiType>Lightning</uiType>

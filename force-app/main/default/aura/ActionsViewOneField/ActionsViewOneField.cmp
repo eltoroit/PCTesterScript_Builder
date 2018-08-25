@@ -2,14 +2,23 @@
     <aura:attribute name="value" type="String" access="private" />
     <aura:attribute name="class" type="String" access="private" />
     <aura:attribute name="fieldName" type="String" access="private" />
+    <aura:attribute name="isJSON" type="Boolean" default="false" access="private" />
 
     <aura:attribute name="action" type="Action__c" />
     <aura:attribute name="field" type="Object" />
 
     <aura:handler name="init" value="this" action="{!c.doInit}" />
 
-    <tr>
-        <th class="sideHeader">{!v.fieldName}</th>
-        <td class="{!v.class}">{!v.value}</td>
-    </tr>
+    <aura:if isTrue="{! !v.isJSON}">
+        <tr>
+            <th class="sideHeader">{!v.fieldName}</th>
+            <td class="{!v.class}">{!v.value}</td>
+        </tr>
+        <aura:set attribute="else">
+            <tr>
+                <th class="sideHeader">{!v.fieldName}</th>
+                <td class="{!v.class}">JSON</td>
+            </tr>
+        </aura:set>
+    </aura:if>
 </aura:component>
