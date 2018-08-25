@@ -70,6 +70,7 @@ EXPORT: Using the SFDX CLI, export the data
     -  C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite
 - How
     SQLite
+        - Database structure: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Database
         - sqlite3 -header -column "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "select * from moz_bookmarks"
         - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "select id, type, fk, parent, title from moz_bookmarks"
         - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT a.id AS ID, a.title AS Title, b.url AS URL FROM moz_bookmarks AS b JOIN moz_places AS b ON a.fk = b.id"
@@ -81,8 +82,6 @@ EXPORT: Using the SFDX CLI, export the data
     - CSV 2 JSON
         - https://www.npmjs.com/package/csvtojson
 
-- Database structure
-    - https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Database
 
 
 
