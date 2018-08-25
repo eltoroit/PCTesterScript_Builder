@@ -1,3 +1,5 @@
 .DS_Store
 .sfdx/
 .vscode/
+.sfdx/orgs/test-uhxb6mwbfq7f@example.com/sourcePathInfos.json
+.sfdx/orgs/test-uhxb6mwbfq7f@example.com/sourcePathInfos.json.bak
