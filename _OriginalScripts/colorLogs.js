@@ -40,7 +40,7 @@ module.exports = {
         } catch (e) {
             if (typeof e.stack === 'string') {
                 var lines = e.stack.split('\n');
-                for (var i = 0; i < lines.length) {
+                for (var i = 0; i < lines.length; i++) {
                     console.log(i + ": " + lines[i]);
                 }
             }
