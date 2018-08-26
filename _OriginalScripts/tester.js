@@ -13,8 +13,8 @@ const https = require('https');
 const log = require('./colorLogs.js');
 
 // Skip manual checks
-var debug = true;
-var verbose = true;
+var debug = false;
+var verbose = false;
 var timerDelay = 250;
 var executeManualChecks = false;
 
@@ -59,7 +59,7 @@ function promptYesNo(instruction) {
 
 		untilCorrectResponse();
 	} else {
-		log.error("Manual checks are being skipped for testing!");
+		log.error("Manual checks are being skipped for testing! (No prompt)");
 		nextInstruction();
 	}
 }
@@ -135,7 +135,7 @@ function checkPath(instruction) {
 	instruction.Command__c = "DIR \"" + instruction.Command__c + "\" /B";
 	if (!instruction.callback) {
 		instruction.callback = function (output) {
-			if (output.stdout.indexOf(instruction.Expected__c) >= 0) {
+			if (output.stdout.toLowerCase().indexOf(instruction.Expected__c.toLowerCase()) >= 0) {
 				if (verbose) log.success("VALID: [Found: '" + instruction.Expected__c + "']");
 				nextInstruction();
 			} else {
@@ -390,20 +390,25 @@ function executeInstruction() {
 			promptYesNo(instruction);
 			break;
 		case "Open Application":
-			instruction.callback = function (output) {
-				if (output.stderr) {
-					instruction.hasErrors = true;
-					instruction.returned = output;
-					reportError(instruction);
-					nextInstruction();
-				}
-			};
-			executeCommand(instruction);
-			setTimeout(function () {
-				if (!instruction.hasErrors) {
-					promptYesNo(instruction);
-				}
-			}, timerDelay * 10);
+			if (executeManualChecks) {
+				instruction.callback = function (output) {
+					if (output.stderr) {
+						instruction.hasErrors = true;
+						instruction.returned = output;
+						reportError(instruction);
+						nextInstruction();
+					}
+				};
+				executeCommand(instruction);
+				setTimeout(function () {
+					if (!instruction.hasErrors) {
+						promptYesNo(instruction);
+					}
+				}, timerDelay * 10);
+			} else {
+				log.error("Manual checks are being skipped for testing! (Open application skipped)");
+				nextInstruction();
+			}
 			break;
 		case "Write":
 			if (instruction.Command__c == "=== === === AUTOMATED CHECKS === === ===") {
