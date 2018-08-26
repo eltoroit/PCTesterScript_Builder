@@ -17,7 +17,22 @@
         <aura:set attribute="else">
             <tr>
                 <th class="sideHeader">{!v.fieldName}</th>
-                <td class="{!v.class}">JSON</td>
+                <td class="{!v.class}">
+                    <table>
+                        <tr>
+                            <th class="sideHeader">Key</th>
+                            <td class="{!v.class}">{!v.value.Key__c}</td>
+                        </tr>
+                        <tr>
+                            <th class="sideHeader">Path</th>
+                            <td class="{!v.class}">{!v.value.Path__c}</td>
+                        </tr>
+                        <tr>
+                            <th class="sideHeader">Value</th>
+                            <td class="{!v.class}">{!v.value.Value__c}</td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
         </aura:set>
     </aura:if>
