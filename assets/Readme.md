@@ -58,6 +58,8 @@ EXPORT: Using the SFDX CLI, export the data
 - Validate the script on Bravo.
 - 
 
+# Bookmarks on Chrome
+    - copy "C:\Users\Admin\AppData\Local\Google\Chrome\User Data\Default\Bookmarks" bmChrome.json
 # Bookmarks on Firefox
 - Needs SQLite, download here:
     - https://www.sqlite.org/download.html
@@ -76,7 +78,7 @@ EXPORT: Using the SFDX CLI, export the data
         - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT a.id AS ID, a.title AS Title, b.url AS URL FROM moz_bookmarks AS b JOIN moz_places AS b ON a.fk = b.id"
         - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.type, b.fk, b.parent, b.title, p.title, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id"
         - sqlite3 -header -csv "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title, p.title, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id"
-        - *** sqlite3 -header -csv "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" > firefoxBookmarks.json
+        - *** sqlite3 -header -csv "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" > bmFirefox.json
             - bTitle = Bookmark title
             - pTitle = <HTML><HEAD><Title>....</Title></HEAD></HTML> (Do not care about this).
     - CSV 2 JSON
