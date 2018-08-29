@@ -11,6 +11,11 @@ const url = require('url');
 const http = require('http');
 const https = require('https');
 const log = require('./colorLogs.js');
+const sqlite3 = require('sqlite3').verbose();
+
+// Paths
+const bmChromePath = "C:\\Users\\Admin\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Bookmarks";
+const bmFirefoxPath = ["C:\\Users\\Admin\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\*.default","places.sqlite"];
 
 // Skip manual checks
 var debug = false;
@@ -18,6 +23,8 @@ var verbose = false;
 var timerDelay = 250;
 var executeManualChecks = false;
 
+// Data structure
+var bm = {};
 var errors = [];
 var errorCodes = {};
 var idxInstructions;

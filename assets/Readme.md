@@ -81,8 +81,7 @@ EXPORT: Using the SFDX CLI, export the data
         - *** sqlite3 -header -csv "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" > bmFirefox.json
             - bTitle = Bookmark title
             - pTitle = <HTML><HEAD><Title>....</Title></HEAD></HTML> (Do not care about this).
-    - CSV 2 JSON
-        - https://www.npmjs.com/package/csvtojson
+
 
 
 
