@@ -6,25 +6,24 @@ sfdx force:auth:web:login -a dhScriptMaker -d
 ```
 ## Create new Scratch ORG
 ```
-sfdx force:org:create -f config/project-scratch-def.json --setalias soMAC20 --setdefaultusername -w 10
+sfdx force:org:create -f config/project-scratch-def.json --setalias soMAC0830 --setdefaultusername -w 10
 sfdx force:package:install --package 04t6A000002D2ElQAK -w 10
-sfdx force:package:install --package 04t6A000002D2EqQAK -w 10
+## sfdx force:package:install --package 04t6A000002D2EqQAK -w 10
 sfdx force:source:push
 sfdx force:user:permset:assign -n Script_Maker
 sfdx force:org:open
 sfdx force:user:password:generate
 sfdx force:org:display
 Workbench <Load Data>
-    - Order:
-        - Event__c
-            - Do NOT map out the owner field
-        - Action__c
-            - Do NOT map out the owner field
-            - Only works if ONE and only ONE event was loaded... Make sure the trigger is assigning to valid event.
-        - Event_X_Action__c
-            - No need to load this, since the trigger automatically creates the record.
-        - JSON_Action__c
-            - Do NOT map out the owner field
+    - Event__c
+        - Do NOT map out the owner field
+    - Action__c
+        - Do NOT map out the owner field
+        - Only works if ONE and only ONE event was loaded... Make sure the trigger is assigning to valid event.
+    - Event_X_Action__c
+        - No need to load this, since the trigger automatically creates the record.
+    - JSON_Action__c
+        - Do NOT map out the owner field
 ```
 ## Export Data
 ```
@@ -81,6 +80,21 @@ EXPORT: Using the SFDX CLI, export the data
         - *** sqlite3 -header -csv "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" > bmFirefox.json
             - bTitle = Bookmark title
             - pTitle = <HTML><HEAD><Title>....</Title></HEAD></HTML> (Do not care about this).
+        - Testing modes
+            - .mode MODE ?TABLE?     Set output mode where MODE is one of:
+                         ascii    Columns/rows delimited by 0x1F and 0x1E
+                         csv      Comma-separated values
+                         column   Left-aligned columns.  (See .width)
+                         html     HTML <table> code
+                         insert   SQL insert statements for TABLE
+                         line     One value per line
+                         list     Values delimited by "|"
+                         quote    Escape answers as for SQL
+                         tabs     Tab-separated values
+                         tcl      TCL list elements
+            - *** sqlite3 -header -line "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" > bmFF_LINE.txt
+            - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id"
+
 
 
 

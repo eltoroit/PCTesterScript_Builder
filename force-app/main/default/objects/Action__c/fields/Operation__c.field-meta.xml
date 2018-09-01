@@ -26,9 +26,9 @@
                 <label>Check Path</label>
             </value>
             <value>
-                <fullName>Chrome Bookmark</fullName>
+                <fullName>Bookmark</fullName>
                 <default>false</default>
-                <label>Chrome Bookmark</label>
+                <label>Bookmark</label>
             </value>
             <value>
                 <fullName>Clear</fullName>

@@ -30,7 +30,7 @@ trigger tAction on Action__c (before insert, after insert, before update, after 
             } else if (action.Operation__c == 'Check Contains') {
                 action.Message__c = 'Validating: ' + action.AppName__c + ' (' + action.Command__c  + ')';
                 action.ErrorMessage__c = 'Could not validate: ' + action.AppName__c + ' (' + action.Command__c  + ')';
-            } else if (action.Operation__c == 'Chrome Bookmark') {
+            } else if (action.Operation__c == 'Bookmark') {
                 action.Message__c = 'Validating: ' + action.AppName__c;
                 action.ErrorMessage__c = 'Could not validate: ' + action.AppName__c;
             } else if (action.Operation__c == 'Edit JSON File') {

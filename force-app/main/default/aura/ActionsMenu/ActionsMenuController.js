@@ -22,12 +22,11 @@
                 { name: "Expected__c", required: true },
                 { name: "Fix__c", required: false }
             ],
-            "Chrome Bookmark": [
+            "Bookmark": [
                 { name: "AppName__c", required: true },
                 { name: "Command__c", required: true },
                 { name: "Expected__c", required: true },
                 { name: "Fix__c", required: false },
-                { name: "JSON_Actions__r", required: true, type: "JSON" }
             ],
             "Clear": [
                 { name: "AppName__c", required: false }
