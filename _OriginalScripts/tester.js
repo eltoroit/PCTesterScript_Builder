@@ -18,11 +18,11 @@ var verbose = false;
 var timerDelay = 250;
 var executeManualChecks = false;
 var testType  = "TEST";
-if (testTYpe=="PROD") {
+if (testType=="PROD") {
 	var debug = false;
 	var verbose = false;
 	var executeManualChecks = true;
-} else if (testTYpe=="TEST") {
+} else if (testType=="TEST") {
 	var debug = true;
 	var verbose = true;
 	var executeManualChecks = false;
@@ -36,6 +36,7 @@ var instructions = [];
 
 // Bookmarks
 var bm = {};
+var bmPretendPath = "./bmPretend.txt";
 const bmChromePath = "C:\\Users\\Admin\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Bookmarks";
 const bmFirefoxPath = ["C:\\Users\\Admin\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\","*.default","places.sqlite"];
 
@@ -382,19 +383,16 @@ function validateBookmarks_Process() {
 	});
 }
 function validateBookmarks(instruction) {
-	if (verbose) log.info("Verifying Bookmarks: " + instruction.AppName__c);
+	if (verbose) log.info("Verifying Bookmarks");
 
-
-	var bmPretendExists = false;
-	var bmPretendPath = "./bmPretend.txt";
-
-	try { bmPretendExists = (fs.statSync(bmPretendPath).size > 0) } catch (ex) {}
-	if (bmPretendExists) {
-		console.log("BM: Read from file [" + bmPretendPath + "]");
+	
+	if (doesFileExist(bmPretendPath)) {
+		log.info("Bookmarks information read from file [" + bmPretendPath + "]");
 		bm = loadFileJson(bmPretendPath);
 		validateBookmarks_Process();	
 	} else {
-		console.log("BM: Processed from browsers");
+		// validateBookmarks_Process is not called from here directly because it is going to work asynchronously... invk=oked from findBookmarks_Firefox.
+		// Do not reverse the order here. First Chrome, then Firefox.
 		findBookmarks_Chrome();
 		findBookmarks_Firefox();
 	}
@@ -467,20 +465,17 @@ function jsonFile_Edit(instruction) {
 function loadFileJson(path) {
 	return JSON.parse(loadFile(path));
 }
+function doesFileExist(path) {
+	var exists = false;
+	try { exists = (fs.statSync(path).size > 0) } catch (ex) {}
+
+	return exists;
+}
 function loadFile(path) {
 	if (verbose) log.debug("Reading file: " + path);
 
-	var stats;
-	var hasErrors = false;
-	try {
-		stats = fs.statSync(path);
-		hasErrors = (stats.size == 0);
-	} catch (ex) {
-		log.debug("Error checking file: " + log.getPrettyJson(ex));
-		hasErrors = true;
-	}
-
-	if (hasErrors) {
+	if (!doesFileExist(path)) {
+		log.error("Files does not exist: " + path);
 		try {
 			fs.writeFileSync(path, '{}');
 		} catch (ex) {
@@ -646,8 +641,12 @@ function menuChooseEvent(data) {
 	forEver();
 }
 
+
 log.clearScreen();
 log.promptMsg('Version: 2018-09-01 @ 11:29:00 AM EST');
+if (doesFileExist(bmPretendPath)) {
+	log.error("BOOKMARKS ARE NOT PROCESSED FROM THE BROWSERS!!! Bookmarks are procesed from file [" + bmPretendPath + "]. Delete the file is this is a real test");
+}
 menuChooseEvent(loadFileJson('./data.json'));
 
 
