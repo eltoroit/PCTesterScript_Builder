@@ -1,4 +1,5 @@
-# EXECUTE IT: assets/data/Apex/ExportData.bat
+# EXECUTE IT: ../assets/data/Apex/ExportData.bat
+cd ..
 
 # Prepare data
 echo "Please wait (1/4)..."
@@ -22,7 +23,9 @@ sfdx force:user:display --json | jq -r '.result | .instanceUrl, .accessToken' | 
 
 # Copy files to updte repository
 echo "Please wait (3/4)..."
+rm _OriginalScripts/Errors-*.json
 cp _OriginalScripts/* ../Run
+rm ../Run/bmPretend.txt
 echo "*** Scripts generated..."
 
 # Export for Backup
