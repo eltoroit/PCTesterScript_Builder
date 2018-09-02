@@ -30,7 +30,7 @@ if (testType == "PROD") {
 	debug = true;
 	verbose = true;
 	resultsTofile = false;
-	checkUrlExists = false;
+	checkUrlExists = true;
 	executeManualChecks = false;
 }
 
@@ -179,44 +179,23 @@ function checkPath(instruction) {
 	}
 	executeCommand(instruction);
 }
+// Bookmarks -- START
 function openUrl(urlToCheck, callback) {
 	if (checkUrlExists) {
+		var process = spawnSync("curl", [urlToCheck]);
+		if (verbose) log.debug(process.stderr);
+		if (debug) log.debug(JSON.stringify(process.stdout.toString('utf8')).substring(0, 250));
 
-		var reqClient;
-		var outputData = "";
-		var options = url.parse(urlToCheck);
-
-		if (verbose) log.info("Opening URL: " + urlToCheck);
-		options.method = 'GET';
-		if (options.protocol.toUpperCase() === "HTTPS:") {
-			reqClient = https;
+		if (process.status == 0) {
+			callback(true);
 		} else {
-			reqClient = http;
+			callback(false, "Invalid url: " + urlToCheck);
 		}
-	
-		var reqWS = reqClient.request(options, function (resWS) {
-			resWS.setEncoding('utf8');
-			resWS.on('data', function (chunk) { outputData += chunk; });
-			resWS.on('end', function () {
-				var output = { body: outputData, statusCode: resWS.statusCode }
-				if (debug) log.debug(output.body.substring(0, 250));
-				callback(true);
-			})
-		});
-	
-		reqWS.on('error', function (e) {
-			if (debug) log.debug(('problem with request: ', e));
-			reportErrorMessage(e);
-			callback(false, e);
-		});
-		reqWS.end();
 	} else {
 		if (debug) log.debug("URL [" + urlToCheck + "] was not validated");
 		callback(true);
 	}
 }
-
-
 function findBookmarks_Chrome_Children(node, path) {
 	var thisPath;
 
@@ -263,7 +242,7 @@ function findBookmarks_Firefox() {
 	var files = fs.readdirSync(sqlitepath);
 	if (files.length == 1) {
 		sqlitepath += "\\" + files[0] + "\\" + bmFirefoxPath[2];
-		log.debug("Searching for Firefox bookmars: sqlite path: " + sqlitepath);
+		if (debug) log.debug("Searching for Firefox bookmars: sqlite path: " + sqlitepath);
 	} else {
 		var msg = "Searching for Firefox bookmars: Multiple profiles for Firefox found";
 		reportErrorMessage(msg);
@@ -278,6 +257,9 @@ function findBookmarks_Firefox() {
 
 	var process = exec(cmd, function (error, stdout, stderr) {
 		if (error) reportErrorMessage(error);
+
+		// Add one more line
+		fs.appendFileSync("./bmFF_LINE.txt", "\r\n");
 
 		// Process results
 		var lineReader = require('readline').createInterface({
@@ -391,16 +373,28 @@ function validateBookmarks_Process() {
 	var bmChecks = loadFileJson(bmCheckPath);
 
 	bmChecks.forEach(function (bmCheck) {
+
 		var hasErrors = false;
 		var urlFF = bm.FF[bmCheck.Title];
 		var urlChrome = bm.Chrome[bmCheck.Title];
 		var expectedUrl = bmCheck.Url;
 
+		log.info("Bookmark: " + bmCheck.Title);
+
+		if (bmCheck.checkFF && bmCheck.checkChrome) {
+			if ((urlFF != urlChrome) && urlFF && urlChrome) {
+				errorCount++;
+				hasErrors = true;
+				var msg = "Bookmark error (1). Urls are different for Firefox and Chrome. Title *" + bmCheck.Title + "*,  Firefox [" + urlFF + "], Chrome [" + urlChrome + "]";
+				reportErrorMessage(msg);
+			}
+		}
+
 		if (bmCheck.checkFF) {
 			if (expectedUrl !== urlFF) {
 				errorCount++;
 				hasErrors = true;
-				var msg = "BAD: Bookmark does not match (1). Title *[FF]" + bmCheck.Title + "*,  Expected [" + expectedUrl + "], found [" + urlFF + "]";
+				var msg = "Bookmark error (2). Url in Firefox is not the expected value. Title *" + bmCheck.Title + "*,  Expected [" + expectedUrl + "], found [" + urlFF + "]";
 				reportErrorMessage(msg);
 			}
 		}
@@ -409,16 +403,7 @@ function validateBookmarks_Process() {
 			if (expectedUrl !== urlChrome) {
 				errorCount++;
 				hasErrors = true;
-				var msg = "BAD: Bookmark does not match (2). Title *[Chrome]" + bmCheck.Title + "*,  Expected [" + expectedUrl + "], found [" + urlChrome + "]";
-				reportErrorMessage(msg);
-			}
-		}
-
-		if (bmCheck.checkFF && bmCheck.checkChrome) {
-			if (urlFF != urlChrome) {
-				errorCount++;
-				hasErrors = true;
-				var msg = "BAD: Bookmark does not match (3). Title *" + bmCheck.Title + "*,  Firefox [" + urlFF + "], found [" + urlChrome + "]";
+				var msg = "Bookmark error (3). Url in Chrome is not the expected value. Title *" + bmCheck.Title + "*,  Expected [" + expectedUrl + "], found [" + urlChrome + "]";
 				reportErrorMessage(msg);
 			}
 		}
@@ -427,9 +412,9 @@ function validateBookmarks_Process() {
 			openUrl(expectedUrl, function (isSuccess, error) {
 				if (!isSuccess) {
 					errorCount++;
-					instruction.hasErrors = true;
-					instruction.returned = error;
-					reportError(instruction);
+					hasErrors = true;
+					var msg = "Bookmark error (4). Url can't be accessed. Title *" + bmCheck.Title + "*,  Expected [" + expectedUrl + "]";
+					reportErrorMessage(msg);
 				} else {
 					if (verbose) log.success("VALID: Bookmark *" + bmCheck.Title + "*, URL [" + expectedUrl + "]");
 				}
@@ -437,10 +422,6 @@ function validateBookmarks_Process() {
 		}
 	});
 
-	if (errorCount > 0) {
-		var msg = "* " + errorCount + "* errors found checking for bookmarks";
-		reportErrorMessage(msg);
-	}
 	nextInstruction();
 }
 function validateBookmarks(instruction) {
@@ -457,9 +438,7 @@ function validateBookmarks(instruction) {
 		findBookmarks_Firefox();
 	}
 }
-
-
-
+// Bookmarks -- END
 function jsonFile_Edit(instruction) {
 	if (verbose) log.info("Editing JSON File: " + instruction.AppName__c);
 
@@ -627,13 +606,15 @@ function executeInstruction() {
 			}
 			break;
 		case "Write":
-			if (instruction.Command__c == "=== === === AUTOMATED CHECKS === === ===") {
+			/*
+		    if (instruction.Command__c == "=== === === AUTOMATED CHECKS === === ===") {
 				if (executeManualChecks) {
 					log.error("Switching debug mode ON");
 					debug = true;
 					verbose = true;
 				}
 			}
+			*/
 			log.info(instruction.Command__c);
 			nextInstruction();
 			break;
@@ -724,102 +705,3 @@ if (doesFileExist(bmCheckPath)) {
 }
 
 menuChooseEvent(loadFileJson('./data.json'));
-
-
-
-
-
-/*
-
-
-					if (nodeTemp.FF && nodeTemp.Chrome && (nodeTemp.FF != nodeTemp.Chrome)) {
-						throw new Error("FF and Chrome urls are different");
-					}
-
-					if (nodeTemp.FF) {
-						//nodeNew.Url = nodeTemp.FF;
-						nodeNew.hasFF = true;
-					}
-					if (nodeTemp.Chrome) {
-						//nodeNew.Url = nodeTemp.Chrome;
-						nodeNew.hasChrome = true;
-					}
-					
-					// Assume we are going to be checking both URLs
-					nodeNew.checkFF = true;
-					nodeNew.checkChrome = true;
-					
-					bmBarNew.push(nodeNew);
-
-
-function ChromeBookmark(instruction) {
-	if (verbose) log.info("Verifying Bookmark in Chrome: " + instruction.AppName__c);
-
-	// if (debug) log.debug("Reading JSON_Action__c");
-	var JSON_Action;
-	JSON_Action = instruction.JSON_Actions__r;
-	if (JSON_Action.totalSize != 1) throw new Error("Multiple JSON Actions are not allowed!");
-	JSON_Action = JSON_Action.records[0];
-
-	// if (debug) log.debug("Reading bookmarks file");
-	var fileContents = loadJsonFile(instruction.Command__c);
-	var data = fileContents;
-	var paths = JSON_Action.Path__c.split(":");
-
-	if (debug) log.debug("Processing bookmarks file: " + JSON_Action.Path__c);
-	for (var i = 0; i < paths.length; i++) {
-		var path = paths[i];
-		if (path != "") {
-			if (path[0] == "[") {
-				// Remove [ and ]
-				path = path.substring(1, path.length - 1);
-				// Split it
-				path = path.split("=");
-				var key = path[0];
-				var value = path[1];
-				if (data && data.length > 0) {
-					for (var j = 0; j < data.length; j++) {
-						var d = data[j];
-						if (d[key].trim().toUpperCase() == value.trim().toUpperCase()) {
-							data = d;
-						}
-					}
-				} else {
-					log.error("DATA IS NOT CORRECT (1)");
-					reportError(instruction);
-				}
-			} else {
-				var s1 = JSON.stringify(data).length;
-				data = data[path];
-				var s2 = JSON.stringify(data).length;
-				if (s1 <= s2) {
-					log.error("DATA IS NOT CORRECT(2)");
-					reportError(instruction);
-				}
-			}
-		}
-	}
-	if (debug) log.debug("Found bookmark: " + log.getPrettyJson(data));
-
-	if (debug) log.debug("Opening bookmark");
-	var url = data[JSON_Action.Key__c];
-	if (url === JSON_Action.Value__c) {
-		openUrl(url, function (isSuccess, error) {
-			if (!isSuccess) {
-				instruction.hasErrors = true;
-				instruction.returned = error;
-				reportError(instruction);
-				nextInstruction();
-			} else {
-				log.success("VALID: Bookmark in Chrome: " + instruction.AppName__c);
-				nextInstruction();
-			}
-		});
-	} else {
-		instruction.returned = url;
-		reportError(instruction);
-		nextInstruction();
-	}
-}
-
-*/
