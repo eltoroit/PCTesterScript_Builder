@@ -37,18 +37,24 @@ let colorBgWhite = "\x1b[47m";
 module.exports = {
     getTrace: function (offset) {
         if (!offset) offset = 0;
-        
+
         if (showLineNumbers) {
             try {
                 throw new Error();
             } catch (e) {
                 if (typeof e.stack === 'string') {
+                    var linePart = 1;
+
                     var lines = e.stack.split('\n');
-                    return "[" + lines[3 + offset].split(':')[2] + "]: ";
+                    var line = lines[3 + offset];
+
+                    console.log(colorBgBlack + colorBright + colorFgMagenta  + line + colorReset);
+                    if (line.toLowerCase().indexOf("c:\\th\\") > 0) linePart++;
+                    return "[" + line.split(':')[linePart] + "]: ";
                 } else {
                     return "";
                 }
-            }    
+            }
         } else {
             return "";
         }
@@ -58,7 +64,7 @@ module.exports = {
         console.log(colorBgBlack + colorBright + colorFgRed + this.getTrace() + msg + colorReset);
     },
     debug: function (msg) {
-        console.log(colorBgBlack + colorDim + colorFgGray + this.getTrace() + msg + colorReset);
+        console.log(colorBgBlack + colorBright + colorFgGray + this.getTrace() + msg + colorReset);
     },
     info: function (msg) {
         console.log(colorBgBlack + colorBright + colorFgWhite + this.getTrace() + msg + colorReset);
