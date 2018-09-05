@@ -1,5 +1,6 @@
-# EXECUTE IT: ../assets/data/Apex/ExportData.bat
-cd ..
+# EXECUTE IT:
+# CD >> ./Build
+# FROM Build assets/data/Apex/ExportData.bat
 
 # Prepare data
 echo "Please wait (1/4)..."
