@@ -29,7 +29,7 @@ if (testType == "PROD") {
 } else if (testType == "TEST") {
 	debug = true;
 	verbose = true;
-	resultsTofile = false;
+	resultsTofile = true;
 	checkUrlExists = true;
 	executeManualChecks = false;
 }
@@ -606,19 +606,18 @@ function executeInstruction() {
 			}
 			break;
 		case "Write":
-			/*
+		    // Force debug mode...
 		    if (instruction.Command__c == "=== === === AUTOMATED CHECKS === === ===") {
-				if (executeManualChecks) {
-					log.error("Switching debug mode ON");
-					debug = true;
-					verbose = true;
-				}
+				log.debug("Switching debug mode ON");
+				debug = false;
+				verbose = false;
+				log.setDebug(true);
 			}
-			*/
 			log.info(instruction.Command__c);
 			nextInstruction();
 			break;
 		case "Done":
+		    log.setDebug(false);
 			var filePath = "Errors-" + (new Date().getTime()) + ".json";
 			try {
 				fs.unlinkSync(filePath);
@@ -626,6 +625,7 @@ function executeInstruction() {
 				if (debug) log.debug("Could not delete file " + filePath + ": " + log.getPrettyJson(ex));
 			}
 			if (errors.length > 0) {
+				log.clearScreen();
 				log.error("Number Of Errors Found: " + errors.length);
 				fs.appendFileSync(filePath, log.getPrettyJson(errors));
 				log.error("Errors written to: ./" + filePath);
@@ -683,7 +683,7 @@ function menuChooseEvent(data) {
 }
 
 log.clearScreen();
-log.promptMsg('Version: 2018-09-01 @ 11:29:00 AM EST');
+log.promptMsg('Version: 2018-09-05 @ 08:36:00 PM EST');
 if (doesFileExist(bmPretendPath)) {
 	log.error("BOOKMARKS ARE NOT PROCESSED FROM THE BROWSERS!!!");
 	log.error("Bookmarks are procesed from file [" + bmPretendPath + "]");

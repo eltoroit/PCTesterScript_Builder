@@ -1,6 +1,10 @@
-# EXECUTE IT:
-# CD >> ./Build
-# FROM Build assets/data/Apex/ExportData.bat
+### EXECUTE IT:
+### Export Data:
+###    cd ../Build
+###    assets/data/Apex/ExportData.bat
+### Push to gitHub
+###    cd ../Run
+###    ./push.bat
 
 # Prepare data
 echo "Please wait (1/4)..."
