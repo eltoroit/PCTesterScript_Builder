@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <field>CUST_NAME</field>
     </columns>
@@ -19,15 +19,21 @@
         <field>Action__c.Fix__c</field>
     </columns>
     <columns>
+        <field>Action__c.Message__c</field>
+    </columns>
+    <columns>
+        <field>Action__c.ErrorMessage__c</field>
+    </columns>
+    <columns>
         <field>Action__c.Order__c</field>
     </columns>
+    <columns>
+        <field>Action__c.Enabled__c</field>
+    </columns>
+    <columns>
+        <field>Action__c.ExtId__c</field>
+    </columns>
     <filter>
-        <criteriaItems>
-            <column>FK_NAME</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>TrailheadDX '18 Workshops</value>
-        </criteriaItems>
         <criteriaItems>
             <column>Action__c.Enabled__c</column>
             <isUnlocked>true</isUnlocked>
@@ -41,14 +47,16 @@
         <field>FK_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>TDX18-Workshop</name>
+    <name>Actions for All Events</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
     <reportType>CustomEntityCustomEntity$Action__c$Event_X_Action__c@Event_X_Action__c.Event__c</reportType>
-    <scope>user</scope>
+    <scope>organization</scope>
     <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
     <sortColumn>Action__c.Order__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>

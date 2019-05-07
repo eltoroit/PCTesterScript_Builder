@@ -126,8 +126,8 @@
         <fields>Action__c.NAME</fields>
         <fields>Action__c.Operation__c</fields>
         <fields>Action__c.AppName__c</fields>
-        <fields>Action__c.Expected__c</fields>
         <fields>Action__c.Command__c</fields>
+        <fields>Action__c.Expected__c</fields>
         <fields>Action__c.Fix__c</fields>
         <fields>Action__c.Enabled__c</fields>
         <fields>Action__c.Order__c</fields>
@@ -141,7 +141,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00hL0000000eR6E</masterLabel>
+        <masterLabel>00h1F000000SYbq</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

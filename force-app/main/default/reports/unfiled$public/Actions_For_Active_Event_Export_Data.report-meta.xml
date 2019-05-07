@@ -4,10 +4,10 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
-        <field>Action__c.AppName__c</field>
+        <field>Action__c.Operation__c</field>
     </columns>
     <columns>
-        <field>Action__c.Operation__c</field>
+        <field>Action__c.AppName__c</field>
     </columns>
     <columns>
         <field>Action__c.Command__c</field>
@@ -19,19 +19,7 @@
         <field>Action__c.Fix__c</field>
     </columns>
     <columns>
-        <field>Action__c.Message__c</field>
-    </columns>
-    <columns>
-        <field>Action__c.ErrorMessage__c</field>
-    </columns>
-    <columns>
         <field>Action__c.Order__c</field>
-    </columns>
-    <columns>
-        <field>Action__c.Enabled__c</field>
-    </columns>
-    <columns>
-        <field>Action__c.ExtId__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -40,20 +28,21 @@
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Event__c.Active__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
     </filter>
-    <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>FK_NAME</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>View Actions By Event</name>
+    <format>Tabular</format>
+    <name>Actions For Active Event (Export Data)</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
     <reportType>CustomEntityCustomEntity$Action__c$Event_X_Action__c@Event_X_Action__c.Event__c</reportType>
-    <scope>organization</scope>
+    <scope>user</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>

@@ -36,6 +36,9 @@
     <columns>
         <field>Action__c$Order__c</field>
     </columns>
+    <columns>
+        <field>Action__c$LastModifiedDate</field>
+    </columns>
     <filter>
         <criteriaItems>
             <column>Action__c$Enabled__c</column>
@@ -45,7 +48,7 @@
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>New Actions With/Without JSON Report</name>
+    <name>Recently Modified Actions</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -55,8 +58,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Action__c$Order__c</sortColumn>
-    <sortOrder>Asc</sortOrder>
+    <sortColumn>Action__c$LastModifiedDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Action__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

@@ -56,7 +56,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Custom Event</label>
+    <label>Trailhead Event</label>
     <nameField>
         <label>Event Name</label>
         <type>Text</type>
