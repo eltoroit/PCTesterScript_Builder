@@ -1,3 +1,0 @@
-Id,IsDeleted,Name,CreatedDate,CreatedById,LastModifiedDate,LastModifiedById,SystemModstamp,LastViewedDate,LastReferencedDate,Action__c,Key__c,Value__c,Path__c
-a033F000001u4GoQAI,false,JSON-0006,2018-08-31T00:34:29.000+0000,0053F000001vgGXQAY,2018-08-31T00:34:29.000+0000,0053F000001vgGXQAY,2018-08-31T00:34:29.000+0000,,,a003F000001OT03QAG,salesforcedx-vscode-apex.java.home,C:\Program Files\java\jdk1.8.0_162,:
-a033F000001u4GpQAI,false,JSON-0007,2018-08-31T00:34:29.000+0000,0053F000001vgGXQAY,2018-08-31T00:34:29.000+0000,0053F000001vgGXQAY,2018-08-31T00:34:29.000+0000,,,a003F000001OT0YQAW,terminal.integrated.shell.windows,C:\Program Files\Git\bin\bash.exe,:

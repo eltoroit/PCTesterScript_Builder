@@ -1,0 +1,163 @@
+Compiled successfully.
+Executed successfully.
+
+45.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
+Execute Anonymous: /*
+Execute Anonymous: REM sfdx force:data:tree:export -d assets/data -q "SELECT Id, Name, Action__c, Action__r.Name,  Action__r.appname__c,  Action__r.ExtID__c,  Action__r.command__c,  Action__r.enabled__c,  Action__r.errormessage__c,  Action__r.fix__c,  Action__r.expected__c,  Action__r.message__c,  Action__r.operation__c,  Action__r.order__c,  Action__r.room__c, Event__c, Event__r.Name, Event__r. ExtID__c, Event__r.active__c FROM Event_X_Action__c"
+Execute Anonymous: sfdx force:apex:execute -f assets/data/Apex/ExportData.txt
+Execute Anonymous: sfdx force:data:soql:query -r csv -q "SELECT id, ownerid, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, appname__c, command__c, enabled__c, errormessage__c, expected__c, extid__c, fix__c, message__c, operation__c, order__c FROM Action__c" > assets/data/Action.csv
+Execute Anonymous: sfdx force:data:soql:query -r csv -q "SELECT id, ownerid, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, active__c, extid__c FROM Event__c" > assets/data/Event.csv
+Execute Anonymous: sfdx force:data:soql:query -r csv -q "SELECT id, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, event__c, action__c, uniquekey__c FROM Event_X_Action__c" > assets/data/Event_X_Action.csv
+Execute Anonymous: sfdx force:data:soql:query -r csv -q "SELECT id, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, action__c, key__c, value__c, path__c FROM JSON_Action__c" > assets/data/JSON_Action.csv
+Execute Anonymous: Util.updateRecords();
+Execute Anonymous: */
+Execute Anonymous: Util.renumber();
+Execute Anonymous: Util.SOQLsToBackup();
+04:38:30.28 (28747793)|USER_INFO|[EXTERNAL]|0051F000002oa9E|test-qzd6klcwlddy@example.com|(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)|GMT-07:00
+04:38:30.28 (28767975)|EXECUTION_STARTED
+04:38:30.28 (28771783)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+04:38:30.28 (55628699)|CODE_UNIT_STARTED|[EXTERNAL]|01q1F00000011LB|tAction on Action trigger event BeforeUpdate|__sfdc_trigger/tAction
+04:38:30.63 (63089990)|CUMULATIVE_LIMIT_USAGE
+04:38:30.63 (63089990)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 43 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 42 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+04:38:30.63 (63089990)|CUMULATIVE_LIMIT_USAGE_END
+
+04:38:30.28 (65449033)|CODE_UNIT_FINISHED|tAction on Action trigger event BeforeUpdate|__sfdc_trigger/tAction
+04:38:30.28 (67896206)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCd
+04:38:30.28 (67953774)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCd
+04:38:30.28 (67980335)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCe
+04:38:30.28 (68020505)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCe
+04:38:30.28 (68038944)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCf
+04:38:30.28 (68066533)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCf
+04:38:30.28 (68078238)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCg
+04:38:30.28 (68095333)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCg
+04:38:30.28 (68104347)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCh
+04:38:30.28 (68129024)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCh
+04:38:30.28 (68144496)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCi
+04:38:30.28 (68164046)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCi
+04:38:30.28 (68172925)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCj
+04:38:30.28 (68189439)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCj
+04:38:30.28 (68197686)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCk
+04:38:30.28 (68219087)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCk
+04:38:30.28 (68231802)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCl
+04:38:30.28 (68250118)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCl
+04:38:30.28 (68258874)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCm
+04:38:30.28 (68274894)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCm
+04:38:30.28 (68283217)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCn
+04:38:30.28 (68298739)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCn
+04:38:30.28 (68307093)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCo
+04:38:30.28 (68322442)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCo
+04:38:30.28 (68330616)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCp
+04:38:30.28 (68345625)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCp
+04:38:30.28 (68354270)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCq
+04:38:30.28 (68369906)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCq
+04:38:30.28 (68378265)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCr
+04:38:30.28 (68393540)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCr
+04:38:30.28 (68402027)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCs
+04:38:30.28 (68418052)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCs
+04:38:30.28 (68426851)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCt
+04:38:30.28 (68443252)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCt
+04:38:30.28 (68451806)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCu
+04:38:30.28 (68467120)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCu
+04:38:30.28 (68475177)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCv
+04:38:30.28 (68490505)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCv
+04:38:30.28 (68498989)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCw
+04:38:30.28 (68514676)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCw
+04:38:30.28 (68523062)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCx
+04:38:30.28 (68538807)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCx
+04:38:30.28 (68547370)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCy
+04:38:30.28 (68562937)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCy
+04:38:30.28 (68571298)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUCz
+04:38:30.28 (68586412)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUCz
+04:38:30.28 (68594610)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD0
+04:38:30.28 (68610013)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD0
+04:38:30.28 (68618344)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD1
+04:38:30.28 (68633909)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD1
+04:38:30.28 (68642392)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD2
+04:38:30.28 (68658577)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD2
+04:38:30.28 (68666851)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD3
+04:38:30.28 (68682318)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD3
+04:38:30.28 (68691749)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD4
+04:38:30.28 (68709969)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD4
+04:38:30.28 (68718812)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD5
+04:38:30.28 (68734094)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD5
+04:38:30.28 (68742870)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD6
+04:38:30.28 (68758337)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD6
+04:38:30.28 (68772041)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD7
+04:38:30.28 (68789069)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD7
+04:38:30.28 (68797658)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD8
+04:38:30.28 (68813280)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD8
+04:38:30.28 (68821961)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUD9
+04:38:30.28 (68837271)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUD9
+04:38:30.28 (68845417)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUDA
+04:38:30.28 (68860995)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUDA
+04:38:30.28 (68869393)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUDB
+04:38:30.28 (68884595)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUDB
+04:38:30.28 (68892927)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUDC
+04:38:30.28 (68908429)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUDC
+04:38:30.28 (68916408)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUDD
+04:38:30.28 (68931620)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUDD
+04:38:30.28 (68939825)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUDE
+04:38:30.28 (68955211)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUDE
+04:38:30.28 (68963818)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUDF
+04:38:30.28 (68984957)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUDF
+04:38:30.28 (69003197)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUDG
+04:38:30.28 (69024548)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUDG
+04:38:30.28 (69033658)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUDH
+04:38:30.28 (69049689)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUDH
+04:38:30.28 (69077368)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Action:a001F000000sUDI
+04:38:30.28 (69101962)|CODE_UNIT_FINISHED|Validation:Action:a001F000000sUDI
+04:38:30.28 (175076401)|CODE_UNIT_STARTED|[EXTERNAL]|01q1F00000011LB|tAction on Action trigger event AfterUpdate|__sfdc_trigger/tAction
+04:38:30.178 (178087739)|CUMULATIVE_LIMIT_USAGE
+04:38:30.178 (178087739)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 43 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 42 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+04:38:30.178 (178087739)|CUMULATIVE_LIMIT_USAGE_END
+
+04:38:30.28 (179702421)|CODE_UNIT_FINISHED|tAction on Action trigger event AfterUpdate|__sfdc_trigger/tAction
+04:38:30.28 (180291643)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I1F000000EHAg
+04:38:30.28 (194167596)|CODE_UNIT_FINISHED|Workflow:01I1F000000EHAg
+04:38:30.28 (292515436)|USER_DEBUG|[56]|DEBUG|"\r\n\r\n\r\n\r\n\r\n\r\nNow run these commnads from the terminal\r\nsfdx force:data:soql:query -r csv -q \"SELECT id, ownerid, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, appname__c, command__c, enabled__c, errormessage__c, event__c, expected__c, extid__c, fix__c, message__c, operation__c, order__c FROM Action__c\" > assets/data/Action__c.csv\r\nsfdx force:data:soql:query -r csv -q \"SELECT id, ownerid, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, active__c, extid__c FROM Event__c\" > assets/data/Event__c.csv\r\nsfdx force:data:soql:query -r csv -q \"SELECT id, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, event__c, action__c, uniquekey__c FROM Event_X_Action__c\" > assets/data/Event_X_Action__c.csv\r\nsfdx force:data:soql:query -r csv -q \"SELECT id, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, action__c, key__c, path__c, uniqueaction__c, value__c FROM JSON_Action__c\" > assets/data/JSON_Action__c.csv\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+04:38:30.299 (299253293)|CUMULATIVE_LIMIT_USAGE
+04:38:30.299 (299253293)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 130 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 42 out of 10000
+  Maximum CPU time: 100 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+04:38:30.299 (299253293)|CUMULATIVE_LIMIT_USAGE_END
+
+04:38:30.28 (299303765)|CODE_UNIT_FINISHED|execute_anonymous_apex
+04:38:30.28 (300474078)|EXECUTION_FINISHED
+

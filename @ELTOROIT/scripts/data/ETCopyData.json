@@ -1,72 +1,14 @@
 {
-    "now": "2019-04-26T10:04:29.022Z",
-    "orgSource": "dhDEX602",
-    "orgDestination": "soDEX602",
-    "sObjectsData": [
-        {
-            "name": "Account",
-            "ignoreFields": "CreatedBy,CreatedDate,CurrencyIsoCode,OwnerId",
-            "maxRecords": -1,
-            "orderBy": null,
-            "where": null
-        },
-        {
-            "name": "Contact",
-            "ignoreFields": "CreatedBy,CreatedDate,CurrencyIsoCode,OwnerId",
-            "maxRecords": -1,
-            "orderBy": null,
-            "where": null
-        },
-        {
-            "name": "Opportunity",
-            "ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
-            "maxRecords": -1,
-            "orderBy": null,
-            "where": null
-        },
-        {
-            "name": "Case",
-            "ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
-            "maxRecords": -1,
-            "orderBy": null,
-            "where": null
-        },
-        {
-            "name": "CaseComment",
-            "ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
-            "maxRecords": -1,
-            "orderBy": null,
-            "where": null
-        }
-    ],
-    "sObjectsMetadata": [
-        {
-            "name": "User",
-            "fieldsToExport": "FirstName,LastName,Email,Id",
-            "matchBy": "Email",
-            "orderBy": "LastName",
-            "where": null
-        },
-        {
-            "name": "Group",
-            "fieldsToExport": "Id,DeveloperName",
-            "matchBy": "DeveloperName",
-            "orderBy": null,
-            "where": "Type = 'Queue'"
-        },
-        {
-            "name": "RecordType",
-            "fieldsToExport": "Id,DeveloperName",
-            "matchBy": "DeveloperName",
-            "orderBy": null,
-            "where": null
-        }
-    ],
+    "now": "2019-05-07T11:38:50.950Z",
+    "orgSource": "soVMCheck01",
+    "orgDestination": "soVMCheck02",
+    "sObjectsData": [],
+    "sObjectsMetadata": [],
     "rootFolder": "ETCopyData",
     "includeAllCustom": true,
-    "stopOnErrors": false,
+    "stopOnErrors": true,
     "ignoreFields": "OwnerId, CreatedBy, CreatedDate, CurrencyIsoCode",
     "maxRecordsEach": null,
     "deleteDestination": true,
-    "pollingTimeout": 100000
+    "pollingTimeout": 120000
 }

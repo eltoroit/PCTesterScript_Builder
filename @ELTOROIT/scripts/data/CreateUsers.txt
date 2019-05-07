@@ -1,3 +1,4 @@
+/*
 List<User> users = new List<User>();
 String usernameRandomBit = String.valueOf(Math.random()).substring(2, 14);
 Id chatterProfileId = [SELECT Id FROM Profile WHERE Name = 'Chatter External User' LIMIT 1].Id;
@@ -28,3 +29,4 @@ for (User u : users) {
 
 // Perform the DML
 insert users;
+*/

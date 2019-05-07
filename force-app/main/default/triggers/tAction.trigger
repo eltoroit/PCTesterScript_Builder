@@ -51,19 +51,5 @@ trigger tAction on Action__c (before insert, after insert, before update, after 
         if (doSort) {
             Util.renumber();
         }
-
-        if (trigger.isInsert) {
-            Integer uniqueKey = 1;
-            Id defaultEventId = [SELECT ID FROM Event__c].Id;
-            List<Event_X_Action__c> eXas = new List<Event_X_Action__c>();
-            for (Action__c action : trigger.new) {
-                eXas.add(new Event_X_Action__c(
-                    Action__c = action.Id,
-                    Event__c = defaultEventId,
-                    UniqueKey__c = 'Key:' + uniqueKey++
-                ));
-            }
-            insert eXas;
-        }
     }
 }

@@ -8,7 +8,6 @@ sfdx force:auth:web:login -a dhScriptMaker -d
 ```
 sfdx force:org:create -f config/project-scratch-def.json --setalias soMAC0830 --setdefaultusername -w 10
 sfdx force:package:install --package 04t6A000002D2ElQAK -w 10
-## sfdx force:package:install --package 04t6A000002D2EqQAK -w 10
 sfdx force:source:push
 sfdx force:user:permset:assign -n Script_Maker
 sfdx force:org:open
@@ -19,7 +18,8 @@ Workbench <Load Data>
         - Do NOT map out the owner field
     - Action__c
         - Do NOT map out the owner field
-        - Only works if ONE and only ONE event was loaded... Make sure the trigger is assigning to valid event.
+        - Only works if ONE and only ONE ACTIVE event was loaded...
+			- Make sure the trigger is assigning to valid event.
     - Event_X_Action__c
         - No need to load this, since the trigger automatically creates the record.
     - JSON_Action__c
@@ -64,7 +64,7 @@ EXPORT: Using the SFDX CLI, export the data
     - C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles
     - C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\*.default\
     - C:\Users\<user>\AppData\Roaming\Mozilla\Firefox\Profiles\<profile folder>\places.sqlite
-    -  C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite
+    - C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite
 - How
     SQLite
         - Database structure: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Database
@@ -122,7 +122,7 @@ sfdx force:apex:execute
     CTRL+D
 sfdx force:apex:execute -f assets/Apex/ExportData.txt
 ```
-## Re-use ORG in other Computer
+**## Re-use ORG in other Computer
 ```
 1. Re-login to Scratch Org to refresh token
 2. Get "Sfdx Auth Url"
@@ -130,7 +130,7 @@ sfdx force:org:display --verbose
 3. Copy "Sfdx Auth Url" to file
 4. Retrieve file from other computer
 5. Register Org using that file
-sfdx force:auth:sfdxurl:store -s -a soDOS -f assets/SOUrl.txt
+sfdx force:auth:sfdxurl:store -s -a soDOS -f assets/SOUrl.txt**
 ```
 ## Some ideas for deep cloning....
 ```
