@@ -1,0 +1,30 @@
+{
+	"fetched": 2,
+	"records": [
+		{
+			"attributes": {
+				"type": "JSON_Action__c",
+				"url": "/services/data/v45.0/sobjects/JSON_Action__c/a031F000001g16BQAQ"
+			},
+			"Action__c": "a001F000000sUCpQAM",
+			"Id": "a031F000001g16BQAQ",
+			"Key__c": "salesforcedx-vscode-apex.java.home",
+			"Path__c": ":",
+			"UniqueAction__c": "a001F000000sUCpQAM",
+			"Value__c": "C:\\Program Files\\java\\jdk1.8.0_162"
+		},
+		{
+			"attributes": {
+				"type": "JSON_Action__c",
+				"url": "/services/data/v45.0/sobjects/JSON_Action__c/a031F000001g16CQAQ"
+			},
+			"Action__c": "a001F000000sUDFQA2",
+			"Id": "a031F000001g16CQAQ",
+			"Key__c": "terminal.integrated.shell.windows",
+			"Path__c": ":",
+			"UniqueAction__c": "a001F000000sUDFQA2",
+			"Value__c": "C:\\Program Files\\Git\\bin\\bash.exe"
+		}
+	],
+	"total": 2
+}
