@@ -51,8 +51,6 @@ EXPORT: Using the SFDX CLI, export the data
     Full Curl
         curl https://force-dream-9371-dev-ed.cs8.my.salesforce.com/services/apexrest/WS_ExportData -H "Authorization: OAuth 00DL00000061j0H\!ARkAQHFL_Df8LQI0sw0HqXTLEOGGDLIQoZYeJGWt1.5LxXOGetlLShTL.bJRVS5L42VybMQbTBZVVygvJ.R5xtv9Xt9gYOKY" > assets/scripts/data.json
 ```
-
-
  
 # FINISH THIS PROJECT... !!!
 I did not finish the data entry or data export tools in Lightning. I did not have time, so the only thing I was able to do was to enter the data manually. This needs to be fixed. When there is time! Maybe if this is a success, fix the data entry mode and re-use in future events.

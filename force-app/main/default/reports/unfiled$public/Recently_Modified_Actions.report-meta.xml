@@ -48,7 +48,7 @@
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Recently Modified Actions</name>
+    <name>All Actions</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -58,8 +58,8 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Action__c$LastModifiedDate</sortColumn>
-    <sortOrder>Desc</sortOrder>
+    <sortColumn>Action__c$Order__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Action__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
