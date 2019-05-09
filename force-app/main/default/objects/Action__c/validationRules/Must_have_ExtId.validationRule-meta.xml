@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Must_have_ExtId</fullName>
-    <active>true</active>
-    <errorConditionFormula>ISBLANK(ExtId__c)</errorConditionFormula>
-    <errorDisplayField>ExtId__c</errorDisplayField>
-    <errorMessage>Must have ExtId</errorMessage>
-</ValidationRule>

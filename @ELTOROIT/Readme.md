@@ -106,12 +106,6 @@ for (String key : actionsByEvent2.keyset()) {
 }
 System.debug('DONE');
 ```
-## Backup complex data
-```
-Create External Id fields (ExtId__c)
-sfdx force:data:soql:query -r csv -q <QUERY>
-Load it with Workbench...
-```
 
 ## Bookmarks on Chrome
     - copy "C:\Users\Admin\AppData\Local\Google\Chrome\User Data\Default\Bookmarks" bmChrome.json

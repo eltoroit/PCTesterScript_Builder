@@ -8,7 +8,6 @@ trigger tAction on Action__c (before insert, after insert, before update, after 
         }
         for (Action__c action : trigger.new) {
             if (trigger.isInsert) {
-                if (action.ExtId__c == null) action.ExtId__c = 'TEMP Id: ' + maxOrder;
                 if (action.Order__c == null) action.Order__c = maxOrder++;
             }
             if (action.Operation__c == 'Open Application') {

@@ -38,7 +38,8 @@ sfdx ETCopyData:export -c './@ELTOROIT/scripts/data' --loglevel warn
 
 # Push to GitHub
 echo "Please wait (5/5)..."
-../PCTesterScript/push.bat
+cd ../PCTesterScript
+./push.bat
 
 # Game Over!
 echo "DONE"

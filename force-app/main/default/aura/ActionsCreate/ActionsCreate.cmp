@@ -1,68 +1,54 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,lightning:actionOverride"
-    access="global">
-    <c:ETLC_PleaseWait />
-    <c:ETLC_ApexBridge aura:id="ApexBridge" />
+<aura:component
+	implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,lightning:actionOverride"
+	access="global">
+	<c:ETLC_PleaseWait />
+	<c:ETLC_ApexBridge aura:id="ApexBridge" />
 
-    <aura:attribute name="fields" type="List" default="[]" />
-    <aura:attribute name="allEvents" type="List" default="[]" />
-    <aura:attribute name="isModal" type="Boolean" default="false" />
-    <aura:attribute name="selectedEvents" type="List" default="[]" />
+	<aura:attribute name="fields" type="List" default="[]" />
+	<aura:attribute name="allEvents" type="List" default="[]" />
+	<aura:attribute name="isModal" type="Boolean" default="false" />
+	<aura:attribute name="selectedEvents" type="List" default="[]" />
 
-    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+	<aura:handler name="init" value="{!this}" action="{!c.init}" />
 
-    <lightning:recordEditForm aura:id="newActionForm" objectApiName="Action__c" onsubmit="{!c.onsubmit}"
-        onsuccess="{!c.onsuccess}" onerror="{!c.onerror}" onload="{!c.onload}" recordId="{!v.recordId}">
+	<lightning:recordEditForm aura:id="newActionForm" objectApiName="Action__c" onsubmit="{!c.onsubmit}"
+		onsuccess="{!c.onsuccess}" onerror="{!c.onerror}" onload="{!c.onload}" recordId="{!v.recordId}">
 
-        <lightning:card title="Create Action" class="slds-p-horizontal_medium">
-            <aura:set attribute="actions">
-                <lightning:button type="submit" variant="brand" label="{! v.recordId != null ? 'Save' : 'Create new' }"
-                />
-            </aura:set>
-            <lightning:messages />
-            <lightning:inputField fieldName="Operation__c" aura:id="operation" onchange="{!c.operationChanged}"
-            />
-            <div aura:id="showFields" class="slds-hide">
-                <br/>
-                <lightning:inputField fieldName="Enabled__c" />
-                <br/>
-                <lightning:inputField fieldName="Order__c" />
-                <br/>
-                <div aura:id="showAppName">
-                    <lightning:inputField fieldName="AppName__c" />
-                </div>
-                <br/>
-                <div aura:id="showCommand">
-                    <lightning:inputField fieldName="Command__c" />
-                    <br/>
-                </div>
-                <div aura:id="showExpected">
-                    <lightning:inputField fieldName="Expected__c" />
-                    <br/>
-                </div>
-                <div aura:id="showFix">
-                    <lightning:inputField fieldName="Fix__c" />
-                    <br/>
-                </div>
-                <br/>
-                <lightning:dualListbox name="multipleOptions" label="Select Options" sourceLabel="Available"
-                    selectedLabel="Selected" options="{!v.allEvents}" value="{!v.selectedEvents}"
-                    onchange="{!c.handleChange}" />
-            </div>
-            <br/>
-            <!--
-                <div aura:id="showMessage">
-                <lightning:inputField fieldName="Message__c" />
-                <br/>
-                </div>
-                <div aura:id="showErrorMessage">
-                <lightning:inputField fieldName="ErrorMessage__c" />
-                <br/>
-                </div>
-                <div aura:id="showExtId">
-                <lightning:inputField fieldName="ExtId__c" />
-                <br/>
-                </div>
-                -->
-        </lightning:card>
-    </lightning:recordEditForm>
+		<lightning:card title="Create Action" class="slds-p-horizontal_medium">
+			<aura:set attribute="actions">
+				<lightning:button type="submit" variant="brand"
+					label="{! v.recordId != null ? 'Save' : 'Create new' }" />
+			</aura:set>
+			<lightning:messages />
+			<lightning:inputField fieldName="Operation__c" aura:id="operation" onchange="{!c.operationChanged}" />
+			<div aura:id="showFields" class="slds-hide">
+				<br />
+				<lightning:inputField fieldName="Enabled__c" />
+				<br />
+				<lightning:inputField fieldName="Order__c" />
+				<br />
+				<div aura:id="showAppName">
+					<lightning:inputField fieldName="AppName__c" />
+				</div>
+				<br />
+				<div aura:id="showCommand">
+					<lightning:inputField fieldName="Command__c" />
+					<br />
+				</div>
+				<div aura:id="showExpected">
+					<lightning:inputField fieldName="Expected__c" />
+					<br />
+				</div>
+				<div aura:id="showFix">
+					<lightning:inputField fieldName="Fix__c" />
+					<br />
+				</div>
+				<br />
+				<lightning:dualListbox name="multipleOptions" label="Select Options" sourceLabel="Available"
+					selectedLabel="Selected" options="{!v.allEvents}" value="{!v.selectedEvents}"
+					onchange="{!c.handleChange}" />
+			</div>
+			<br />
+		</lightning:card>
+	</lightning:recordEditForm>
 </aura:component>

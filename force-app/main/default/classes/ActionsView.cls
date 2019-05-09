@@ -27,7 +27,7 @@ public with sharing class ActionsView extends ETLC_ApexBridge_Abstract {
         String eventId = String.valueOf(request.getInputValue('eventId'));
         List<Action__c> actions = [
             SELECT ID, Name, AppName__c, Command__c, Enabled__c, ErrorMessage__c, Fix__c, Expected__c, 
-            Message__c, Operation__c, Order__c, ExtId__c, 
+            Message__c, Operation__c, Order__c, 
             (SELECT Id, Name, Event__c, Event__r.Name FROM Actions_X_Events__r),
             (SELECT Id, Name, Action__c, Key__c, Path__c, Value__c FROM JSON_Actions__r)
             FROM Action__c 

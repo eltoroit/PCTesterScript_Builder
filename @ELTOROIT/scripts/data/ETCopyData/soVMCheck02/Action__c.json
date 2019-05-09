@@ -1,21 +1,21 @@
 {
-	"fetched": 42,
+	"fetched": 45,
 	"records": [
 		{
 			"attributes": {
 				"type": "Action__c",
 				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUCdQAM"
 			},
-			"AppName__c": "VS Code Plugin (1/7)",
-			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-43*",
+			"AppName__c": "VS Code Plugin (1)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-45.13.0*",
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "salesforce.salesforcedx-vscode-43",
+			"Expected__c": "salesforce.salesforcedx-vscode-45.13.0",
 			"ExtId__c": "a001F000000sUCdQAM",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
 			"Id": "a001F000000sUCdQAM",
-			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-43*",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-45.13.0*",
 			"Operation__c": "Check Path",
 			"Order__c": 23
 		},
@@ -79,15 +79,15 @@
 				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUChQAM"
 			},
 			"AppName__c": "SoapUI",
-			"Command__c": "C:\\Program Files\\SmartBear\\SoapUI-5.4.0-EB\\bin\\SoapUI-5.4.0-EB.exe",
+			"Command__c": "C:\\Program Files (x86)\\SmartBear\\SoapUI-5.5.0\\bin\\SoapUI-5.5.0.exe",
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "SoapUI-5.4.0-EB.exe",
+			"Expected__c": "SoapUI-5.5.0.exe",
 			"ExtId__c": "a001F000000sUChQAM",
 			"Fix__c": "SoapUI is missing, install from here: http://www.softpedia.com/get/Internet/Other-Internet-Related/soapUI.shtml",
 			"Id": "a001F000000sUChQAM",
-			"Message__c": "Checking path: C:\\Program Files\\SmartBear\\SoapUI-5.4.0-EB\\bin\\SoapUI-5.4.0-EB.exe",
+			"Message__c": "Checking path: C:\\Program Files (x86)\\SmartBear\\SoapUI-5.5.0\\bin\\SoapUI-5.5.0.exe",
 			"Operation__c": "Check Path",
 			"Order__c": 16
 		},
@@ -96,16 +96,16 @@
 				"type": "Action__c",
 				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUCiQAM"
 			},
-			"AppName__c": "VS Code Plugin (7/7)",
-			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-replay-debugger-43*",
+			"AppName__c": "VS Code Plugin (7)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-replay-debugger-45.13.0*",
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "salesforce.salesforcedx-vscode-apex-replay-debugger-43",
+			"Expected__c": "salesforce.salesforcedx-vscode-apex-replay-debugger-45.13.0",
 			"ExtId__c": "a001F000000sUCiQAM",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
 			"Id": "a001F000000sUCiQAM",
-			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-replay-debugger-43*",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-replay-debugger-45.13.0*",
 			"Operation__c": "Check Path",
 			"Order__c": 29
 		},
@@ -125,7 +125,7 @@
 			"Id": "a001F000000sUCjQAM",
 			"Message__c": "Validating: Checking all bookmarks",
 			"Operation__c": "Bookmark",
-			"Order__c": 40
+			"Order__c": 43
 		},
 		{
 			"attributes": {
@@ -179,7 +179,7 @@
 			"Id": "a001F000000sUCmQAM",
 			"Message__c": "Validating: Logout SFDX (sfdx force:auth:logout --all --noprompt)",
 			"Operation__c": "Check Contains",
-			"Order__c": 41
+			"Order__c": 44
 		},
 		{
 			"attributes": {
@@ -197,7 +197,7 @@
 			"Id": "a001F000000sUCnQAM",
 			"Message__c": "Validating: Logout Heroku (heroku logout)",
 			"Operation__c": "Check Contains",
-			"Order__c": 42
+			"Order__c": 45
 		},
 		{
 			"attributes": {
@@ -215,7 +215,7 @@
 			"Id": "a001F000000sUCoQAM",
 			"Message__c": "Checking exact: travis version",
 			"Operation__c": "Check Exact",
-			"Order__c": 36
+			"Order__c": 39
 		},
 		{
 			"attributes": {
@@ -233,7 +233,7 @@
 			"Id": "a001F000000sUCpQAM",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-42*",
 			"Operation__c": "JSON File - Edit",
-			"Order__c": 31
+			"Order__c": 34
 		},
 		{
 			"attributes": {
@@ -258,16 +258,16 @@
 				"type": "Action__c",
 				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUCrQAM"
 			},
-			"AppName__c": "VS Code Plugin (3/7)",
-			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-debugger-43*",
+			"AppName__c": "VS Code Plugin (3)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-debugger-45.13.0*",
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "salesforce.salesforcedx-vscode-apex-debugger-43",
+			"Expected__c": "salesforce.salesforcedx-vscode-apex-debugger-45.13.0",
 			"ExtId__c": "a001F000000sUCrQAM",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
 			"Id": "a001F000000sUCrQAM",
-			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-debugger-43*",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-debugger-45.13.0*",
 			"Operation__c": "Check Path",
 			"Order__c": 25
 		},
@@ -276,16 +276,16 @@
 				"type": "Action__c",
 				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUCsQAM"
 			},
-			"AppName__c": "VS Code Plugin (5/7)",
-			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lightning-43*",
+			"AppName__c": "VS Code Plugin (5)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lightning-45.13.0*",
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "salesforce.salesforcedx-vscode-lightning-43",
+			"Expected__c": "salesforce.salesforcedx-vscode-lightning-45.13.0",
 			"ExtId__c": "a001F000000sUCsQAM",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
 			"Id": "a001F000000sUCsQAM",
-			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lightning-43*",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lightning-45.13.0*",
 			"Operation__c": "Check Path",
 			"Order__c": 27
 		},
@@ -348,16 +348,16 @@
 				"type": "Action__c",
 				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUCwQAM"
 			},
-			"AppName__c": "VS Code Plugin (2/7)",
-			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-43*",
+			"AppName__c": "VS Code Plugin (2)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-45.13.0*",
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "salesforce.salesforcedx-vscode-apex-43",
+			"Expected__c": "salesforce.salesforcedx-vscode-apex-45.13.0",
 			"ExtId__c": "a001F000000sUCwQAM",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
 			"Id": "a001F000000sUCwQAM",
-			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-43*",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-45.13.0*",
 			"Operation__c": "Check Path",
 			"Order__c": 24
 		},
@@ -384,16 +384,16 @@
 				"type": "Action__c",
 				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUCyQAM"
 			},
-			"AppName__c": "VS Code Plugin (4/7)",
-			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-core-43*",
+			"AppName__c": "VS Code Plugin (4)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-core-45.13.0*",
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "salesforce.salesforcedx-vscode-core-43",
+			"Expected__c": "salesforce.salesforcedx-vscode-core-45.13.0",
 			"ExtId__c": "a001F000000sUCyQAM",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
 			"Id": "a001F000000sUCyQAM",
-			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-core-43*",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-core-45.13.0*",
 			"Operation__c": "Check Path",
 			"Order__c": 26
 		},
@@ -449,7 +449,7 @@
 			"Id": "a001F000000sUD1QAM",
 			"Message__c": "Validating: Git config name (git config --global user.name \"Your Name\")",
 			"Operation__c": "Check Contains",
-			"Order__c": 34
+			"Order__c": 37
 		},
 		{
 			"attributes": {
@@ -515,13 +515,13 @@
 			"Enabled__c": true,
 			"ErrorMessage__c": "Could not validate: 7-Zip (\"C:\\Program Files\\7-Zip\\7z.exe\" -version)",
 			"Event__c": null,
-			"Expected__c": "7-Zip 18.01 (x64)",
+			"Expected__c": "7-Zip 18.06 (x64)",
 			"ExtId__c": "a001F000000sUD5QAM",
 			"Fix__c": null,
 			"Id": "a001F000000sUD5QAM",
 			"Message__c": "Validating: 7-Zip (\"C:\\Program Files\\7-Zip\\7z.exe\" -version)",
 			"Operation__c": "Check Contains",
-			"Order__c": 37
+			"Order__c": 40
 		},
 		{
 			"attributes": {
@@ -539,23 +539,23 @@
 			"Id": "a001F000000sUD6QAM",
 			"Message__c": "Validating: Python (python --version)",
 			"Operation__c": "Check Contains",
-			"Order__c": 39
+			"Order__c": 42
 		},
 		{
 			"attributes": {
 				"type": "Action__c",
 				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUD7QAM"
 			},
-			"AppName__c": "VS Code Plugin (6/7)",
-			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-43*",
+			"AppName__c": "VS Code Plugin (6)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-45.13*",
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "salesforce.salesforcedx-vscode-visualforce-43",
+			"Expected__c": "salesforce.salesforcedx-vscode-visualforce-45.13",
 			"ExtId__c": "a001F000000sUD7QAM",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
 			"Id": "a001F000000sUD7QAM",
-			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-43*",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-45.13*",
 			"Operation__c": "Check Path",
 			"Order__c": 28
 		},
@@ -593,7 +593,7 @@
 			"Id": "a001F000000sUD9QAM",
 			"Message__c": "Validating: Git config email (git config --global user.email \"you@example.com\")",
 			"Operation__c": "Check Contains",
-			"Order__c": 33
+			"Order__c": 36
 		},
 		{
 			"attributes": {
@@ -641,13 +641,13 @@
 			"Enabled__c": true,
 			"ErrorMessage__c": "Could not validate: Git 2.18 (git --version)",
 			"Event__c": null,
-			"Expected__c": "git version 2.18",
+			"Expected__c": "git version 2.21",
 			"ExtId__c": "a001F000000sUDCQA2",
 			"Fix__c": "Download from here: https://git-scm.com/download/win",
 			"Id": "a001F000000sUDCQA2",
 			"Message__c": "Validating: Git 2.18 (git --version)",
 			"Operation__c": "Check Contains",
-			"Order__c": 32
+			"Order__c": 35
 		},
 		{
 			"attributes": {
@@ -659,13 +659,13 @@
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "v9.6.1",
+			"Expected__c": "v10.15.3",
 			"ExtId__c": "a001F000000sUDDQA2",
 			"Fix__c": null,
 			"Id": "a001F000000sUDDQA2",
 			"Message__c": "Checking exact: node --version",
 			"Operation__c": "Check Exact",
-			"Order__c": 38
+			"Order__c": 41
 		},
 		{
 			"attributes": {
@@ -683,7 +683,7 @@
 			"Id": "a001F000000sUDEQA2",
 			"Message__c": "Checking exact: ruby --version",
 			"Operation__c": "Check Exact",
-			"Order__c": 35
+			"Order__c": 38
 		},
 		{
 			"attributes": {
@@ -701,7 +701,7 @@
 			"Id": "a001F000000sUDFQA2",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-42*",
 			"Operation__c": "JSON File - Edit",
-			"Order__c": 30
+			"Order__c": 33
 		},
 		{
 			"attributes": {
@@ -756,7 +756,61 @@
 			"Message__c": "Opening Application: \"Internet Explorer + Salesforce is homepage\". Was this succesful?",
 			"Operation__c": "Open Application",
 			"Order__c": 10
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUHtQAM"
+			},
+			"AppName__c": "VS Code Plugin (9)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\dbaeumer.vscode-eslint-1.8.2*",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "dbaeumer.vscode-eslint-1.8.2",
+			"ExtId__c": "a001F000000sUHtQAM",
+			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
+			"Id": "a001F000000sUHtQAM",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\dbaeumer.vscode-eslint-1.8.2*",
+			"Operation__c": "Check Path",
+			"Order__c": 31
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUHoQAM"
+			},
+			"AppName__c": "VS Code Plugin (8)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-45.13.0*",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "salesforce.salesforcedx-vscode-lwc-45.13.0",
+			"ExtId__c": "a001F000000sUHoQAM",
+			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
+			"Id": "a001F000000sUHoQAM",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-45.13.0*",
+			"Operation__c": "Check Path",
+			"Order__c": 30
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a001F000000sUI3QAM"
+			},
+			"AppName__c": "VS Code Plugin (10)",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\eamodio.gitlens-9.7.1*",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "eamodio.gitlens-9.7.1",
+			"ExtId__c": "a001F000000sUI3QAM",
+			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens",
+			"Id": "a001F000000sUI3QAM",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\eamodio.gitlens-9.7.1*",
+			"Operation__c": "Check Path",
+			"Order__c": 32
 		}
 	],
-	"total": 42
+	"total": 45
 }
