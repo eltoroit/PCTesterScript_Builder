@@ -7,7 +7,6 @@
 				"url": "/services/data/v45.0/sobjects/Event__c/a021F000001d4WZQAY"
 			},
 			"Active__c": false,
-			"ExtId__c": "a021F000001d4WZQAY",
 			"Id": "a021F000001d4WZQAY",
 			"Name": "Dreamforce  '18",
 			"Order__c": 3
@@ -18,7 +17,6 @@
 				"url": "/services/data/v45.0/sobjects/Event__c/a021F000001d4WaQAI"
 			},
 			"Active__c": true,
-			"ExtId__c": "a021F000001d4WaQAI",
 			"Id": "a021F000001d4WaQAI",
 			"Name": "Logout Apps",
 			"Order__c": 2
@@ -29,7 +27,6 @@
 				"url": "/services/data/v45.0/sobjects/Event__c/a021F000001d4WeQAI"
 			},
 			"Active__c": true,
-			"ExtId__c": "a021F000001d4WeQAI",
 			"Id": "a021F000001d4WeQAI",
 			"Name": "TrailheaDX '19",
 			"Order__c": 1
