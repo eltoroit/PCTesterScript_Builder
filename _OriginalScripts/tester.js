@@ -13,13 +13,15 @@ const https = require('https');
 const log = require('./colorLogs.js');
 
 // Configure execution...
+var testType = "TEST";
+var timerDelay = 250;
+
+// Depending on execution (TEST | PROD)
 var debug = false;
 var verbose = false;
-var timerDelay = 250;
 var checkUrlExists = true;
 var resultsTofile = true;
 var executeManualChecks = false;
-var testType = "TEST";
 if (testType == "PROD") {
 	debug = false;
 	verbose = false;
@@ -179,6 +181,7 @@ function checkPath(instruction) {
 	}
 	executeCommand(instruction);
 }
+
 // Bookmarks -- START
 function openUrl(urlToCheck, callback) {
 	if (checkUrlExists) {
@@ -209,7 +212,6 @@ function findBookmarks_Chrome_Children(node, path) {
 		if (!barNode) barNode = {};
 		barNode.Chrome = node.url;
 		bm.Bar[thisPath] = barNode;
-
 		bm.Chrome[thisPath] = node.url;
 	}
 	if (node.children) {
@@ -225,6 +227,8 @@ function findBookmarks_Chrome() {
 	var data = loadFileJson(bmChromePath);
 	findBookmarks_Chrome_Children(
 		data["roots"]["bookmark_bar"], "");
+	if (verbose) log.debug("Chrome Bookmarks (1): ");
+	if (verbose) log.debug(JSON.stringify(bm, null, 4));
 }
 function findBookmarks_Firefox() {
 	if (verbose) log.info("Finding Firefox bookmarks");
@@ -254,6 +258,7 @@ function findBookmarks_Firefox() {
 	cmd += '"' + sqlitepath + '" ';
 	cmd += '"SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id"';
 	cmd += '> ./bmFF_LINE.txt';
+	if (verbose) log.debug("Execting command: " + cmd);
 
 	var process = exec(cmd, function (error, stdout, stderr) {
 		if (error) reportErrorMessage(error);
@@ -268,7 +273,7 @@ function findBookmarks_Firefox() {
 
 		lineReader.on('line', function (line) {
 			if (line == "") {
-				if (record.bTitle == "Bookmarks Toolbar") {
+				if (record.bTitle == "toolbar") {
 					record.bTitle = "BAR";
 				}
 				if (tmp.TitlesByRow[record.id]) {
@@ -300,6 +305,9 @@ function findBookmarks_Firefox() {
 		});
 
 		lineReader.on('close', function () {
+			if (verbose) log.debug("Firefox Bookmarks... (2): ");
+			if (verbose) log.debug(JSON.stringify(tmp, null, 4));
+
 			// Merge the data
 			for (var path in tmp.TitlesByName) {
 				if (path.startsWith("[BAR]")) {
@@ -318,6 +326,9 @@ function findBookmarks_Firefox() {
 				}
 			}
 
+			if (verbose) log.debug("Merged Bookmarks (A)... (3): ");
+			if (verbose) log.debug(JSON.stringify(bm, null, 4));
+
 			// Check bm.Bar
 			var bmBarNew = [];
 			var bmBarTemp = bm.Bar;
@@ -328,6 +339,11 @@ function findBookmarks_Firefox() {
 					var nodeTemp = bmBarTemp[path];
 
 					nodeNew.Title = path;
+
+					// Put existing URLs
+					nodeNew.urlChrome = nodeTemp.Chrome;
+					nodeNew.urlFirefox = nodeTemp.FF;
+					nodeNew.urlExpected = (nodeNew.urlChrome === nodeNew.urlFirefox) ? nodeNew.urlChrome : "NO_IDEA";
 
 					// Check if the url is defined in each browser
 					nodeNew.hasFF = (nodeTemp.FF) ? true : false;
@@ -341,6 +357,9 @@ function findBookmarks_Firefox() {
 				}
 			}
 			bm.Bar = bmBarNew;
+
+			if (verbose) log.debug("Merged Bookmarks (B)... (4): ");
+			if (verbose) log.debug(JSON.stringify(bm, null, 4));
 
 			// Write to files
 			fs.writeFile("./bmDump.txt", JSON.stringify(bm.Bar, null, 4), function (err) {
@@ -377,7 +396,7 @@ function validateBookmarks_Process() {
 		var hasErrors = false;
 		var urlFF = bm.FF[bmCheck.Title];
 		var urlChrome = bm.Chrome[bmCheck.Title];
-		var expectedUrl = bmCheck.Url;
+		var expectedUrl = bmCheck.urlExpected;
 
 		log.info("Bookmark: " + bmCheck.Title);
 
@@ -432,13 +451,14 @@ function validateBookmarks(instruction) {
 		bm = loadFileJson(bmPretendPath);
 		validateBookmarks_Process();
 	} else {
-		// validateBookmarks_Process is not called from here directly because it is going to work asynchronously... invk=oked from findBookmarks_Firefox.
+		// validateBookmarks_Process is not called from here directly because it is going to work asynchronously... invoked from findBookmarks_Firefox.
 		// Do not reverse the order here. First Chrome, then Firefox.
 		findBookmarks_Chrome();
-		findBookmarks_Firefox();
+		findBookmarks_Firefox(); // Firefox must be last!
 	}
 }
 // Bookmarks -- END
+
 function jsonFile_Edit(instruction) {
 	if (verbose) log.info("Editing JSON File: " + instruction.AppName__c);
 
@@ -609,8 +629,8 @@ function executeInstruction() {
 			// Force debug mode...
 			if (instruction.Command__c == "=== === === AUTOMATED CHECKS === === ===") {
 				log.debug("Switching debug mode ON");
-				debug = false;
-				verbose = false;
+				debug = true;
+				verbose = true;
 				log.setDebug(true);
 			}
 			log.info(instruction.Command__c);
@@ -645,6 +665,7 @@ function executeInstruction() {
 function menuChooseEvent(data) {
 	var events = data.events;
 
+	log.setDebug(debug);
 	log.info("Application Tester built by Andres Perez (ELTORO.IT) to help validate the computer's setup");
 	log.info("");
 	log.info("Please select the test you want to run");

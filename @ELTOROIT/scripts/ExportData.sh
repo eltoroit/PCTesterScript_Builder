@@ -43,3 +43,4 @@ cd ../PCTesterScript
 
 # Game Over!
 echo "DONE"
+Date

@@ -48,7 +48,7 @@
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>All Actions</name>
+    <name>_All Actions</name>
     <params>
         <name>co</name>
         <value>1</value>
