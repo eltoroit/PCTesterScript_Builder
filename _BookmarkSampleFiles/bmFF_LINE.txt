@@ -1,0 +1,120 @@
+    id = 1
+parent = 0
+bTitle = 
+pTitle = 
+   url = 
+
+    id = 2
+parent = 1
+bTitle = menu
+pTitle = 
+   url = 
+
+    id = 3
+parent = 1
+bTitle = toolbar
+pTitle = 
+   url = 
+
+    id = 4
+parent = 1
+bTitle = tags
+pTitle = 
+   url = 
+
+    id = 5
+parent = 1
+bTitle = unfiled
+pTitle = 
+   url = 
+
+    id = 6
+parent = 1
+bTitle = mobile
+pTitle = 
+   url = 
+
+    id = 8
+parent = 3
+bTitle = Login | Salesforce
+pTitle = Login | Salesforce
+   url = https://login.salesforce.com/
+
+    id = 9
+parent = 3
+bTitle = Login | Salesforce Marketing Cloud
+pTitle = Login | Salesforce Marketing Cloud
+   url = https://mc.login.exacttarget.com/hub-cas/login?service=https%3a%2f%2fmc.exacttarget.com%2fcloud%2flogin.html%3fhash%3dOrEn1bG9nZ2VkLWluSXc9PQ2
+
+    id = 10
+parent = 3
+bTitle = Bootcamps - TrailheaDX 2019 Survey
+pTitle = Bootcamps - TrailheaDX 2019 Survey
+   url = https://www.surveymonkey.com/r/TDX19Bootcamp
+
+    id = 11
+parent = 3
+bTitle = TrailheaDX 19
+pTitle = TrailheaDX 19
+   url = https://www.salesforce.com/trailheadx/
+
+    id = 12
+parent = 3
+bTitle = Mimeo Digital
+pTitle = Mimeo Digital
+   url = https://salesforce.mimeo.digital/login
+
+    id = 13
+parent = 3
+bTitle = Trailmix Room 2020
+pTitle = 
+   url = 
+
+    id = 14
+parent = 13
+bTitle = Wednesday Room 2020
+pTitle = Trailmixes | Salesforce Trailhead
+   url = https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2020-wednesday-projects
+
+    id = 15
+parent = 13
+bTitle = Thursday Room 2020
+pTitle = Trailmixes | Salesforce Trailhead
+   url = https://trailhead.salesforce.com/en/users/tacademy/trailmixes/tdx-19-moscone-2020-thursday-projects
+
+    id = 16
+parent = 3
+bTitle = Trailmix Room 2022
+pTitle = 
+   url = 
+
+    id = 17
+parent = 16
+bTitle = Wednesday Room 2022
+pTitle = Trailmixes | Salesforce Trailhead
+   url = https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-wednesday-projects
+
+    id = 18
+parent = 16
+bTitle = Thursday Room 2022
+pTitle = Trailmixes | Salesforce Trailhead
+   url = https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-thursday-projects
+
+    id = 19
+parent = 3
+bTitle = Trailmix Room 2024/2026
+pTitle = 
+   url = 
+
+    id = 20
+parent = 19
+bTitle = Wednesday Room 2024/2026
+pTitle = Trailmixes | Salesforce Trailhead
+   url = https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-wednesday-projects
+
+    id = 21
+parent = 19
+bTitle = Thursday Room 2024/2026
+pTitle = Trailmixes | Salesforce Trailhead
+   url = https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-thursday-projects
+
