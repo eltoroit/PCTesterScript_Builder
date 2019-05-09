@@ -1,5 +1,5 @@
 {
-    "now": "2019-05-09T15:42:22.850Z",
+    "now": "2019-05-09T16:22:06.637Z",
     "orgSource": "soVMCheck02",
     "orgDestination": "soVMCheck02",
     "sObjectsData": [],
@@ -7,7 +7,7 @@
     "rootFolder": "ETCopyData",
     "includeAllCustom": true,
     "stopOnErrors": true,
-    "ignoreFields": "OwnerId, CreatedBy, CreatedDate, CurrencyIsoCode",
+    "ignoreFields": "OwnerId, CreatedBy, CreatedDate, CurrencyIsoCode, ExtId__c",
     "maxRecordsEach": null,
     "deleteDestination": true,
     "pollingTimeout": 120000
