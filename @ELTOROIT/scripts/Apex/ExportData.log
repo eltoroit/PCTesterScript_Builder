@@ -3,13 +3,12 @@ Executed successfully.
 
 45.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO
 Execute Anonymous: Util.renumber();
-Execute Anonymous: Util.SOQLsToBackup();
-17:32:43.65 (65329438)|USER_INFO|[EXTERNAL]|005f0000003Nd3X|test-p1gfwi6122tt@example.com|(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)|GMT-07:00
-17:32:43.65 (65368159)|EXECUTION_STARTED
-17:32:43.65 (65377245)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
-17:32:43.65 (109061187)|CODE_UNIT_STARTED|[EXTERNAL]|01qf0000000CIb7|tAction on Action trigger event BeforeUpdate|__sfdc_trigger/tAction
-17:32:43.117 (117918306)|CUMULATIVE_LIMIT_USAGE
-17:32:43.117 (117918306)|LIMIT_USAGE_FOR_NS|(default)|
+18:05:07.41 (41737186)|USER_INFO|[EXTERNAL]|005f0000003Nd3X|test-p1gfwi6122tt@example.com|(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)|GMT-07:00
+18:05:07.41 (41762142)|EXECUTION_STARTED
+18:05:07.41 (41766668)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+18:05:07.41 (77277702)|CODE_UNIT_STARTED|[EXTERNAL]|01qf0000000CIb7|tAction on Action trigger event BeforeUpdate|__sfdc_trigger/tAction
+18:05:07.89 (89712141)|CUMULATIVE_LIMIT_USAGE
+18:05:07.89 (89712141)|LIMIT_USAGE_FOR_NS|(default)|
   Number of SOQL queries: 2 out of 100
   Number of query rows: 46 out of 50000
   Number of SOSL queries: 0 out of 20
@@ -23,12 +22,12 @@ Execute Anonymous: Util.SOQLsToBackup();
   Number of queueable jobs added to the queue: 0 out of 50
   Number of Mobile Apex push calls: 0 out of 10
 
-17:32:43.117 (117918306)|CUMULATIVE_LIMIT_USAGE_END
+18:05:07.89 (89712141)|CUMULATIVE_LIMIT_USAGE_END
 
-17:32:43.65 (119572673)|CODE_UNIT_FINISHED|tAction on Action trigger event BeforeUpdate|__sfdc_trigger/tAction
-17:32:43.65 (224080422)|CODE_UNIT_STARTED|[EXTERNAL]|01qf0000000CIb7|tAction on Action trigger event AfterUpdate|__sfdc_trigger/tAction
-17:32:43.227 (227773829)|CUMULATIVE_LIMIT_USAGE
-17:32:43.227 (227773829)|LIMIT_USAGE_FOR_NS|(default)|
+18:05:07.41 (92299784)|CODE_UNIT_FINISHED|tAction on Action trigger event BeforeUpdate|__sfdc_trigger/tAction
+18:05:07.41 (156366110)|CODE_UNIT_STARTED|[EXTERNAL]|01qf0000000CIb7|tAction on Action trigger event AfterUpdate|__sfdc_trigger/tAction
+18:05:07.162 (162690751)|CUMULATIVE_LIMIT_USAGE
+18:05:07.162 (162690751)|LIMIT_USAGE_FOR_NS|(default)|
   Number of SOQL queries: 2 out of 100
   Number of query rows: 46 out of 50000
   Number of SOSL queries: 0 out of 20
@@ -42,18 +41,17 @@ Execute Anonymous: Util.SOQLsToBackup();
   Number of queueable jobs added to the queue: 0 out of 50
   Number of Mobile Apex push calls: 0 out of 10
 
-17:32:43.227 (227773829)|CUMULATIVE_LIMIT_USAGE_END
+18:05:07.162 (162690751)|CUMULATIVE_LIMIT_USAGE_END
 
-17:32:43.65 (228894243)|CODE_UNIT_FINISHED|tAction on Action trigger event AfterUpdate|__sfdc_trigger/tAction
-17:32:43.65 (332552406)|USER_DEBUG|[56]|DEBUG|"\r\n\r\n\r\n\r\n\r\n\r\nNow run these commnads from the terminal\r\nsfdx force:data:soql:query -r csv -q \"SELECT id, ownerid, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, appname__c, command__c, enabled__c, errormessage__c, event__c, expected__c, fix__c, message__c, operation__c, order__c, count_events__c FROM Action__c\" > assets/data/Action__c.csv\r\nsfdx force:data:soql:query -r csv -q \"SELECT id, ownerid, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, active__c, order__c FROM Event__c\" > assets/data/Event__c.csv\r\nsfdx force:data:soql:query -r csv -q \"SELECT id, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, event__c, action__c, uniquekey__c FROM Event_X_Action__c\" > assets/data/Event_X_Action__c.csv\r\nsfdx force:data:soql:query -r csv -q \"SELECT id, isdeleted, name, createddate, createdbyid, lastmodifieddate, lastmodifiedbyid, systemmodstamp, lastvieweddate, lastreferenceddate, action__c, key__c, path__c, uniqueaction__c, value__c FROM JSON_Action__c\" > assets/data/JSON_Action__c.csv\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
-17:32:43.340 (340821844)|CUMULATIVE_LIMIT_USAGE
-17:32:43.340 (340821844)|LIMIT_USAGE_FOR_NS|(default)|
-  Number of SOQL queries: 6 out of 100
-  Number of query rows: 141 out of 50000
+18:05:07.41 (164478231)|CODE_UNIT_FINISHED|tAction on Action trigger event AfterUpdate|__sfdc_trigger/tAction
+18:05:07.185 (185417227)|CUMULATIVE_LIMIT_USAGE
+18:05:07.185 (185417227)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 46 out of 50000
   Number of SOSL queries: 0 out of 20
   Number of DML statements: 1 out of 150
   Number of DML rows: 45 out of 10000
-  Maximum CPU time: 109 out of 10000
+  Maximum CPU time: 0 out of 10000
   Maximum heap size: 0 out of 6000000
   Number of callouts: 0 out of 100
   Number of Email Invocations: 0 out of 10
@@ -61,8 +59,8 @@ Execute Anonymous: Util.SOQLsToBackup();
   Number of queueable jobs added to the queue: 0 out of 50
   Number of Mobile Apex push calls: 0 out of 10
 
-17:32:43.340 (340821844)|CUMULATIVE_LIMIT_USAGE_END
+18:05:07.185 (185417227)|CUMULATIVE_LIMIT_USAGE_END
 
-17:32:43.65 (340874840)|CODE_UNIT_FINISHED|execute_anonymous_apex
-17:32:43.65 (342247954)|EXECUTION_FINISHED
+18:05:07.41 (185494664)|CODE_UNIT_FINISHED|execute_anonymous_apex
+18:05:07.41 (186865360)|EXECUTION_FINISHED
 

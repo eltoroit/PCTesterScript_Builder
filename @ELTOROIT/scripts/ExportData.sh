@@ -6,11 +6,11 @@
 ###    ./push.bat
 
 # Prepare data
-echo "Please wait (1/5)..."
+echo "Please wait (1/5): Renumbering"
 sfdx force:apex:execute -f "./@ELTOROIT/scripts/Apex/ExportData.txt" > "./@ELTOROIT/scripts/Apex/ExportData.log"
 
 # Export for scripts
-echo "Please wait (2/5)..."
+echo "Please wait (2/5): Exporting data"
 sfdx force:user:display --json | jq -r '.result | .instanceUrl, .accessToken' | {
     jsonFile="_OriginalScripts/data.json"
     # echo "Writing to: $jsonFile"
@@ -26,20 +26,20 @@ sfdx force:user:display --json | jq -r '.result | .instanceUrl, .accessToken' | 
 }
 
 # Copy files to updte repository
-echo "Please wait (3/5)..."
+echo "Please wait (3/5): Copying files to runtime folder"
 rm -f _OriginalScripts/Errors-*.json
 cp _OriginalScripts/* ../PCTesterScript
 rm ../PCTesterScript/bmPretend.txt
 echo "*** Scripts generated..."
 
-# Export for Backup
-echo "Please wait (4/5)..."
-sfdx ETCopyData:export -c './@ELTOROIT/scripts/data' --loglevel warn
-
 # Push to GitHub
-echo "Please wait (5/5)..."
+echo "Please wait (4/5): Push to GitHub"
 cd ../PCTesterScript
 ./push.bat
+
+# Export for Backup
+echo "Please wait (5/5): Export data"
+sfdx ETCopyData:export -c './@ELTOROIT/scripts/data' --loglevel warn
 
 # Game Over!
 echo "DONE"

@@ -25,36 +25,36 @@ public class Util {
         return  Database.query(SOQL);
     }
 
-    public static void SOQLsToBackup() {
-        Map<String, String> SOQLs = new Map<String, String>();
-        String SOQL;
+    // public static void SOQLsToBackup() {
+    //     Map<String, String> SOQLs = new Map<String, String>();
+    //     String SOQL;
 
-        SOQL = 'SELECT ' + getFieldsAll('Action__c') + ' FROM Action__c';
-        Database.query(SOQL);
-        SOQLs.put('Action__c', SOQL);
+    //     SOQL = 'SELECT ' + getFieldsAll('Action__c') + ' FROM Action__c';
+    //     Database.query(SOQL);
+    //     SOQLs.put('Action__c', SOQL);
 
-        SOQL = 'SELECT ' + getFieldsAll('Event__c') + ' FROM Event__c';
-        Database.query(SOQL);
-        SOQLs.put('Event__c', SOQL);
+    //     SOQL = 'SELECT ' + getFieldsAll('Event__c') + ' FROM Event__c';
+    //     Database.query(SOQL);
+    //     SOQLs.put('Event__c', SOQL);
 
-        SOQL = 'SELECT ' + getFieldsAll('Event_X_Action__c') + ' FROM Event_X_Action__c';
-        Database.query(SOQL);
-        SOQLs.put('Event_X_Action__c', SOQL);
+    //     SOQL = 'SELECT ' + getFieldsAll('Event_X_Action__c') + ' FROM Event_X_Action__c';
+    //     Database.query(SOQL);
+    //     SOQLs.put('Event_X_Action__c', SOQL);
         
-        SOQL = 'SELECT ' + getFieldsAll('JSON_Action__c') + ' FROM JSON_Action__c';
-        Database.query(SOQL);
-        SOQLs.put('JSON_Action__c', SOQL);
+    //     SOQL = 'SELECT ' + getFieldsAll('JSON_Action__c') + ' FROM JSON_Action__c';
+    //     Database.query(SOQL);
+    //     SOQLs.put('JSON_Action__c', SOQL);
         
-        // Create statements to execute
-        String msg = '';
-        msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n';
-        msg += 'Now run these commnads from the terminal\r\n';
-        for (String key : SOQLs.keySet()) {
-            msg += 'sfdx force:data:soql:query -r csv -q "' + SOQLs.get(key) + '" > assets/data/' + key + '.csv' + '\r\n';
-        } 
-        msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n';
-        System.debug(JSON.serializePretty(msg));
-    }
+    //     // Create statements to execute
+    //     String msg = '';
+    //     msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n';
+    //     msg += 'Now run these commnads from the terminal\r\n';
+    //     for (String key : SOQLs.keySet()) {
+    //         msg += 'sfdx force:data:soql:query -r csv -q "' + SOQLs.get(key) + '" > assets/data/' + key + '.csv' + '\r\n';
+    //     } 
+    //     msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n'; msg += '\r\n';
+    //     System.debug(JSON.serializePretty(msg));
+    // }
 
     private static String getFieldsCustom(String sobjName) {
         return getFields(sobjName, true);
