@@ -1,216 +1,153 @@
 {
     "FF": {
-        "[BAR][Salesforce Login]": "https://login.salesforce.com/",
-        "[BAR][Mimeo Login]": "https://salesforce.mimeo.digital/",
-        "[BAR][Bootcamp Survey]": "https://www.surveymonkey.com/r/DF18Bootcamps",
-        "[BAR][Marketing Cloud Login]": "http://mc.exacttarget.com/",
-        "[BAR][Pardot Login]": "http://pi.pardot.com/",
-        "[BAR][Tuesday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl123-tuesday-projects",
-        "[BAR][Tuesday][Continental 4][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl4-tuesday-projects",
-        "[BAR][Tuesday][Continental 5][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl5-tuesday-projects",
-        "[BAR][Tuesday][Continental 6][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl6-tuesday-projects",
-        "[BAR][Tuesday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl789-tuesday-projects",
-        "[BAR][Wednesday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl123-wednesday-projects",
-        "[BAR][Wednesday][Continental 4][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl4-wednesday-projects",
-        "[BAR][Wednesday][Continental 5][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl5-wednesday-projects",
-        "[BAR][Wednesday][Continental 6][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl6-wednesday-projects",
-        "[BAR][Wednesday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl789-wednesday-projects",
-        "[BAR][Thursday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl123-thursday-projects",
-        "[BAR][Thursday][Continental 4][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl4-thursday-projects",
-        "[BAR][Thursday][Continental 5][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl5-thursday-projects",
-        "[BAR][Thursday][Continental 6][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl6-thursday-projects",
-        "[BAR][Thursday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl789-thursday-projects",
-        "[BAR][Friday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl123-friday-projects",
-        "[BAR][Friday][Continental 4][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl4-friday-projects",
-        "[BAR][Friday][Continental 5][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl5-friday-projects",
-        "[BAR][Friday][Continental 6][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl6-friday-projects",
-        "[BAR][Friday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl789-friday-projects"
+        "[BAR][Login | Salesforce]": "https://login.salesforce.com/",
+        "[BAR][Login | Salesforce Marketing Cloud]": "https://mc.login.exacttarget.com/hub-cas/login?service",
+        "[BAR][Bootcamps - TrailheaDX 2019 Survey]": "https://www.surveymonkey.com/r/TDX19Bootcamp",
+        "[BAR][TrailheaDX 19]": "https://www.salesforce.com/trailheadx/",
+        "[BAR][Mimeo Digital]": "https://salesforce.mimeo.digital/login",
+        "[BAR][Trailmix Room 2020][Wednesday Room 2020]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2020-wednesday-projects",
+        "[BAR][Trailmix Room 2020][Thursday Room 2020]": "https://trailhead.salesforce.com/en/users/tacademy/trailmixes/tdx-19-moscone-2020-thursday-projects",
+        "[BAR][Trailmix Room 2022][Wednesday Room 2022]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-wednesday-projects",
+        "[BAR][Trailmix Room 2022][Thursday Room 2022]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-thursday-projects",
+        "[BAR][Trailmix Room 2024/2026][Wednesday Room 2024/2026]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-wednesday-projects",
+        "[BAR][Trailmix Room 2024/2026][Thursday Room 2024/2026]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-thursday-projects"
     },
     "Bar": [
         {
-            "Title": "[BAR][Salesforce Login]",
+            "id": "BM_1",
+            "title": "[BAR][Login | Salesforce]",
+            "urlChrome": "https://login.salesforce.com/",
+            "urlFirefox": "https://login.salesforce.com/",
+            "urlExpected": "https://login.salesforce.com/",
             "hasFF": true,
             "hasChrome": true,
             "checkFF": true,
             "checkChrome": true
         },
         {
-            "Title": "[BAR][Bootcamp Survey]",
+            "id": "BM_2",
+            "title": "[BAR][Bootcamps - TrailheaDX 2019 Survey]",
+            "urlChrome": "https://www.surveymonkey.com/r/TDX19Bootcamp",
+            "urlFirefox": "https://www.surveymonkey.com/r/TDX19Bootcamp",
+            "urlExpected": "https://www.surveymonkey.com/r/TDX19Bootcamp",
             "hasFF": true,
             "hasChrome": true,
             "checkFF": true,
             "checkChrome": true
         },
         {
-            "Title": "[BAR][Salesforce Certification]",
+            "id": "BM_3",
+            "title": "[BAR][Marketing Cloud Login]",
+            "urlChrome": "https://mc.login.exacttarget.com/hub-cas/login?service=https%3a%2f%2fmc.exacttarget.com%2fcloud%2flogin.html%3fhash%3dOrEn1bG9nZ2VkLWluSXc9PQ2",
+            "urlExpected": "NO_IDEA",
             "hasFF": false,
             "hasChrome": true,
             "checkFF": true,
             "checkChrome": true
         },
         {
-            "Title": "[BAR][Marketing Cloud Login]",
+            "id": "BM_4",
+            "title": "[BAR][TrailheaDX 19]",
+            "urlChrome": "https://www.salesforce.com/trailheadx/",
+            "urlFirefox": "https://www.salesforce.com/trailheadx/",
+            "urlExpected": "https://www.salesforce.com/trailheadx/",
             "hasFF": true,
             "hasChrome": true,
             "checkFF": true,
             "checkChrome": true
         },
         {
-            "Title": "[BAR][Pardot Login]",
+            "id": "BM_5",
+            "title": "[BAR][Mimeo Digital]",
+            "urlChrome": "https://salesforce.mimeo.digital/login",
+            "urlFirefox": "https://salesforce.mimeo.digital/login",
+            "urlExpected": "https://salesforce.mimeo.digital/login",
             "hasFF": true,
             "hasChrome": true,
             "checkFF": true,
             "checkChrome": true
         },
         {
-            "Title": "[BAR][Mimeo Ebook]",
+            "id": "BM_6",
+            "title": "[BAR][Trailmix Room 2020][Wednesday Room 2020]",
+            "urlChrome": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2020-wednesday-projects",
+            "urlFirefox": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2020-wednesday-projects",
+            "urlExpected": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2020-wednesday-projects",
+            "hasFF": true,
+            "hasChrome": true,
+            "checkFF": true,
+            "checkChrome": true
+        },
+        {
+            "id": "BM_7",
+            "title": "[BAR][Trailmix Room 2020][Thursday Room 2020]",
+            "urlChrome": "https://trailhead.salesforce.com/en/users/tacademy/trailmixes/tdx-19-moscone-2020-thursday-projects",
+            "urlFirefox": "https://trailhead.salesforce.com/en/users/tacademy/trailmixes/tdx-19-moscone-2020-thursday-projects",
+            "urlExpected": "https://trailhead.salesforce.com/en/users/tacademy/trailmixes/tdx-19-moscone-2020-thursday-projects",
+            "hasFF": true,
+            "hasChrome": true,
+            "checkFF": true,
+            "checkChrome": true
+        },
+        {
+            "id": "BM_8",
+            "title": "[BAR][Trailmix Room 2022][Wednesday Room 2022]",
+            "urlChrome": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-wednesday-projects",
+            "urlFirefox": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-wednesday-projects",
+            "urlExpected": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-wednesday-projects",
+            "hasFF": true,
+            "hasChrome": true,
+            "checkFF": true,
+            "checkChrome": true
+        },
+        {
+            "id": "BM_9",
+            "title": "[BAR][Trailmix Room 2022][Thursday Room 2022]",
+            "urlChrome": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-thursday-projects",
+            "urlFirefox": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-thursday-projects",
+            "urlExpected": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-thursday-projects",
+            "hasFF": true,
+            "hasChrome": true,
+            "checkFF": true,
+            "checkChrome": true
+        },
+        {
+            "id": "BM_10",
+            "title": "[BAR][Trailmix Room 2024/2026][Wednesday Room 2024/2026]",
+            "urlChrome": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-wednesday-projects",
+            "urlFirefox": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-wednesday-projects",
+            "urlExpected": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-wednesday-projects",
+            "hasFF": true,
+            "hasChrome": true,
+            "checkFF": true,
+            "checkChrome": true
+        },
+        {
+            "id": "BM_11",
+            "title": "[BAR][Trailmix Room 2024/2026][Thursday Room 2024/2026]",
+            "urlChrome": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-thursday-projects",
+            "urlFirefox": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-thursday-projects",
+            "urlExpected": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-thursday-projects",
+            "hasFF": true,
+            "hasChrome": true,
+            "checkFF": true,
+            "checkChrome": true
+        },
+        {
+            "id": "BM_12",
+            "title": "[BAR][Schedule your Salesforce Certification Exam]",
+            "urlChrome": "https://www.webassessor.com/salesforce",
+            "urlExpected": "NO_IDEA",
             "hasFF": false,
             "hasChrome": true,
             "checkFF": true,
             "checkChrome": true
         },
         {
-            "Title": "[BAR][Tuesday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Tuesday][Continental 4][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Tuesday][Continental 5][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Tuesday][Continental 6][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Tuesday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Wednesday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Wednesday][Continental 4][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Wednesday][Continental 5][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Wednesday][Continental 6][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Wednesday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Thursday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Thursday][Continental 4][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Thursday][Continental 5][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Thursday][Continental 6][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Thursday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Friday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Friday][Continental 4][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Friday][Continental 5][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Friday][Continental 6][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Friday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]",
-            "hasFF": true,
-            "hasChrome": true,
-            "checkFF": true,
-            "checkChrome": true
-        },
-        {
-            "Title": "[BAR][Mimeo Login]",
+            "id": "BM_13",
+            "title": "[BAR][Login | Salesforce Marketing Cloud]",
+            "urlFirefox": "https://mc.login.exacttarget.com/hub-cas/login?service",
+            "urlExpected": "NO_IDEA",
             "hasFF": true,
             "hasChrome": false,
             "checkFF": true,
@@ -218,31 +155,17 @@
         }
     ],
     "Chrome": {
-        "[BAR][Salesforce Login]": "https://login.salesforce.com/",
-        "[BAR][Bootcamp Survey]": "https://www.surveymonkey.com/r/DF18Bootcamps",
-        "[BAR][Salesforce Certification]": "https://www.webassessor.com/salesforce",
-        "[BAR][Marketing Cloud Login]": "http://mc.exacttarget.com/",
-        "[BAR][Pardot Login]": "http://pi.pardot.com/",
-        "[BAR][Mimeo Ebook]": "https://salesforce.mimeo.digital/",
-        "[BAR][Tuesday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl123-tuesday-projects",
-        "[BAR][Tuesday][Continental 4][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl4-tuesday-projects",
-        "[BAR][Tuesday][Continental 5][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl5-tuesday-projects",
-        "[BAR][Tuesday][Continental 6][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl6-tuesday-projects",
-        "[BAR][Tuesday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl789-tuesday-projects",
-        "[BAR][Wednesday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl123-wednesday-projects",
-        "[BAR][Wednesday][Continental 4][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl4-wednesday-projects",
-        "[BAR][Wednesday][Continental 5][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl5-wednesday-projects",
-        "[BAR][Wednesday][Continental 6][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl6-wednesday-projects",
-        "[BAR][Wednesday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl789-wednesday-projects",
-        "[BAR][Thursday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl123-thursday-projects",
-        "[BAR][Thursday][Continental 4][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl4-thursday-projects",
-        "[BAR][Thursday][Continental 5][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl5-thursday-projects",
-        "[BAR][Thursday][Continental 6][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl6-thursday-projects",
-        "[BAR][Thursday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl789-thursday-projects",
-        "[BAR][Friday][Continental 1/2/3][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl123-friday-projects",
-        "[BAR][Friday][Continental 4][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl4-friday-projects",
-        "[BAR][Friday][Continental 5][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl5-friday-projects",
-        "[BAR][Friday][Continental 6][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl6-friday-projects",
-        "[BAR][Friday][Continental 7/8/9][Trailmixes | Salesforce Trailhead]": "https://trailhead.salesforce.com/users/00550000007GH2eAAG/trailmixes/df18-cntl789-friday-projects"
+        "[BAR][Login | Salesforce]": "https://login.salesforce.com/",
+        "[BAR][Bootcamps - TrailheaDX 2019 Survey]": "https://www.surveymonkey.com/r/TDX19Bootcamp",
+        "[BAR][Marketing Cloud Login]": "https://mc.login.exacttarget.com/hub-cas/login?service=https%3a%2f%2fmc.exacttarget.com%2fcloud%2flogin.html%3fhash%3dOrEn1bG9nZ2VkLWluSXc9PQ2",
+        "[BAR][TrailheaDX 19]": "https://www.salesforce.com/trailheadx/",
+        "[BAR][Mimeo Digital]": "https://salesforce.mimeo.digital/login",
+        "[BAR][Trailmix Room 2020][Wednesday Room 2020]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2020-wednesday-projects",
+        "[BAR][Trailmix Room 2020][Thursday Room 2020]": "https://trailhead.salesforce.com/en/users/tacademy/trailmixes/tdx-19-moscone-2020-thursday-projects",
+        "[BAR][Trailmix Room 2022][Wednesday Room 2022]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-wednesday-projects",
+        "[BAR][Trailmix Room 2022][Thursday Room 2022]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2022-thursday-projects",
+        "[BAR][Trailmix Room 2024/2026][Wednesday Room 2024/2026]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-wednesday-projects",
+        "[BAR][Trailmix Room 2024/2026][Thursday Room 2024/2026]": "https://trailhead.salesforce.com/users/tacademy/trailmixes/tdx-19-moscone-2024-2026-thursday-projects",
+        "[BAR][Schedule your Salesforce Certification Exam]": "https://www.webassessor.com/salesforce"
     }
 }
