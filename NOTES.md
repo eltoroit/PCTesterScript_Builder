@@ -24,5 +24,11 @@
   - This is the data that gets generated when the bookmarks are read from the borwsers. 
   - Because I write the code in a computer that is not the PCs to be tested (PCs are Windows and I write the code in Mac) I need to have the data so I can write the scripts. 
   - **THIS FILE SHOULD NOT EXIST WHEN TESTING THE MACHINES.**
+
+How to create the bmCheck.txt from the bmDump.txt?
+`cat ./_OriginalScripts/bmDump.txt | jq 'del(.[].urlChrome)' | jq 'del(.[].urlFirefox)' > ./_OriginalScripts/bmCheck.txt`
+
+
+
 **Note:** Additional notes found here: ./@ELTOROIT/Readme.md
 
