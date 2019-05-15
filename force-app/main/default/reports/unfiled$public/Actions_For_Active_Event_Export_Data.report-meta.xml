@@ -36,7 +36,7 @@
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Actions For Active Event (Export Data)</name>
+    <name>### Active Event Actions (Export Data)</name>
     <params>
         <name>co</name>
         <value>1</value>

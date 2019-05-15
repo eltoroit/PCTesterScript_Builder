@@ -32,14 +32,16 @@ cp _OriginalScripts/* ../PCTesterScript
 rm ../PCTesterScript/bmPretend.txt
 echo "--- Scripts generated..."
 
-# Export for Backup
-echo "--- --- --- Please wait (4/5): Export data"
-sfdx ETCopyData:export -c './@ELTOROIT/scripts/data' --loglevel trace
-
 # Push to GitHub
-echo "--- --- --- Please wait (5/5): Push to GitHub"
+echo "--- --- --- Please wait (4/5): Push to GitHub"
 cd ../PCTesterScript
 ./push.bat
+
+# Export for Backup
+echo "--- --- --- Please wait (5/5): Export data"
+cd ../PCTesterScript_Builder
+sfdx ETCopyData:export -c './@ELTOROIT/scripts/data' --loglevel trace
+
 
 
 # Game Over!
