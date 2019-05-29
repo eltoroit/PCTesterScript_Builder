@@ -4,262 +4,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrK7PAAV"
-			},
-			"AppName__c": "B2C Commerce Cloud (3)",
-			"Command__c": "C:\\Users\\Admin\\DigitalServerConnect*",
-			"Enabled__c": false,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "DigitalServerConnect",
-			"Fix__c": "B2C Commerce Cloud folder (3)  is missing",
-			"Id": "a00f000000BrK7PAAV",
-			"Message__c": "Checking path: C:\\Users\\Admin\\DigitalServerConnect*",
-			"Operation__c": "Check Path",
-			"Order__c": 58
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrKIaAAN"
-			},
-			"AppName__c": "SalesforceSans Font (6)",
-			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Regular.ttf\"",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "SalesforceSans-Regular.ttf",
-			"Fix__c": "Please install Salesforce Fonts",
-			"Id": "a00f000000BrKIaAAN",
-			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Regular.ttf\"",
-			"Operation__c": "Check Path",
-			"Order__c": 48
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrJRCAA3"
-			},
-			"AppName__c": "Eclipse Neon",
-			"Command__c": "\"C:\\Users\\Admin\\Desktop\\Eclipse JEE Neon.lnk\"",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Unable to open application: \"Eclipse Neon\"",
-			"Event__c": null,
-			"Expected__c": "Application was opened from shortcut",
-			"Fix__c": null,
-			"Id": "a00f000000BrJRCAA3",
-			"Message__c": "Opening Application: \"Eclipse Neon\". Was this succesful?",
-			"Operation__c": "Open Application",
-			"Order__c": 11
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrKIGAA3"
-			},
-			"AppName__c": "SalesforceSans Font (1)",
-			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Bold.ttf\"",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "SalesforceSans-Bold.ttf",
-			"Fix__c": "Please install Salesforce Fonts",
-			"Id": "a00f000000BrKIGAA3",
-			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Bold.ttf\"",
-			"Operation__c": "Check Path",
-			"Order__c": 43
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrKILAA3"
-			},
-			"AppName__c": "SalesforceSans Font (2)",
-			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-BoldItalic.ttf\"",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "SalesforceSans-BoldItalic.ttf",
-			"Fix__c": "Please install Salesforce Fonts",
-			"Id": "a00f000000BrKILAA3",
-			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-BoldItalic.ttf\"",
-			"Operation__c": "Check Path",
-			"Order__c": 44
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrK7KAAV"
-			},
-			"AppName__c": "B2C Commerce Cloud (2)",
-			"Command__c": "C:\\Users\\Admin\\tdxworkspace\\.metadata\\version.ini",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "version.ini",
-			"Fix__c": "B2C Commerce Cloud folder (2)  is missing",
-			"Id": "a00f000000BrK7KAAV",
-			"Message__c": "Checking path: C:\\Users\\Admin\\tdxworkspace\\.metadata\\version.ini",
-			"Operation__c": "Check Path",
-			"Order__c": 20
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrKIQAA3"
-			},
-			"AppName__c": "SalesforceSans Font (3)",
-			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Italic.ttf\"",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "SalesforceSans-Italic.ttf",
-			"Fix__c": "Please install Salesforce Fonts",
-			"Id": "a00f000000BrKIQAA3",
-			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Italic.ttf\"",
-			"Operation__c": "Check Path",
-			"Order__c": 45
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrKIRAA3"
-			},
-			"AppName__c": "SalesforceSans Font (4)",
-			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Light.ttf\"",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "SalesforceSans-Light.ttf",
-			"Fix__c": "Please install Salesforce Fonts",
-			"Id": "a00f000000BrKIRAA3",
-			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Light.ttf\"",
-			"Operation__c": "Check Path",
-			"Order__c": 46
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrK7FAAV"
-			},
-			"AppName__c": "B2C Commerce Cloud (1)",
-			"Command__c": "C:\\Users\\Admin\\Documents\\ntoforall*",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "ntoforall",
-			"Fix__c": "B2C Commerce Cloud (1) folder is missing",
-			"Id": "a00f000000BrK7FAAV",
-			"Message__c": "Checking path: C:\\Users\\Admin\\Documents\\ntoforall*",
-			"Operation__c": "Check Path",
-			"Order__c": 19
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKoAAN"
-			},
-			"AppName__c": "Say Hi",
-			"Command__c": "Application Tester built by Andres Perez (ELTORO.IT)",
-			"Enabled__c": true,
-			"ErrorMessage__c": null,
-			"Event__c": null,
-			"Expected__c": null,
-			"Fix__c": null,
-			"Id": "a00f000000BrDKoAAN",
-			"Message__c": null,
-			"Operation__c": "Write",
-			"Order__c": 2
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKpAAN"
-			},
-			"AppName__c": "Git 2.18",
-			"Command__c": "git --version",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Could not validate: Git 2.18 (git --version)",
-			"Event__c": null,
-			"Expected__c": "git version 2.21",
-			"Fix__c": "Download from here: https://git-scm.com/download/win",
-			"Id": "a00f000000BrDKpAAN",
-			"Message__c": "Validating: Git 2.18 (git --version)",
-			"Operation__c": "Check Contains",
-			"Order__c": 37
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKqAAN"
-			},
-			"AppName__c": "Node",
-			"Command__c": "node --version",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "v10.15.3",
-			"Fix__c": null,
-			"Id": "a00f000000BrDKqAAN",
-			"Message__c": "Checking exact: node --version",
-			"Operation__c": "Check Exact",
-			"Order__c": 41
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKrAAN"
-			},
-			"AppName__c": "Ruby",
-			"Command__c": "ruby --version",
-			"Enabled__c": false,
-			"ErrorMessage__c": "Invalid response received",
-			"Event__c": null,
-			"Expected__c": "ruby 2.4.3p205 (2017-12-14 revision 61247) [x64-mingw32]",
-			"Fix__c": "Download from here: https://github.com/oneclick/rubyinstaller2/releases/download/rubyinstaller-2.4.3-1/rubyinstaller-2.4.3-1-x64.exe",
-			"Id": "a00f000000BrDKrAAN",
-			"Message__c": "Checking exact: ruby --version",
-			"Operation__c": "Check Exact",
-			"Order__c": 54
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKsAAN"
-			},
-			"AppName__c": "Desktop: Data Loader",
-			"Command__c": "\"C:\\Users\\Admin\\Desktop\\Dataloader 45.0.0.lnk\"",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Unable to open application: \"Desktop: Data Loader\"",
-			"Event__c": null,
-			"Expected__c": "Application was opened from shortcut",
-			"Fix__c": null,
-			"Id": "a00f000000BrDKsAAN",
-			"Message__c": "Opening Application: \"Desktop: Data Loader\". Was this succesful?",
-			"Operation__c": "Open Application",
-			"Order__c": 6
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKtAAN"
-			},
-			"AppName__c": "VS Code Version",
-			"Command__c": "code --version",
-			"Enabled__c": true,
-			"ErrorMessage__c": "Could not validate: VS Code Version (code --version)",
-			"Event__c": null,
-			"Expected__c": "1.33.1",
-			"Fix__c": null,
-			"Id": "a00f000000BrDKtAAN",
-			"Message__c": "Validating: VS Code Version (code --version)",
-			"Operation__c": "Check Contains",
-			"Order__c": 24
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKuAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZRAA4"
 			},
 			"AppName__c": "Internet Explorer + Salesforce is homepage",
 			"Command__c": "\"C:\\Users\\Public\\Desktop\\Internet Explorer.lnk\"",
@@ -268,7 +13,7 @@
 			"Event__c": null,
 			"Expected__c": "Application was opened from shortcut",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKuAAN",
+			"Id": "a000v000002LRZRAA4",
 			"Message__c": "Opening Application: \"Internet Explorer + Salesforce is homepage\". Was this succesful?",
 			"Operation__c": "Open Application",
 			"Order__c": 57
@@ -276,7 +21,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKvAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZSAA4"
 			},
 			"AppName__c": "VS Code Plugin (9)",
 			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\dbaeumer.vscode-eslint-1.9.0*",
@@ -285,7 +30,7 @@
 			"Event__c": null,
 			"Expected__c": "dbaeumer.vscode-eslint-1.9.0",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
-			"Id": "a00f000000BrDKvAAN",
+			"Id": "a000v000002LRZSAA4",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\dbaeumer.vscode-eslint-1.9.0*",
 			"Operation__c": "Check Path",
 			"Order__c": 33
@@ -293,7 +38,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKwAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZTAA4"
 			},
 			"AppName__c": "VS Code Plugin (8)",
 			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-45.*",
@@ -302,7 +47,7 @@
 			"Event__c": null,
 			"Expected__c": "salesforce.salesforcedx-vscode-lwc-45",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
-			"Id": "a00f000000BrDKwAAN",
+			"Id": "a000v000002LRZTAA4",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-45.*",
 			"Operation__c": "Check Path",
 			"Order__c": 32
@@ -310,24 +55,24 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKxAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZUAA4"
 			},
 			"AppName__c": "VS Code Plugin (10)",
-			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\eamodio.gitlens-9.7*",
+			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\eamodio.gitlens-9.*",
 			"Enabled__c": true,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
-			"Expected__c": "eamodio.gitlens-9.7",
+			"Expected__c": "eamodio.gitlens-9",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens",
-			"Id": "a00f000000BrDKxAAN",
-			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\eamodio.gitlens-9.7*",
+			"Id": "a000v000002LRZUAA4",
+			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\eamodio.gitlens-9.*",
 			"Operation__c": "Check Path",
 			"Order__c": 34
 		},
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKyAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZVAA4"
 			},
 			"AppName__c": "SFDX (Shell)",
 			"Command__c": "C:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\settings.json",
@@ -336,7 +81,7 @@
 			"Event__c": null,
 			"Expected__c": null,
 			"Fix__c": null,
-			"Id": "a00f000000BrDKyAAN",
+			"Id": "a000v000002LRZVAA4",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-42*",
 			"Operation__c": "JSON File - Edit",
 			"Order__c": 35
@@ -344,7 +89,92 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKGAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZMAA4"
+			},
+			"AppName__c": "Git 2.18",
+			"Command__c": "git --version",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Could not validate: Git 2.18 (git --version)",
+			"Event__c": null,
+			"Expected__c": "git version 2.21",
+			"Fix__c": "Download from here: https://git-scm.com/download/win",
+			"Id": "a000v000002LRZMAA4",
+			"Message__c": "Validating: Git 2.18 (git --version)",
+			"Operation__c": "Check Contains",
+			"Order__c": 37
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZNAA4"
+			},
+			"AppName__c": "Node",
+			"Command__c": "node --version",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "v10.15.3",
+			"Fix__c": null,
+			"Id": "a000v000002LRZNAA4",
+			"Message__c": "Checking exact: node --version",
+			"Operation__c": "Check Exact",
+			"Order__c": 41
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZOAA4"
+			},
+			"AppName__c": "Ruby",
+			"Command__c": "ruby --version",
+			"Enabled__c": false,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "ruby 2.4.3p205 (2017-12-14 revision 61247) [x64-mingw32]",
+			"Fix__c": "Download from here: https://github.com/oneclick/rubyinstaller2/releases/download/rubyinstaller-2.4.3-1/rubyinstaller-2.4.3-1-x64.exe",
+			"Id": "a000v000002LRZOAA4",
+			"Message__c": "Checking exact: ruby --version",
+			"Operation__c": "Check Exact",
+			"Order__c": 54
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZPAA4"
+			},
+			"AppName__c": "Desktop: Data Loader",
+			"Command__c": "\"C:\\Users\\Admin\\Desktop\\Dataloader 45.0.0.lnk\"",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Unable to open application: \"Desktop: Data Loader\"",
+			"Event__c": null,
+			"Expected__c": "Application was opened from shortcut",
+			"Fix__c": null,
+			"Id": "a000v000002LRZPAA4",
+			"Message__c": "Opening Application: \"Desktop: Data Loader\". Was this succesful?",
+			"Operation__c": "Open Application",
+			"Order__c": 6
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZQAA4"
+			},
+			"AppName__c": "VS Code Version",
+			"Command__c": "code --version",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Could not validate: VS Code Version (code --version)",
+			"Event__c": null,
+			"Expected__c": "1.3",
+			"Fix__c": null,
+			"Id": "a000v000002LRZQAA4",
+			"Message__c": "Validating: VS Code Version (code --version)",
+			"Operation__c": "Check Contains",
+			"Order__c": 24
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZWAA4"
 			},
 			"AppName__c": "VS Code Plugin (1)",
 			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-45.*",
@@ -353,7 +183,7 @@
 			"Event__c": null,
 			"Expected__c": "salesforce.salesforcedx-vscode-45",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
-			"Id": "a00f000000BrDKGAA3",
+			"Id": "a000v000002LRZWAA4",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-45.*",
 			"Operation__c": "Check Path",
 			"Order__c": 25
@@ -361,7 +191,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKHAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZXAA4"
 			},
 			"AppName__c": "AUTOMATED TESTS",
 			"Command__c": "=== === === AUTOMATED CHECKS === === ===",
@@ -370,7 +200,7 @@
 			"Event__c": null,
 			"Expected__c": null,
 			"Fix__c": null,
-			"Id": "a00f000000BrDKHAA3",
+			"Id": "a000v000002LRZXAA4",
 			"Message__c": null,
 			"Operation__c": "Write",
 			"Order__c": 13
@@ -378,7 +208,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKIAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZYAA4"
 			},
 			"AppName__c": "Desktop: Notepad++",
 			"Command__c": "\"C:\\Users\\Public\\Desktop\\Notepad++.lnk\"",
@@ -387,7 +217,7 @@
 			"Event__c": null,
 			"Expected__c": "Application was opened from shortcut",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKIAA3",
+			"Id": "a000v000002LRZYAA4",
 			"Message__c": "Opening Application: \"Desktop: Notepad++\". Was this succesful?",
 			"Operation__c": "Open Application",
 			"Order__c": 7
@@ -395,7 +225,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKJAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZZAA4"
 			},
 			"AppName__c": "Postman",
 			"Command__c": "C:\\Users\\Admin\\AppData\\Local\\Postman\\Update.exe",
@@ -404,7 +234,7 @@
 			"Event__c": null,
 			"Expected__c": "Update.exe",
 			"Fix__c": "Postman is missing, install from here: https://www.getpostman.com/",
-			"Id": "a00f000000BrDKJAA3",
+			"Id": "a000v000002LRZZAA4",
 			"Message__c": "Checking path: C:\\Users\\Admin\\AppData\\Local\\Postman\\Update.exe",
 			"Operation__c": "Check Path",
 			"Order__c": 21
@@ -412,7 +242,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKKAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZaAAO"
 			},
 			"AppName__c": "SoapUI",
 			"Command__c": "C:\\Program Files (x86)\\SmartBear\\SoapUI-5.5.0\\bin\\SoapUI-5.5.0.exe",
@@ -421,7 +251,7 @@
 			"Event__c": null,
 			"Expected__c": "SoapUI-5.5.0.exe",
 			"Fix__c": "SoapUI is missing, install from here: http://www.softpedia.com/get/Internet/Other-Internet-Related/soapUI.shtml",
-			"Id": "a00f000000BrDKKAA3",
+			"Id": "a000v000002LRZaAAO",
 			"Message__c": "Checking path: C:\\Program Files (x86)\\SmartBear\\SoapUI-5.5.0\\bin\\SoapUI-5.5.0.exe",
 			"Operation__c": "Check Path",
 			"Order__c": 22
@@ -429,7 +259,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKLAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZbAAO"
 			},
 			"AppName__c": "VS Code Plugin (7)",
 			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-replay-debugger-45.*",
@@ -438,7 +268,7 @@
 			"Event__c": null,
 			"Expected__c": "salesforce.salesforcedx-vscode-apex-replay-debugger-45",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
-			"Id": "a00f000000BrDKLAA3",
+			"Id": "a000v000002LRZbAAO",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-replay-debugger-45.*",
 			"Operation__c": "Check Path",
 			"Order__c": 31
@@ -446,7 +276,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKMAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZcAAO"
 			},
 			"AppName__c": "Checking all bookmarks",
 			"Command__c": null,
@@ -455,7 +285,7 @@
 			"Event__c": null,
 			"Expected__c": "Bookmarks are correct",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKMAA3",
+			"Id": "a000v000002LRZcAAO",
 			"Message__c": "Validating: Checking all bookmarks",
 			"Operation__c": "Bookmark",
 			"Order__c": 42
@@ -463,7 +293,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKNAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZdAAO"
 			},
 			"AppName__c": "Check Curl version",
 			"Command__c": "curl --version",
@@ -472,7 +302,7 @@
 			"Event__c": null,
 			"Expected__c": "curl 7.55.1 (Windows) libcurl/7.55.1 WinSSL",
 			"Fix__c": "Please ensure Curl is installed. https://curl.haxx.se/download.html",
-			"Id": "a00f000000BrDKNAA3",
+			"Id": "a000v000002LRZdAAO",
 			"Message__c": "Validating: Check Curl version (curl --version)",
 			"Operation__c": "Check Contains",
 			"Order__c": 53
@@ -480,7 +310,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKOAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZeAAO"
 			},
 			"AppName__c": "Notepad",
 			"Command__c": "C:\\Windows\\Notepad.exe",
@@ -489,7 +319,7 @@
 			"Event__c": null,
 			"Expected__c": "Notepad.exe",
 			"Fix__c": "Notepad is missing!",
-			"Id": "a00f000000BrDKOAA3",
+			"Id": "a000v000002LRZeAAO",
 			"Message__c": "Checking path: C:\\Windows\\Notepad.exe",
 			"Operation__c": "Check Path",
 			"Order__c": 18
@@ -497,7 +327,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKPAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZfAAO"
 			},
 			"AppName__c": "Logout SFDX",
 			"Command__c": "sfdx force:auth:logout --all --noprompt",
@@ -506,7 +336,7 @@
 			"Event__c": null,
 			"Expected__c": null,
 			"Fix__c": null,
-			"Id": "a00f000000BrDKPAA3",
+			"Id": "a000v000002LRZfAAO",
 			"Message__c": "Validating: Logout SFDX (sfdx force:auth:logout --all --noprompt)",
 			"Operation__c": "Check Contains",
 			"Order__c": 51
@@ -514,7 +344,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKQAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZgAAO"
 			},
 			"AppName__c": "Logout Heroku",
 			"Command__c": "heroku logout",
@@ -523,7 +353,7 @@
 			"Event__c": null,
 			"Expected__c": null,
 			"Fix__c": null,
-			"Id": "a00f000000BrDKQAA3",
+			"Id": "a000v000002LRZgAAO",
 			"Message__c": "Validating: Logout Heroku (heroku logout)",
 			"Operation__c": "Check Contains",
 			"Order__c": 52
@@ -531,7 +361,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKRAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZhAAO"
 			},
 			"AppName__c": "Travis",
 			"Command__c": "travis version",
@@ -540,7 +370,7 @@
 			"Event__c": null,
 			"Expected__c": "1.8.8",
 			"Fix__c": "gem install travis",
-			"Id": "a00f000000BrDKRAA3",
+			"Id": "a000v000002LRZhAAO",
 			"Message__c": "Checking exact: travis version",
 			"Operation__c": "Check Exact",
 			"Order__c": 55
@@ -548,7 +378,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKSAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZiAAO"
 			},
 			"AppName__c": "SFDX (Java)",
 			"Command__c": "C:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\settings.json",
@@ -557,7 +387,7 @@
 			"Event__c": null,
 			"Expected__c": null,
 			"Fix__c": null,
-			"Id": "a00f000000BrDKSAA3",
+			"Id": "a000v000002LRZiAAO",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-42*",
 			"Operation__c": "JSON File - Edit",
 			"Order__c": 36
@@ -565,7 +395,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKTAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZjAAO"
 			},
 			"AppName__c": "VS Code",
 			"Command__c": "code",
@@ -574,7 +404,7 @@
 			"Event__c": null,
 			"Expected__c": "Application runs with no errors",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKTAA3",
+			"Id": "a000v000002LRZjAAO",
 			"Message__c": "Opening Application: \"VS Code\". Was this succesful?",
 			"Operation__c": "Open Application",
 			"Order__c": 12
@@ -582,7 +412,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKUAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZkAAO"
 			},
 			"AppName__c": "VS Code Plugin (3)",
 			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-debugger-45.*",
@@ -591,7 +421,7 @@
 			"Event__c": null,
 			"Expected__c": "salesforce.salesforcedx-vscode-apex-debugger-45",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
-			"Id": "a00f000000BrDKUAA3",
+			"Id": "a000v000002LRZkAAO",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-debugger-45.*",
 			"Operation__c": "Check Path",
 			"Order__c": 27
@@ -599,7 +429,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKVAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZlAAO"
 			},
 			"AppName__c": "VS Code Plugin (5)",
 			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lightning-45.*",
@@ -608,7 +438,7 @@
 			"Event__c": null,
 			"Expected__c": "salesforce.salesforcedx-vscode-lightning-45",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
-			"Id": "a00f000000BrDKVAA3",
+			"Id": "a000v000002LRZlAAO",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lightning-45.*",
 			"Operation__c": "Check Path",
 			"Order__c": 29
@@ -616,7 +446,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKWAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZmAAO"
 			},
 			"AppName__c": "Clear Screen",
 			"Command__c": null,
@@ -625,7 +455,7 @@
 			"Event__c": null,
 			"Expected__c": null,
 			"Fix__c": null,
-			"Id": "a00f000000BrDKWAA3",
+			"Id": "a000v000002LRZmAAO",
 			"Message__c": null,
 			"Operation__c": "Clear",
 			"Order__c": 1
@@ -633,7 +463,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKXAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZnAAO"
 			},
 			"AppName__c": "SFDX Update",
 			"Command__c": "sfdx update",
@@ -642,7 +472,7 @@
 			"Event__c": null,
 			"Expected__c": "sfdx-cli: Updating CLI... already on latest version",
 			"Fix__c": "Please install SFDX from here: https://sfdc.co/sfdx_cli_win64",
-			"Id": "a00f000000BrDKXAA3",
+			"Id": "a000v000002LRZnAAO",
 			"Message__c": "Validating: SFDX Update (sfdx update)",
 			"Operation__c": "Check Contains",
 			"Order__c": 23
@@ -650,7 +480,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKYAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZoAAO"
 			},
 			"AppName__c": "Check Java version",
 			"Command__c": "java -version",
@@ -659,7 +489,7 @@
 			"Event__c": null,
 			"Expected__c": "openjdk version \"1.8.0_212\"",
 			"Fix__c": "Please ensure Java is installed",
-			"Id": "a00f000000BrDKYAA3",
+			"Id": "a000v000002LRZoAAO",
 			"Message__c": "Validating: Check Java version (java -version)",
 			"Operation__c": "Check Contains",
 			"Order__c": 15
@@ -667,7 +497,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKZAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZpAAO"
 			},
 			"AppName__c": "VS Code Plugin (2)",
 			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-45.*",
@@ -676,7 +506,7 @@
 			"Event__c": null,
 			"Expected__c": "salesforce.salesforcedx-vscode-apex-45",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
-			"Id": "a00f000000BrDKZAA3",
+			"Id": "a000v000002LRZpAAO",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-45.*",
 			"Operation__c": "Check Path",
 			"Order__c": 26
@@ -684,7 +514,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKaAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZqAAO"
 			},
 			"AppName__c": "Desktop Image",
 			"Command__c": "Computer background image?",
@@ -693,7 +523,7 @@
 			"Event__c": null,
 			"Expected__c": "User validated: Computer background image?",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKaAAN",
+			"Id": "a000v000002LRZqAAO",
 			"Message__c": "User validated: Computer background image?",
 			"Operation__c": "Manual",
 			"Order__c": 5
@@ -701,7 +531,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKbAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZrAAO"
 			},
 			"AppName__c": "VS Code Plugin (4)",
 			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-core-45.*",
@@ -710,7 +540,7 @@
 			"Event__c": null,
 			"Expected__c": "salesforce.salesforcedx-vscode-core-45",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
-			"Id": "a00f000000BrDKbAAN",
+			"Id": "a000v000002LRZrAAO",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-core-45.*",
 			"Operation__c": "Check Path",
 			"Order__c": 28
@@ -718,16 +548,16 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKcAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZsAAO"
 			},
 			"AppName__c": "Chrome: Plugin Resize",
 			"Command__c": "c:\\Users\\Admin\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\bkpenclhmiealbebdopglffmfdiilejc\\2.3.3_0\\package.json",
-			"Enabled__c": true,
+			"Enabled__c": false,
 			"ErrorMessage__c": "Invalid response received",
 			"Event__c": null,
 			"Expected__c": "package.json",
 			"Fix__c": "Please install plugin from here: https://chrome.google.com/webstore/detail/tab-resize-split-screen-l/bkpenclhmiealbebdopglffmfdiilejc",
-			"Id": "a00f000000BrDKcAAN",
+			"Id": "a000v000002LRZsAAO",
 			"Message__c": "Checking path: c:\\Users\\Admin\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\bkpenclhmiealbebdopglffmfdiilejc\\2.3.3_0\\package.json",
 			"Operation__c": "Check Path",
 			"Order__c": 14
@@ -735,16 +565,16 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKdAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZtAAO"
 			},
 			"AppName__c": "Chrome: Plugin",
 			"Command__c": "Chrome Plugin to split screen",
-			"Enabled__c": true,
+			"Enabled__c": false,
 			"ErrorMessage__c": "User could not validate: Chrome Plugin to split screen",
 			"Event__c": null,
 			"Expected__c": "User validated: Chrome Plugin to split screen",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKdAAN",
+			"Id": "a000v000002LRZtAAO",
 			"Message__c": "User validated: Chrome Plugin to split screen",
 			"Operation__c": "Manual",
 			"Order__c": 10
@@ -752,7 +582,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKeAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZuAAO"
 			},
 			"AppName__c": "Git config name",
 			"Command__c": "git config --global user.name \"Your Name\"",
@@ -761,7 +591,7 @@
 			"Event__c": null,
 			"Expected__c": null,
 			"Fix__c": null,
-			"Id": "a00f000000BrDKeAAN",
+			"Id": "a000v000002LRZuAAO",
 			"Message__c": "Validating: Git config name (git config --global user.name \"Your Name\")",
 			"Operation__c": "Check Contains",
 			"Order__c": 39
@@ -769,7 +599,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKfAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZvAAO"
 			},
 			"AppName__c": "Firefox + Salesforce is homepage",
 			"Command__c": "\"C:\\Users\\Public\\Desktop\\Firefox.lnk\"",
@@ -778,7 +608,7 @@
 			"Event__c": null,
 			"Expected__c": "Application was opened from shortcut",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKfAAN",
+			"Id": "a000v000002LRZvAAO",
 			"Message__c": "Opening Application: \"Firefox + Salesforce is homepage\". Was this succesful?",
 			"Operation__c": "Open Application",
 			"Order__c": 8
@@ -786,7 +616,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKgAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZwAAO"
 			},
 			"AppName__c": "Sticker",
 			"Command__c": "Sticker with computer number?",
@@ -795,7 +625,7 @@
 			"Event__c": null,
 			"Expected__c": "User validated: Sticker with computer number?",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKgAAN",
+			"Id": "a000v000002LRZwAAO",
 			"Message__c": "User validated: Sticker with computer number?",
 			"Operation__c": "Manual",
 			"Order__c": 4
@@ -803,7 +633,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKhAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZxAAO"
 			},
 			"AppName__c": "Chrome + Salesforce is homepage",
 			"Command__c": "\"C:\\Users\\Public\\Desktop\\Google Chrome.lnk\"",
@@ -812,7 +642,7 @@
 			"Event__c": null,
 			"Expected__c": "Application was opened from shortcut",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKhAAN",
+			"Id": "a000v000002LRZxAAO",
 			"Message__c": "Opening Application: \"Chrome + Salesforce is homepage\". Was this succesful?",
 			"Operation__c": "Open Application",
 			"Order__c": 9
@@ -820,7 +650,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKiAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZyAAO"
 			},
 			"AppName__c": "7-Zip",
 			"Command__c": "\"C:\\Program Files\\7-Zip\\7z.exe\" -version",
@@ -829,7 +659,7 @@
 			"Event__c": null,
 			"Expected__c": "7-Zip 18.06 (x64)",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKiAAN",
+			"Id": "a000v000002LRZyAAO",
 			"Message__c": "Validating: 7-Zip (\"C:\\Program Files\\7-Zip\\7z.exe\" -version)",
 			"Operation__c": "Check Contains",
 			"Order__c": 40
@@ -837,7 +667,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKjAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZzAAO"
 			},
 			"AppName__c": "Python",
 			"Command__c": "python --version",
@@ -846,7 +676,7 @@
 			"Event__c": null,
 			"Expected__c": "Python 2.7.14",
 			"Fix__c": null,
-			"Id": "a00f000000BrDKjAAN",
+			"Id": "a000v000002LRZzAAO",
 			"Message__c": "Validating: Python (python --version)",
 			"Operation__c": "Check Contains",
 			"Order__c": 56
@@ -854,7 +684,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKkAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRa0AAG"
 			},
 			"AppName__c": "VS Code Plugin (6)",
 			"Command__c": "C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-45.*",
@@ -863,7 +693,7 @@
 			"Event__c": null,
 			"Expected__c": "salesforce.salesforcedx-vscode-visualforce-45",
 			"Fix__c": "Please ensure VS Plugins are installed. https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode",
-			"Id": "a00f000000BrDKkAAN",
+			"Id": "a000v000002LRa0AAG",
 			"Message__c": "Checking path: C:\\Users\\Admin\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-45.*",
 			"Operation__c": "Check Path",
 			"Order__c": 30
@@ -871,7 +701,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKlAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRa1AAG"
 			},
 			"AppName__c": "Java 8",
 			"Command__c": "C:\\Program Files\\Zulu\\zulu-8\\jre\\bin\\java.exe*",
@@ -880,7 +710,7 @@
 			"Event__c": null,
 			"Expected__c": "java.exe",
 			"Fix__c": "Please ensure Java JDK is installed.",
-			"Id": "a00f000000BrDKlAAN",
+			"Id": "a000v000002LRa1AAG",
 			"Message__c": "Checking path: C:\\Program Files\\Zulu\\zulu-8\\jre\\bin\\java.exe*",
 			"Operation__c": "Check Path",
 			"Order__c": 16
@@ -888,7 +718,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKmAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRa2AAG"
 			},
 			"AppName__c": "Git config email",
 			"Command__c": "git config --global user.email \"you@example.com\"",
@@ -897,7 +727,7 @@
 			"Event__c": null,
 			"Expected__c": null,
 			"Fix__c": null,
-			"Id": "a00f000000BrDKmAAN",
+			"Id": "a000v000002LRa2AAG",
 			"Message__c": "Validating: Git config email (git config --global user.email \"you@example.com\")",
 			"Operation__c": "Check Contains",
 			"Order__c": 38
@@ -905,7 +735,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrDKnAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRa3AAG"
 			},
 			"AppName__c": "MANUAL CHECKS",
 			"Command__c": "=== === === MANUAL CHECKS === === ===",
@@ -914,7 +744,7 @@
 			"Event__c": null,
 			"Expected__c": null,
 			"Fix__c": null,
-			"Id": "a00f000000BrDKnAAN",
+			"Id": "a000v000002LRa3AAG",
 			"Message__c": null,
 			"Operation__c": "Write",
 			"Order__c": 3
@@ -922,7 +752,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrKIfAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRa4AAG"
 			},
 			"AppName__c": "SalesforceSans Font (7)",
 			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Thin.ttf\"",
@@ -931,7 +761,7 @@
 			"Event__c": null,
 			"Expected__c": "SalesforceSans-Thin.ttf",
 			"Fix__c": "Please install Salesforce Fonts",
-			"Id": "a00f000000BrKIfAAN",
+			"Id": "a000v000002LRa4AAG",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Thin.ttf\"",
 			"Operation__c": "Check Path",
 			"Order__c": 49
@@ -939,7 +769,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrLBnAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRa5AAG"
 			},
 			"AppName__c": "Java 11",
 			"Command__c": "C:\\Program Files\\Zulu\\zulu-11\\bin\\java.exe*",
@@ -948,7 +778,7 @@
 			"Event__c": null,
 			"Expected__c": "java.exe",
 			"Fix__c": "Please ensure Java JDK is installed.",
-			"Id": "a00f000000BrLBnAAN",
+			"Id": "a000v000002LRa5AAG",
 			"Message__c": "Checking path: C:\\Program Files\\Zulu\\zulu-11\\bin\\java.exe*",
 			"Operation__c": "Check Path",
 			"Order__c": 17
@@ -956,7 +786,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrKIVAA3"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRa6AAG"
 			},
 			"AppName__c": "SalesforceSans Font (5)",
 			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-LightItalic.ttf\"",
@@ -965,7 +795,7 @@
 			"Event__c": null,
 			"Expected__c": "SalesforceSans-LightItalic.ttf",
 			"Fix__c": "Please install Salesforce Fonts",
-			"Id": "a00f000000BrKIVAA3",
+			"Id": "a000v000002LRa6AAG",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-LightItalic.ttf\"",
 			"Operation__c": "Check Path",
 			"Order__c": 47
@@ -973,7 +803,7 @@
 		{
 			"attributes": {
 				"type": "Action__c",
-				"url": "/services/data/v45.0/sobjects/Action__c/a00f000000BrKIkAAN"
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRa7AAG"
 			},
 			"AppName__c": "SalesforceSans Font (8)",
 			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-ThinItalic.ttf\"",
@@ -982,10 +812,180 @@
 			"Event__c": null,
 			"Expected__c": "SalesforceSans-ThinItalic.ttf",
 			"Fix__c": "Please install Salesforce Fonts",
-			"Id": "a00f000000BrKIkAAN",
+			"Id": "a000v000002LRa7AAG",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-ThinItalic.ttf\"",
 			"Operation__c": "Check Path",
 			"Order__c": 50
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZCAA4"
+			},
+			"AppName__c": "B2C Commerce Cloud (3)",
+			"Command__c": "C:\\Users\\Admin\\DigitalServerConnect*",
+			"Enabled__c": false,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "DigitalServerConnect",
+			"Fix__c": "B2C Commerce Cloud folder (3)  is missing",
+			"Id": "a000v000002LRZCAA4",
+			"Message__c": "Checking path: C:\\Users\\Admin\\DigitalServerConnect*",
+			"Operation__c": "Check Path",
+			"Order__c": 58
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZDAA4"
+			},
+			"AppName__c": "SalesforceSans Font (6)",
+			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Regular.ttf\"",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "SalesforceSans-Regular.ttf",
+			"Fix__c": "Please install Salesforce Fonts",
+			"Id": "a000v000002LRZDAA4",
+			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Regular.ttf\"",
+			"Operation__c": "Check Path",
+			"Order__c": 48
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZEAA4"
+			},
+			"AppName__c": "Eclipse Neon",
+			"Command__c": "\"C:\\Users\\Admin\\Desktop\\Eclipse JEE Neon.lnk\"",
+			"Enabled__c": false,
+			"ErrorMessage__c": "Unable to open application: \"Eclipse Neon\"",
+			"Event__c": null,
+			"Expected__c": "Application was opened from shortcut",
+			"Fix__c": null,
+			"Id": "a000v000002LRZEAA4",
+			"Message__c": "Opening Application: \"Eclipse Neon\". Was this succesful?",
+			"Operation__c": "Open Application",
+			"Order__c": 11
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZFAA4"
+			},
+			"AppName__c": "SalesforceSans Font (1)",
+			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Bold.ttf\"",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "SalesforceSans-Bold.ttf",
+			"Fix__c": "Please install Salesforce Fonts",
+			"Id": "a000v000002LRZFAA4",
+			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Bold.ttf\"",
+			"Operation__c": "Check Path",
+			"Order__c": 43
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZGAA4"
+			},
+			"AppName__c": "SalesforceSans Font (2)",
+			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-BoldItalic.ttf\"",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "SalesforceSans-BoldItalic.ttf",
+			"Fix__c": "Please install Salesforce Fonts",
+			"Id": "a000v000002LRZGAA4",
+			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-BoldItalic.ttf\"",
+			"Operation__c": "Check Path",
+			"Order__c": 44
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZHAA4"
+			},
+			"AppName__c": "B2C Commerce Cloud (2)",
+			"Command__c": "C:\\Users\\Admin\\tdxworkspace\\.metadata\\version.ini",
+			"Enabled__c": false,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "version.ini",
+			"Fix__c": "B2C Commerce Cloud folder (2)  is missing",
+			"Id": "a000v000002LRZHAA4",
+			"Message__c": "Checking path: C:\\Users\\Admin\\tdxworkspace\\.metadata\\version.ini",
+			"Operation__c": "Check Path",
+			"Order__c": 20
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZIAA4"
+			},
+			"AppName__c": "SalesforceSans Font (3)",
+			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Italic.ttf\"",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "SalesforceSans-Italic.ttf",
+			"Fix__c": "Please install Salesforce Fonts",
+			"Id": "a000v000002LRZIAA4",
+			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Italic.ttf\"",
+			"Operation__c": "Check Path",
+			"Order__c": 45
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZJAA4"
+			},
+			"AppName__c": "SalesforceSans Font (4)",
+			"Command__c": "\"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Light.ttf\"",
+			"Enabled__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "SalesforceSans-Light.ttf",
+			"Fix__c": "Please install Salesforce Fonts",
+			"Id": "a000v000002LRZJAA4",
+			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Light.ttf\"",
+			"Operation__c": "Check Path",
+			"Order__c": 46
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZKAA4"
+			},
+			"AppName__c": "B2C Commerce Cloud (1)",
+			"Command__c": "C:\\Users\\Admin\\Documents\\ntoforall*",
+			"Enabled__c": false,
+			"ErrorMessage__c": "Invalid response received",
+			"Event__c": null,
+			"Expected__c": "ntoforall",
+			"Fix__c": "B2C Commerce Cloud (1) folder is missing",
+			"Id": "a000v000002LRZKAA4",
+			"Message__c": "Checking path: C:\\Users\\Admin\\Documents\\ntoforall*",
+			"Operation__c": "Check Path",
+			"Order__c": 19
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v45.0/sobjects/Action__c/a000v000002LRZLAA4"
+			},
+			"AppName__c": "Say Hi",
+			"Command__c": "Application Tester built by Andres Perez (ELTORO.IT)",
+			"Enabled__c": true,
+			"ErrorMessage__c": null,
+			"Event__c": null,
+			"Expected__c": null,
+			"Fix__c": null,
+			"Id": "a000v000002LRZLAA4",
+			"Message__c": null,
+			"Operation__c": "Write",
+			"Order__c": 2
 		}
 	],
 	"total": 58
