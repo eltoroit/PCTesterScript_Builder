@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>Action__c.Actions_X_Events__r$Name</field>
-    </columns>
-    <columns>
         <field>Action__c.Actions_X_Events__r$Event__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Action__c$Count_Events__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>Action__c$Enabled__c</field>
-    </columns>
-    <columns>
-        <field>Action__c$AppName__c</field>
     </columns>
     <filter>
         <criteriaItems>
@@ -28,7 +18,12 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Action__c$Name</field>
+        <field>Action__c$Order__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Action__c$AppName__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>### Actions (Event Count &lt;&gt; 1)</name>

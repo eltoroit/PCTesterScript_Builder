@@ -41,7 +41,7 @@
         <field>FK_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>### Actions for All Events</name>
+    <name>$ Active events with their actions</name>
     <params>
         <name>co</name>
         <value>1</value>
