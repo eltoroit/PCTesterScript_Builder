@@ -1,5 +1,5 @@
 {
-	"now": "2019-07-05T09:13:26.967Z",
+	"now": "2019-07-06T19:11:50.688Z",
 	"alias": "soVMCheck02",
 	"importOrder": [
 		"Event__c",
@@ -824,62 +824,6 @@
 	},
 	"rejected": {
 		"ADD_FIELD": {
-			"Event_X_Action__c.IsDeleted": [
-				"Must be createable"
-			],
-			"Event_X_Action__c.Name": [
-				"Can't be autoNumber",
-				"Must be createable"
-			],
-			"Event_X_Action__c.CreatedDate": [
-				"User asked for this field to be excluded",
-				"Must be createable"
-			],
-			"Event_X_Action__c.CreatedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"Event_X_Action__c.LastModifiedDate": [
-				"Must be createable"
-			],
-			"Event_X_Action__c.LastModifiedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"Event_X_Action__c.SystemModstamp": [
-				"Must be createable"
-			],
-			"JSON_Action__c.IsDeleted": [
-				"Must be createable"
-			],
-			"JSON_Action__c.Name": [
-				"Can't be autoNumber",
-				"Must be createable"
-			],
-			"JSON_Action__c.CreatedDate": [
-				"User asked for this field to be excluded",
-				"Must be createable"
-			],
-			"JSON_Action__c.CreatedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"JSON_Action__c.LastModifiedDate": [
-				"Must be createable"
-			],
-			"JSON_Action__c.LastModifiedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"JSON_Action__c.SystemModstamp": [
-				"Must be createable"
-			],
-			"JSON_Action__c.LastViewedDate": [
-				"Must be createable"
-			],
-			"JSON_Action__c.LastReferencedDate": [
-				"Must be createable"
-			],
 			"Action__c.OwnerId": [
 				"User asked for this field to be excluded",
 				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
@@ -919,6 +863,31 @@
 				"Can't be calculated",
 				"Must be createable"
 			],
+			"Event_X_Action__c.IsDeleted": [
+				"Must be createable"
+			],
+			"Event_X_Action__c.Name": [
+				"Can't be autoNumber",
+				"Must be createable"
+			],
+			"Event_X_Action__c.CreatedDate": [
+				"User asked for this field to be excluded",
+				"Must be createable"
+			],
+			"Event_X_Action__c.CreatedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Event_X_Action__c.LastModifiedDate": [
+				"Must be createable"
+			],
+			"Event_X_Action__c.LastModifiedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Event_X_Action__c.SystemModstamp": [
+				"Must be createable"
+			],
 			"Event__c.OwnerId": [
 				"User asked for this field to be excluded",
 				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
@@ -949,147 +918,40 @@
 			],
 			"Event__c.LastReferencedDate": [
 				"Must be createable"
+			],
+			"JSON_Action__c.IsDeleted": [
+				"Must be createable"
+			],
+			"JSON_Action__c.Name": [
+				"Can't be autoNumber",
+				"Must be createable"
+			],
+			"JSON_Action__c.CreatedDate": [
+				"User asked for this field to be excluded",
+				"Must be createable"
+			],
+			"JSON_Action__c.CreatedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"JSON_Action__c.LastModifiedDate": [
+				"Must be createable"
+			],
+			"JSON_Action__c.LastModifiedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"JSON_Action__c.SystemModstamp": [
+				"Must be createable"
+			],
+			"JSON_Action__c.LastViewedDate": [
+				"Must be createable"
+			],
+			"JSON_Action__c.LastReferencedDate": [
+				"Must be createable"
 			]
 		},
 		"ADD_CHILD": {
-			"Event_X_Action__c.AttachedContentDocuments => AttachedContentDocument": [
-				"Child sObject [AttachedContentDocument] is not processed"
-			],
-			"Event_X_Action__c.Attachments => Attachment": [
-				"Child sObject [Attachment] is not processed"
-			],
-			"Event_X_Action__c.RecordAssociatedGroups => CollaborationGroupRecord": [
-				"Child sObject [CollaborationGroupRecord] is not processed"
-			],
-			"Event_X_Action__c.CombinedAttachments => CombinedAttachment": [
-				"Child sObject [CombinedAttachment] is not processed"
-			],
-			"Event_X_Action__c.ContactRequests => ContactRequest": [
-				"Child sObject [ContactRequest] is not processed"
-			],
-			"Event_X_Action__c.null => ContentDistribution": [
-				"Child sObject [ContentDistribution] is not processed"
-			],
-			"Event_X_Action__c.ContentDocumentLinks => ContentDocumentLink": [
-				"Child sObject [ContentDocumentLink] is not processed"
-			],
-			"Event_X_Action__c.null => ContentVersion": [
-				"Child sObject [ContentVersion] is not processed"
-			],
-			"Event_X_Action__c.DuplicateRecordItems => DuplicateRecordItem": [
-				"Child sObject [DuplicateRecordItem] is not processed"
-			],
-			"Event_X_Action__c.FeedSubscriptionsForEntity => EntitySubscription": [
-				"Child sObject [EntitySubscription] is not processed"
-			],
-			"Event_X_Action__c.null => EventChangeEvent": [
-				"Child sObject [EventChangeEvent] is not processed"
-			],
-			"Event_X_Action__c.null => EventRelationChangeEvent": [
-				"Child sObject [EventRelationChangeEvent] is not processed"
-			],
-			"Event_X_Action__c.null => FeedComment": [
-				"Child sObject [FeedComment] is not processed"
-			],
-			"Event_X_Action__c.null => FeedItem": [
-				"Child sObject [FeedItem] is not processed"
-			],
-			"Event_X_Action__c.null => FlowRecordRelation": [
-				"Child sObject [FlowRecordRelation] is not processed"
-			],
-			"Event_X_Action__c.Notes => Note": [
-				"Child sObject [Note] is not processed"
-			],
-			"Event_X_Action__c.NotesAndAttachments => NoteAndAttachment": [
-				"Child sObject [NoteAndAttachment] is not processed"
-			],
-			"Event_X_Action__c.ProcessInstances => ProcessInstance": [
-				"Child sObject [ProcessInstance] is not processed"
-			],
-			"Event_X_Action__c.ProcessSteps => ProcessInstanceHistory": [
-				"Child sObject [ProcessInstanceHistory] is not processed"
-			],
-			"Event_X_Action__c.RecordActions => RecordAction": [
-				"Child sObject [RecordAction] is not processed"
-			],
-			"Event_X_Action__c.RecordActionHistories => RecordActionHistory": [
-				"Child sObject [RecordActionHistory] is not processed"
-			],
-			"Event_X_Action__c.null => TaskChangeEvent": [
-				"Child sObject [TaskChangeEvent] is not processed"
-			],
-			"Event_X_Action__c.TopicAssignments => TopicAssignment": [
-				"Child sObject [TopicAssignment] is not processed"
-			],
-			"JSON_Action__c.AttachedContentDocuments => AttachedContentDocument": [
-				"Child sObject [AttachedContentDocument] is not processed"
-			],
-			"JSON_Action__c.Attachments => Attachment": [
-				"Child sObject [Attachment] is not processed"
-			],
-			"JSON_Action__c.RecordAssociatedGroups => CollaborationGroupRecord": [
-				"Child sObject [CollaborationGroupRecord] is not processed"
-			],
-			"JSON_Action__c.CombinedAttachments => CombinedAttachment": [
-				"Child sObject [CombinedAttachment] is not processed"
-			],
-			"JSON_Action__c.ContactRequests => ContactRequest": [
-				"Child sObject [ContactRequest] is not processed"
-			],
-			"JSON_Action__c.null => ContentDistribution": [
-				"Child sObject [ContentDistribution] is not processed"
-			],
-			"JSON_Action__c.ContentDocumentLinks => ContentDocumentLink": [
-				"Child sObject [ContentDocumentLink] is not processed"
-			],
-			"JSON_Action__c.null => ContentVersion": [
-				"Child sObject [ContentVersion] is not processed"
-			],
-			"JSON_Action__c.DuplicateRecordItems => DuplicateRecordItem": [
-				"Child sObject [DuplicateRecordItem] is not processed"
-			],
-			"JSON_Action__c.FeedSubscriptionsForEntity => EntitySubscription": [
-				"Child sObject [EntitySubscription] is not processed"
-			],
-			"JSON_Action__c.null => EventChangeEvent": [
-				"Child sObject [EventChangeEvent] is not processed"
-			],
-			"JSON_Action__c.null => EventRelationChangeEvent": [
-				"Child sObject [EventRelationChangeEvent] is not processed"
-			],
-			"JSON_Action__c.null => FeedComment": [
-				"Child sObject [FeedComment] is not processed"
-			],
-			"JSON_Action__c.null => FeedItem": [
-				"Child sObject [FeedItem] is not processed"
-			],
-			"JSON_Action__c.null => FlowRecordRelation": [
-				"Child sObject [FlowRecordRelation] is not processed"
-			],
-			"JSON_Action__c.Notes => Note": [
-				"Child sObject [Note] is not processed"
-			],
-			"JSON_Action__c.NotesAndAttachments => NoteAndAttachment": [
-				"Child sObject [NoteAndAttachment] is not processed"
-			],
-			"JSON_Action__c.ProcessInstances => ProcessInstance": [
-				"Child sObject [ProcessInstance] is not processed"
-			],
-			"JSON_Action__c.ProcessSteps => ProcessInstanceHistory": [
-				"Child sObject [ProcessInstanceHistory] is not processed"
-			],
-			"JSON_Action__c.RecordActions => RecordAction": [
-				"Child sObject [RecordAction] is not processed"
-			],
-			"JSON_Action__c.RecordActionHistories => RecordActionHistory": [
-				"Child sObject [RecordActionHistory] is not processed"
-			],
-			"JSON_Action__c.null => TaskChangeEvent": [
-				"Child sObject [TaskChangeEvent] is not processed"
-			],
-			"JSON_Action__c.TopicAssignments => TopicAssignment": [
-				"Child sObject [TopicAssignment] is not processed"
-			],
 			"Action__c.AttachedContentDocuments => AttachedContentDocument": [
 				"Child sObject [AttachedContentDocument] is not processed"
 			],
@@ -1159,6 +1021,75 @@
 			"Action__c.TopicAssignments => TopicAssignment": [
 				"Child sObject [TopicAssignment] is not processed"
 			],
+			"Event_X_Action__c.AttachedContentDocuments => AttachedContentDocument": [
+				"Child sObject [AttachedContentDocument] is not processed"
+			],
+			"Event_X_Action__c.Attachments => Attachment": [
+				"Child sObject [Attachment] is not processed"
+			],
+			"Event_X_Action__c.RecordAssociatedGroups => CollaborationGroupRecord": [
+				"Child sObject [CollaborationGroupRecord] is not processed"
+			],
+			"Event_X_Action__c.CombinedAttachments => CombinedAttachment": [
+				"Child sObject [CombinedAttachment] is not processed"
+			],
+			"Event_X_Action__c.ContactRequests => ContactRequest": [
+				"Child sObject [ContactRequest] is not processed"
+			],
+			"Event_X_Action__c.null => ContentDistribution": [
+				"Child sObject [ContentDistribution] is not processed"
+			],
+			"Event_X_Action__c.ContentDocumentLinks => ContentDocumentLink": [
+				"Child sObject [ContentDocumentLink] is not processed"
+			],
+			"Event_X_Action__c.null => ContentVersion": [
+				"Child sObject [ContentVersion] is not processed"
+			],
+			"Event_X_Action__c.DuplicateRecordItems => DuplicateRecordItem": [
+				"Child sObject [DuplicateRecordItem] is not processed"
+			],
+			"Event_X_Action__c.FeedSubscriptionsForEntity => EntitySubscription": [
+				"Child sObject [EntitySubscription] is not processed"
+			],
+			"Event_X_Action__c.null => EventChangeEvent": [
+				"Child sObject [EventChangeEvent] is not processed"
+			],
+			"Event_X_Action__c.null => EventRelationChangeEvent": [
+				"Child sObject [EventRelationChangeEvent] is not processed"
+			],
+			"Event_X_Action__c.null => FeedComment": [
+				"Child sObject [FeedComment] is not processed"
+			],
+			"Event_X_Action__c.null => FeedItem": [
+				"Child sObject [FeedItem] is not processed"
+			],
+			"Event_X_Action__c.null => FlowRecordRelation": [
+				"Child sObject [FlowRecordRelation] is not processed"
+			],
+			"Event_X_Action__c.Notes => Note": [
+				"Child sObject [Note] is not processed"
+			],
+			"Event_X_Action__c.NotesAndAttachments => NoteAndAttachment": [
+				"Child sObject [NoteAndAttachment] is not processed"
+			],
+			"Event_X_Action__c.ProcessInstances => ProcessInstance": [
+				"Child sObject [ProcessInstance] is not processed"
+			],
+			"Event_X_Action__c.ProcessSteps => ProcessInstanceHistory": [
+				"Child sObject [ProcessInstanceHistory] is not processed"
+			],
+			"Event_X_Action__c.RecordActions => RecordAction": [
+				"Child sObject [RecordAction] is not processed"
+			],
+			"Event_X_Action__c.RecordActionHistories => RecordActionHistory": [
+				"Child sObject [RecordActionHistory] is not processed"
+			],
+			"Event_X_Action__c.null => TaskChangeEvent": [
+				"Child sObject [TaskChangeEvent] is not processed"
+			],
+			"Event_X_Action__c.TopicAssignments => TopicAssignment": [
+				"Child sObject [TopicAssignment] is not processed"
+			],
 			"Event__c.AttachedContentDocuments => AttachedContentDocument": [
 				"Child sObject [AttachedContentDocument] is not processed"
 			],
@@ -1226,6 +1157,75 @@
 				"Child sObject [TaskChangeEvent] is not processed"
 			],
 			"Event__c.TopicAssignments => TopicAssignment": [
+				"Child sObject [TopicAssignment] is not processed"
+			],
+			"JSON_Action__c.AttachedContentDocuments => AttachedContentDocument": [
+				"Child sObject [AttachedContentDocument] is not processed"
+			],
+			"JSON_Action__c.Attachments => Attachment": [
+				"Child sObject [Attachment] is not processed"
+			],
+			"JSON_Action__c.RecordAssociatedGroups => CollaborationGroupRecord": [
+				"Child sObject [CollaborationGroupRecord] is not processed"
+			],
+			"JSON_Action__c.CombinedAttachments => CombinedAttachment": [
+				"Child sObject [CombinedAttachment] is not processed"
+			],
+			"JSON_Action__c.ContactRequests => ContactRequest": [
+				"Child sObject [ContactRequest] is not processed"
+			],
+			"JSON_Action__c.null => ContentDistribution": [
+				"Child sObject [ContentDistribution] is not processed"
+			],
+			"JSON_Action__c.ContentDocumentLinks => ContentDocumentLink": [
+				"Child sObject [ContentDocumentLink] is not processed"
+			],
+			"JSON_Action__c.null => ContentVersion": [
+				"Child sObject [ContentVersion] is not processed"
+			],
+			"JSON_Action__c.DuplicateRecordItems => DuplicateRecordItem": [
+				"Child sObject [DuplicateRecordItem] is not processed"
+			],
+			"JSON_Action__c.FeedSubscriptionsForEntity => EntitySubscription": [
+				"Child sObject [EntitySubscription] is not processed"
+			],
+			"JSON_Action__c.null => EventChangeEvent": [
+				"Child sObject [EventChangeEvent] is not processed"
+			],
+			"JSON_Action__c.null => EventRelationChangeEvent": [
+				"Child sObject [EventRelationChangeEvent] is not processed"
+			],
+			"JSON_Action__c.null => FeedComment": [
+				"Child sObject [FeedComment] is not processed"
+			],
+			"JSON_Action__c.null => FeedItem": [
+				"Child sObject [FeedItem] is not processed"
+			],
+			"JSON_Action__c.null => FlowRecordRelation": [
+				"Child sObject [FlowRecordRelation] is not processed"
+			],
+			"JSON_Action__c.Notes => Note": [
+				"Child sObject [Note] is not processed"
+			],
+			"JSON_Action__c.NotesAndAttachments => NoteAndAttachment": [
+				"Child sObject [NoteAndAttachment] is not processed"
+			],
+			"JSON_Action__c.ProcessInstances => ProcessInstance": [
+				"Child sObject [ProcessInstance] is not processed"
+			],
+			"JSON_Action__c.ProcessSteps => ProcessInstanceHistory": [
+				"Child sObject [ProcessInstanceHistory] is not processed"
+			],
+			"JSON_Action__c.RecordActions => RecordAction": [
+				"Child sObject [RecordAction] is not processed"
+			],
+			"JSON_Action__c.RecordActionHistories => RecordActionHistory": [
+				"Child sObject [RecordActionHistory] is not processed"
+			],
+			"JSON_Action__c.null => TaskChangeEvent": [
+				"Child sObject [TaskChangeEvent] is not processed"
+			],
+			"JSON_Action__c.TopicAssignments => TopicAssignment": [
 				"Child sObject [TopicAssignment] is not processed"
 			]
 		},
