@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Active__c</fullName>
+    <fullName>EnabledAction__c</fullName>
     <defaultValue>true</defaultValue>
     <externalId>false</externalId>
-    <label>Active</label>
+    <label>Enabled Action</label>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>
 </CustomField>
