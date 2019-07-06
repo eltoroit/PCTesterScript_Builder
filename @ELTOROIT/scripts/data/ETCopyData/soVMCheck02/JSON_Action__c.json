@@ -4,25 +4,25 @@
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v45.0/sobjects/JSON_Action__c/a030v00000UlHf8AAF"
+				"url": "/services/data/v46.0/sobjects/JSON_Action__c/a030x000002Ld7nAAC"
 			},
-			"Action__c": "a000v000002LRZiAAO",
-			"Id": "a030v00000UlHf8AAF",
+			"Action__c": "a000x000005e5zlAAA",
+			"Id": "a030x000002Ld7nAAC",
 			"Key__c": "salesforcedx-vscode-apex.java.home",
 			"Path__c": ":",
-			"UniqueAction__c": "a000v000002LRZiAAO",
+			"UniqueAction__c": "a000x000005e5zlAAA",
 			"Value__c": "C:\\Program Files\\java\\jdk1.8.0_162"
 		},
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v45.0/sobjects/JSON_Action__c/a030v00000UlHf9AAF"
+				"url": "/services/data/v46.0/sobjects/JSON_Action__c/a030x000002Ld7oAAC"
 			},
-			"Action__c": "a000v000002LRZVAA4",
-			"Id": "a030v00000UlHf9AAF",
+			"Action__c": "a000x000005e5zTAAQ",
+			"Id": "a030x000002Ld7oAAC",
 			"Key__c": "terminal.integrated.shell.windows",
 			"Path__c": ":",
-			"UniqueAction__c": "a000v000002LRZVAA4",
+			"UniqueAction__c": "a000x000005e5zTAAQ",
 			"Value__c": "C:\\Program Files\\Git\\bin\\bash.exe"
 		}
 	],
