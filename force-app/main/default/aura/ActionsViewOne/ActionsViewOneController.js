@@ -56,7 +56,7 @@
 		helper.fireEvent(component, { direction: +1 });
 	},
 	changeEnabled: function (component, event, helper) {
-		var curEnabled = component.get("v.action").Enabled__c;
+		var curEnabled = component.get("v.action").EnabledAction__c;
 		helper.fireEvent(component, { enabled: !curEnabled });
 	},
 	test: function (component, event, helper) {

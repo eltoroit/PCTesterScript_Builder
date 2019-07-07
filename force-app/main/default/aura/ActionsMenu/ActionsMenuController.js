@@ -1,8 +1,8 @@
 ({
     doInit: function (component, event, helper) {
         var fields = {
-            "All": ["Id", "Name", "AppName__c", "Command__c", "Enabled__c", "Expected__c", "ErrorMessage__c", "Fix__c", "Message__c", "Operation__c", "Order__c"],
-            "Common": ["Id", "Name", "Enabled__c", "Operation__c", "Order__c"],
+            "All": ["Id", "Name", "AppName__c", "Command__c", "EnabledAction__c", "Expected__c", "ErrorMessage__c", "Fix__c", "Message__c", "Operation__c", "Order__c"],
+            "Common": ["Id", "Name", "EnabledAction__c", "Operation__c", "Order__c"],
             "Auto": ["ErrorMessage__c", "Message__c"],
             "Check Contains": [
                 { name: "AppName__c", required: true },

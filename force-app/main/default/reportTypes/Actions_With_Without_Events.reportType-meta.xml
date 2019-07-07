@@ -57,17 +57,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Enabled__c</field>
+            <field>EnabledAction__c</field>
             <table>Action__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>ErrorMessage__c</field>
-            <table>Action__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Event__c</field>
             <table>Action__c</table>
         </columns>
         <columns>
@@ -141,6 +136,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>UniqueKey__c</field>
+            <table>Action__c.Actions_X_Events__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ActiveEvent__c</field>
+            <table>Action__c.Actions_X_Events__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Action__c</field>
             <table>Action__c.Actions_X_Events__r</table>
         </columns>
         <masterLabel>Actions By Events</masterLabel>

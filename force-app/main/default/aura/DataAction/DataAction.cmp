@@ -45,7 +45,7 @@
         <aura:set attribute="actions">
             <div>
                 {!v.action.Order__c}
-                <lightning:buttonIcon iconName="utility:check" variant="{!v.action.Enabled__c ? 'brand' : 'border'}"
+                <lightning:buttonIcon iconName="utility:check" variant="{!v.action.EnabledAction__c ? 'brand' : 'border'}"
                     onclick="{!c.changeEnabled}" />
                 <lightning:buttonIcon iconName="utility:arrowup" variant="border" onclick="{!c.moveUp}" disabled="{!!v.isMoveUp}"
                 />

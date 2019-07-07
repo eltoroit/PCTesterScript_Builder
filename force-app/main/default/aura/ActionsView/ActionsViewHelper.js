@@ -62,7 +62,7 @@
 			helper.retrieveActions(component, event, helper);
 			return;
 		} else if (typeof eventData.enabled === 'boolean') {
-			action.Enabled__c = eventData.enabled;
+			action.EnabledAction__c = eventData.enabled;
 		} else {
 			throw new Error("Event data does not have valid data");
 		}

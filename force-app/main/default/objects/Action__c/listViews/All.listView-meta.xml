@@ -9,7 +9,7 @@
     <columns>Fix__c</columns>
     <columns>Order__c</columns>
     <columns>Count_Events__c</columns>
-    <columns>Enabled__c</columns>
+    <columns>EnabledAction__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

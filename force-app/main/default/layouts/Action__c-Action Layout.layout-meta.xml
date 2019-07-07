@@ -19,7 +19,7 @@
 		<layoutColumns>
 			<layoutItems>
 				<behavior>Edit</behavior>
-				<field>Enabled__c</field>
+				<field>EnabledAction__c</field>
 			</layoutItems>
 			<layoutItems>
 				<behavior>Required</behavior>
@@ -184,7 +184,7 @@
 	<relatedLists>
 		<fields>NAME</fields>
 		<fields>Event__c.NAME</fields>
-		<fields>Event__c.Active__c</fields>
+		<fields>Event__c.ActiveEvent__c</fields>
 		<relatedList>Event_X_Action__c.Action__c</relatedList>
 	</relatedLists>
 	<relatedLists>

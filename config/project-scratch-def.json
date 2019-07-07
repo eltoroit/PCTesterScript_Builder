@@ -1,7 +1,7 @@
 {
 	"orgName": "Script Maker For Image Validator -- ELTORO.IT",
 	"edition": "Developer",
-	"orgPreferences": {
+	"settings": {
 		"orgPreferenceSettings": {
 			"s1DesktopEnabled": true,
 			"s1EncryptedStoragePref2": false

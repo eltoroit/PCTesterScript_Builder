@@ -13,7 +13,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Active__c</field>
+                <field>ActiveEvent__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -133,7 +133,7 @@
         <fields>Action__c.Command__c</fields>
         <fields>Action__c.Expected__c</fields>
         <fields>Action__c.Fix__c</fields>
-        <fields>Action__c.Enabled__c</fields>
+        <fields>Action__c.EnabledAction__c</fields>
         <fields>Action__c.Order__c</fields>
         <relatedList>Event_X_Action__c.Event__c</relatedList>
         <sortField>Action__c.Order__c</sortField>

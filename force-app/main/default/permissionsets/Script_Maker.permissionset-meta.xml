@@ -21,17 +21,12 @@
 	</fieldPermissions>
 	<fieldPermissions>
 		<editable>true</editable>
-		<field>Action__c.Enabled__c</field>
+		<field>Action__c.EnabledAction__c</field>
 		<readable>true</readable>
 	</fieldPermissions>
 	<fieldPermissions>
 		<editable>true</editable>
 		<field>Action__c.ErrorMessage__c</field>
-		<readable>true</readable>
-	</fieldPermissions>
-	<fieldPermissions>
-		<editable>true</editable>
-		<field>Action__c.Event__c</field>
 		<readable>true</readable>
 	</fieldPermissions>
 	<fieldPermissions>
@@ -61,7 +56,7 @@
 	</fieldPermissions>
 	<fieldPermissions>
 		<editable>true</editable>
-		<field>Event__c.Active__c</field>
+		<field>Event__c.ActiveEvent__c</field>
 		<readable>true</readable>
 	</fieldPermissions>
 	<fieldPermissions>

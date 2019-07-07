@@ -6,7 +6,7 @@
 	},
 	changeEnabled: function (component, event, helper) {
 		var action = component.get("v.action");
-		action.Enabled__c = !action.Enabled__c;
+		action.EnabledAction__c = !action.EnabledAction__c;
 		helper.saveRecord(component, helper);
 	},
 	viewRecord: function (component, event, helper) {

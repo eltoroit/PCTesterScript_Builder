@@ -23,20 +23,20 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Action__c.Enabled__c</column>
+            <column>Action__c.EnabledAction__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
         <criteriaItems>
-            <column>FK_$Event__c.Active__c</column>
+            <column>FK_$Event__c.ActiveEvent__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>### Active Event Actions (Export Data)</name>
+    <name>_Active Event Actions (Export Data)</name>
     <params>
         <name>co</name>
         <value>1</value>

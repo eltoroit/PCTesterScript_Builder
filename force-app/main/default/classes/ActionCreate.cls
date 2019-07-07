@@ -11,9 +11,9 @@ public with sharing class ActionCreate extends ETLC_ApexBridge_Abstract {
 
     private List<Event__c> getAllEvents(ETLC_ApexBridge_Request request) {
         List<Event__c> events = [
-            SELECT Id, Name, Active__c 
+            SELECT Id, Name, ActiveEvent__c 
             FROM Event__c 
-            WHERE Active__c = true 
+            WHERE ActiveEvent__c = true 
             ORDER BY Name 
         ];
         ETLC_SecuredDB.validateQuery(events);
@@ -25,7 +25,7 @@ public with sharing class ActionCreate extends ETLC_ApexBridge_Abstract {
         
         List<Id> output = new List<Id>();
         List<Event__c> events = [
-            SELECT Id, Name, Active__c 
+            SELECT Id, Name, ActiveEvent__c 
             FROM Event__c
             WHERE Id IN (SELECT Event__c FROM Event_X_Action__c WHERE Action__c = :actionId)
         ];

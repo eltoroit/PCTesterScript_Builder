@@ -37,7 +37,7 @@
 		</columns>
 		<columns>
 			<checkedByDefault>false</checkedByDefault>
-			<field>Enabled__c</field>
+			<field>EnabledAction__c</field>
 			<table>Action__c</table>
 		</columns>
 		<columns>

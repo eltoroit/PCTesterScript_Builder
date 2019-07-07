@@ -10,7 +10,7 @@
         <field>Action__c.Order__c</field>
     </columns>
     <columns>
-        <field>Action__c.Enabled__c</field>
+        <field>Action__c.EnabledAction__c</field>
     </columns>
     <columns>
         <field>Action__c.Operation__c</field>
@@ -29,7 +29,7 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Action__c.Enabled__c</column>
+            <column>Action__c.EnabledAction__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>

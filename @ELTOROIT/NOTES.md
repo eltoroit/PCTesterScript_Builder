@@ -36,6 +36,6 @@ How to create the bmCheck.txt from the bmDump.txt?
 ````
 SELECT Action__c, Event__c, Action__r.Order__c, Action__r.AppName__c, Event__r.Name
 FROM Event_X_Action__c
-WHERE Event__c = 'a02f000000BXgl7AAD' AND Action__r.Enabled__c = true
+WHERE Event__c = 'a02f000000BXgl7AAD' AND Action__r.EnabledAction__c = true
 ORDER By Action__r.Order__c
 ````

@@ -14,9 +14,9 @@ public with sharing class ActionsView extends ETLC_ApexBridge_Abstract {
 
     private List<Event__c> getEvents(ETLC_ApexBridge_Request request) {
         List<Event__c> events = [
-            SELECT Id, Name, Active__c 
+            SELECT Id, Name, ActiveEvent__c 
             FROM Event__c 
-            WHERE Active__c = true 
+            WHERE ActiveEvent__c = true 
             ORDER BY Name 
         ];
         ETLC_SecuredDB.validateQuery(events);
@@ -26,7 +26,7 @@ public with sharing class ActionsView extends ETLC_ApexBridge_Abstract {
     private List<Action__c> getActions(ETLC_ApexBridge_Request request) {
         String eventId = String.valueOf(request.getInputValue('eventId'));
         List<Action__c> actions = [
-            SELECT ID, Name, AppName__c, Command__c, Enabled__c, ErrorMessage__c, Fix__c, Expected__c, 
+            SELECT ID, Name, AppName__c, Command__c, EnabledAction__c, ErrorMessage__c, Fix__c, Expected__c, 
             Message__c, Operation__c, Order__c, 
             (SELECT Id, Name, Event__c, Event__r.Name FROM Actions_X_Events__r),
             (SELECT Id, Name, Action__c, Key__c, Path__c, Value__c FROM JSON_Actions__r)
