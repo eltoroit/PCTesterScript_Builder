@@ -29,7 +29,7 @@ sfdx force:user:display --json | jq -r '.result | .instanceUrl, .accessToken' | 
 echo "--- --- --- Please wait (3/5): Copying files to runtime folder"
 rm -f _OriginalScripts/Errors-*.json
 cp _OriginalScripts/* ../PCTesterScript
-rm ../PCTesterScript/bmPretend.txt
+rm ../PCTesterScript/bmPretend.json
 echo "--- Scripts generated..."
 
 # Push to GitHub
@@ -40,7 +40,7 @@ cd ../PCTesterScript
 # Export for Backup
 echo "--- --- --- Please wait (5/5): Export data"
 cd ../PCTesterScript_Builder
-sfdx ETCopyData:export -c './@ELTOROIT/scripts/data' --loglevel trace
+sfdx ETCopyData:export -c './@ELTOROIT/scripts/data' --loglevel warn
 
 
 

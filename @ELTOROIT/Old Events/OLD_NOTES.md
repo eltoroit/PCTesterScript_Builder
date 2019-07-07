@@ -1,10 +1,14 @@
 # === Rebuild ===
+
 ## Register DevHub Org
+
 ```
 https://developer.salesforce.com/promotions/orgs/dx-signup
 sfdx force:auth:web:login -a dhScriptMaker -d
 ```
+
 ## Create new Scratch ORG
+
 ```
 sfdx force:org:create -f config/project-scratch-def.json --setalias soMAC0830 --setdefaultusername -w 10
 sfdx force:package:install --package 04t6A000002D2ElQAK -w 10
@@ -25,7 +29,9 @@ Workbench <Load Data>
     - JSON_Action__c
         - Do NOT map out the owner field
 ```
+
 ## Export Data
+
 ```
 CHECK: Using Workbench, go to this URL
     /services/apexrest/WS_ExportData
@@ -40,7 +46,7 @@ EXPORT: Using the SFDX CLI, export the data
             # NO NEED TO REPLACE THIS >>> echo $accessToken | sed 's/!/\\!/g' | read -r session
             echo curl $instanceUrl/services/apexrest/WS_ExportData -H \"Authorization: OAuth $accessToken\" | read -r cmdExport
             eval $cmdExport | jq '.' > $jsonFile
-            cat $jsonFile 
+            cat $jsonFile
         }
     Base Curl
         curl ***instance_name***/services/apexrest/WS_ExportData -H "Authorization: OAuth ***AccessToken***" > assets/scripts/data.json
@@ -51,12 +57,15 @@ EXPORT: Using the SFDX CLI, export the data
     Full Curl
         curl https://force-dream-9371-dev-ed.cs8.my.salesforce.com/services/apexrest/WS_ExportData -H "Authorization: OAuth 00DL00000061j0H\!ARkAQHFL_Df8LQI0sw0HqXTLEOGGDLIQoZYeJGWt1.5LxXOGetlLShTL.bJRVS5L42VybMQbTBZVVygvJ.R5xtv9Xt9gYOKY" > assets/scripts/data.json
 ```
- 
+
 # FINISH THIS PROJECT... !!!
+
 I did not finish the data entry or data export tools in Lightning. I did not have time, so the only thing I was able to do was to enter the data manually. This needs to be fixed. When there is time! Maybe if this is a success, fix the data entry mode and re-use in future events.
 
 # General knowledge
+
 ## How to push when saving?
+
 ```
 https://ntotten.com/2018/01/17/using-nodemon-to-autopush-sfdx-project-changes/
 $ npm init
@@ -71,14 +80,18 @@ Edit package.json
 VS Code create a new shell
 $ npx nodemon
 ```
+
 ## Execute anonymous
+
 ```
 sfdx force:apex:execute
     System.debug('Hello');
     CTRL+D
 sfdx force:apex:execute -f assets/Apex/ExportData.txt
 ```
-**## Re-use ORG in other Computer
+
+\*\*## Re-use ORG in other Computer
+
 ```
 1. Re-login to Scratch Org to refresh token
 2. Get "Sfdx Auth Url"
@@ -88,7 +101,9 @@ sfdx force:org:display --verbose
 5. Register Org using that file
 sfdx force:auth:sfdxurl:store -s -a soDOS -f assets/SOUrl.txt**
 ```
+
 ## Some ideas for deep cloning....
+
 ```
 Map<String, List<Action__c>> actionsByEvent = WS_ExportData.getJsonData().actionsByEvent;
 Map<String, List<Action__c>> actionsByEvent2 = new Map<String, List<Action__c>>();
@@ -108,43 +123,40 @@ System.debug('DONE');
 ```
 
 ## Bookmarks on Chrome
+
     - copy "C:\Users\Admin\AppData\Local\Google\Chrome\User Data\Default\Bookmarks" bmChrome.json
 
 ## Bookmarks on Firefox
-- Needs SQLite, download here:
-    - https://www.sqlite.org/download.html
-    - https://www.sqlite.org/2018/sqlite-tools-win32-x86-3240000.zip
-- Location
-    - %APPDATA%\Mozilla\Firefox\Profiles\
-    - C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles
-    - C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\*.default\
-    - C:\Users\<user>\AppData\Roaming\Mozilla\Firefox\Profiles\<profile folder>\places.sqlite
-    - C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite
-- How
-    SQLite
-        - Database structure: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Database
-        - sqlite3 -header -column "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "select * from moz_bookmarks"
-        - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "select id, type, fk, parent, title from moz_bookmarks"
-        - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT a.id AS ID, a.title AS Title, b.url AS URL FROM moz_bookmarks AS b JOIN moz_places AS b ON a.fk = b.id"
-        - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.type, b.fk, b.parent, b.title, p.title, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id"
-        - sqlite3 -header -csv "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title, p.title, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id"
-        - *** sqlite3 -header -csv "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" > bmFirefox.json
-            - bTitle = Bookmark title
-            - pTitle = <HTML><HEAD><Title>....</Title></HEAD></HTML> (Do not care about this).
-        - Testing modes
-            - .mode MODE ?TABLE?     Set output mode where MODE is one of:
-                         ascii    Columns/rows delimited by 0x1F and 0x1E
-                         csv      Comma-separated values
-                         column   Left-aligned columns.  (See .width)
-                         html     HTML <table> code
-                         insert   SQL insert statements for TABLE
-                         line     One value per line
-                         list     Values delimited by "|"
-                         quote    Escape answers as for SQL
-                         tabs     Tab-separated values
-                         tcl      TCL list elements
-            - *** sqlite3 -header -line "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" > bmFF_LINE.txt
-            - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id"
 
+-   Needs SQLite, download here:
+    -   https://www.sqlite.org/download.html
+    -   https://www.sqlite.org/2018/sqlite-tools-win32-x86-3240000.zip
+-   Location
+    -   %APPDATA%\Mozilla\Firefox\Profiles\
+    -   C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles
+    -   C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\*.default\
+    -   C:\Users\<user>\AppData\Roaming\Mozilla\Firefox\Profiles\<profile folder>\places.sqlite
+    -   C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite
+-   How
+    SQLite - Database structure: https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Database - sqlite3 -header -column "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "select \* from moz_bookmarks" - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "select id, type, fk, parent, title from moz_bookmarks" - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT a.id AS ID, a.title AS Title, b.url AS URL FROM moz_bookmarks AS b JOIN moz_places AS b ON a.fk = b.id" - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.type, b.fk, b.parent, b.title, p.title, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" - sqlite3 -header -csv "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title, p.title, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" - **_ sqlite3 -header -csv "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" > bmFirefox.json - bTitle = Bookmark title - pTitle = <HTML><HEAD><Title>....</Title></HEAD></HTML> (Do not care about this). - Testing modes - .mode MODE ?TABLE? Set output mode where MODE is one of:
+    ascii Columns/rows delimited by 0x1F and 0x1E
+    csv Comma-separated values
+    column Left-aligned columns. (See .width)
+    html HTML <table> code
+    insert SQL insert statements for TABLE
+    line One value per line
+    list Values delimited by "|"
+    quote Escape answers as for SQL
+    tabs Tab-separated values
+    tcl TCL list elements - _** sqlite3 -header -line "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id" > bmFF_LINE.txt - sqlite3 -header "C:\Users\Admin\AppData\Roaming\Mozilla\Firefox\Profiles\ji3dkhsg.default\places.sqlite" "SELECT b.id, b.parent, b.title as bTitle, p.title as pTitle, p.url FROM moz_bookmarks AS b LEFT JOIN moz_places AS p ON b.fk = p.id"
 
+# Data
 
+-   SOQL for exporting actions related to an event. Can be used for copying actions between events.
+
+```
+SELECT Action__c, Event__c, Action__r.Order__c, Action__r.AppName__c, Event__r.Name
+FROM Event_X_Action__c
+WHERE Event__c = 'a02f000000BXgl7AAD' AND Action__r.EnabledAction__c = true
+ORDER By Action__r.Order__c
+```

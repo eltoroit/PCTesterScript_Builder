@@ -1,5 +1,5 @@
 {
-	"fetched": 149,
+	"fetched": 148,
 	"records": [
 		{
 			"attributes": {
@@ -1084,16 +1084,6 @@
 		{
 			"attributes": {
 				"type": "Event_X_Action__c",
-				"url": "/services/data/v46.0/sobjects/Event_X_Action__c/a01P00000066BxqIAE"
-			},
-			"Action__c": "a00P00000046AW3IAM",
-			"Event__c": "a02P0000005MKCtIAO",
-			"Id": "a01P00000066BxqIAE",
-			"UniqueKey__c": "a02P0000005MKCtIAO|a00P00000046AW3IAM"
-		},
-		{
-			"attributes": {
-				"type": "Event_X_Action__c",
 				"url": "/services/data/v46.0/sobjects/Event_X_Action__c/a01P00000066BxrIAE"
 			},
 			"Action__c": "a00P00000046AVUIA2",
@@ -1492,5 +1482,5 @@
 			"UniqueKey__c": "a02P0000005MKCtIAO|a00P00000046AWAIA2"
 		}
 	],
-	"total": 149
+	"total": 148
 }
