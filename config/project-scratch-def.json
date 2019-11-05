@@ -1,10 +1,12 @@
 {
-	"orgName": "Script Maker For Image Validator -- ELTORO.IT",
-	"edition": "Developer",
-	"settings": {
-		"orgPreferenceSettings": {
-			"s1DesktopEnabled": true,
-			"s1EncryptedStoragePref2": false
-		}
-	}
+  "orgName": "Script Maker For Image Validator -- ELTORO.IT",
+  "edition": "Developer",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
 }

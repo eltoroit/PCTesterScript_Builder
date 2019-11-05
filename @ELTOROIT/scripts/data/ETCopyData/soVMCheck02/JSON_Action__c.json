@@ -4,61 +4,61 @@
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a033F000003AVvRQAW"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031F000003fGBbQAM"
 			},
-			"Action__c": "a003F0000039MdWQAU",
-			"Id": "a033F000003AVvRQAW",
+			"Action__c": "a001F000007xT7WQAU",
+			"Id": "a031F000003fGBbQAM",
 			"Key__c": "production",
 			"Path__c": "pages:servers",
-			"UniqueAction__c": "a003F0000039MdWQAU",
+			"UniqueAction__c": "a001F000007xT7WQAU",
 			"Value__c": "https://et-epl.herokuapp.com"
 		},
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a033F000003AVvSQAW"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031F000003fGBcQAM"
 			},
-			"Action__c": "a003F0000039Md1QAE",
-			"Id": "a033F000003AVvSQAW",
+			"Action__c": "a001F000007xT70QAE",
+			"Id": "a031F000003fGBcQAM",
 			"Key__c": "salesforcedx-vscode-apex.java.home",
 			"Path__c": ":",
-			"UniqueAction__c": "a003F0000039Md1QAE",
+			"UniqueAction__c": "a001F000007xT70QAE",
 			"Value__c": "C:\\Program Files\\java\\jdk1.8.0_162"
 		},
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a033F000003AVvTQAW"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031F000003fGBdQAM"
 			},
-			"Action__c": "a003F0000039Md0QAE",
-			"Id": "a033F000003AVvTQAW",
+			"Action__c": "a001F000007xT6zQAE",
+			"Id": "a031F000003fGBdQAM",
 			"Key__c": "terminal.integrated.shell.windows",
 			"Path__c": ":",
-			"UniqueAction__c": "a003F0000039Md0QAE",
+			"UniqueAction__c": "a001F000007xT6zQAE",
 			"Value__c": "C:\\Program Files\\Git\\bin\\bash.exe"
 		},
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a033F000003AVvUQAW"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031F000003fGBeQAM"
 			},
-			"Action__c": "a003F0000039MdXQAU",
-			"Id": "a033F000003AVvUQAW",
+			"Action__c": "a001F000007xT7XQAU",
+			"Id": "a031F000003fGBeQAM",
 			"Key__c": "pingServer",
 			"Path__c": "pages",
-			"UniqueAction__c": "a003F0000039MdXQAU",
+			"UniqueAction__c": "a001F000007xT7XQAU",
 			"Value__c": "https://et-epl.herokuapp.com"
 		},
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a033F000003AVvVQAW"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031F000003fGBfQAM"
 			},
-			"Action__c": "a003F0000039MdYQAU",
-			"Id": "a033F000003AVvVQAW",
+			"Action__c": "a001F000007xT7YQAU",
+			"Id": "a031F000003fGBfQAM",
 			"Key__c": "version",
 			"Path__c": ":",
-			"UniqueAction__c": "a003F0000039MdYQAU",
+			"UniqueAction__c": "a001F000007xT7YQAU",
 			"Value__c": "2019-10-30V01"
 		}
 	],
