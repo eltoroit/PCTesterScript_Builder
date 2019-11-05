@@ -26,6 +26,16 @@
                 <label>Check Path</label>
             </value>
             <value>
+                <fullName>Execute</fullName>
+                <default>false</default>
+                <label>Execute</label>
+            </value>
+            <value>
+                <fullName>Execute Async</fullName>
+                <default>false</default>
+                <label>Execute Async</label>
+            </value>
+            <value>
                 <fullName>Bookmark</fullName>
                 <default>false</default>
                 <label>Bookmark</label>

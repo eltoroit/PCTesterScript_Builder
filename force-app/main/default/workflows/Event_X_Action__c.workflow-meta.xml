@@ -3,7 +3,7 @@
     <fieldUpdates>
         <fullName>Generate_Unique_Key</fullName>
         <field>UniqueKey__c</field>
-        <formula>CASESAFEID(Event__c) &amp; "|" &amp; CASESAFEID(Action__c)</formula>
+        <formula>CASESAFEID(Event__c) &amp; &quot;|&quot; &amp; CASESAFEID(Action__c)</formula>
         <name>Generate Unique Key</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
