@@ -1,5 +1,5 @@
 {
-  "now": "2019-11-05T23:26:03.666Z",
+  "now": "2019-11-05T23:34:27.781Z",
   "events": [
     {
       "attributes": {
@@ -62,6 +62,22 @@
         "Operation__c": "Check Contains",
         "Order__c": 55,
         "Count_Events__c": 1
+      },
+      {
+        "attributes": {
+          "type": "Action__c",
+          "url": "/services/data/v42.0/sobjects/Action__c/a001F000007xT7PQAU"
+        },
+        "Id": "a001F000007xT7PQAU",
+        "Name": "ACT-0062",
+        "AppName__c": "ETEPL - Kill App",
+        "Command__c": "TASKKILL  /F /IM \"ETTrailheadTester.exe\"",
+        "EnabledAction__c": true,
+        "ErrorMessage__c": "Could not validate: ETEPL - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\PCTesterScript\\copy\\src\" \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
+        "Message__c": "Validating: ETEPL - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\PCTesterScript\\copy\\src\" \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
+        "Operation__c": "Execute",
+        "Order__c": 63,
+        "Count_Events__c": 2
       }
     ],
     "a021F000003PVJ3QAO": [
@@ -929,7 +945,7 @@
         "Message__c": "Validating: ETEPL - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\PCTesterScript\\copy\\src\" \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
         "Operation__c": "Execute",
         "Order__c": 63,
-        "Count_Events__c": 1
+        "Count_Events__c": 2
       },
       {
         "attributes": {
@@ -1100,23 +1116,6 @@
       {
         "attributes": {
           "type": "Action__c",
-          "url": "/services/data/v42.0/sobjects/Action__c/a001F000007xT7ZQAU"
-        },
-        "Id": "a001F000007xT7ZQAU",
-        "Name": "ACT-0072",
-        "AppName__c": "ETEPL - Event Proctor Login",
-        "Command__c": "\"C:\\TH\\ETTrailheadTester\\ETTrailheadTester.exe\"",
-        "EnabledAction__c": true,
-        "ErrorMessage__c": "Unable to open application: \"ETEPL - Event Proctor Login\"",
-        "Expected__c": "Application runs with no errors",
-        "Message__c": "Opening Application: \"ETEPL - Event Proctor Login\". Was this succesful?",
-        "Operation__c": "Open Application",
-        "Order__c": 72,
-        "Count_Events__c": 1
-      },
-      {
-        "attributes": {
-          "type": "Action__c",
           "url": "/services/data/v42.0/sobjects/Action__c/a001F000007xT7YQAU"
         },
         "Id": "a001F000007xT7YQAU",
@@ -1126,7 +1125,7 @@
         "EnabledAction__c": true,
         "Expected__c": "JSON CHECK",
         "Operation__c": "JSON File - Check",
-        "Order__c": 73,
+        "Order__c": 72,
         "Count_Events__c": 1,
         "JSON_Actions__r": {
           "totalSize": 1,
@@ -1143,10 +1142,27 @@
               "Key__c": "version",
               "Path__c": ":",
               "UniqueAction__c": "a001F000007xT7YQAU",
-              "Value__c": "2019-10-30V01"
+              "Value__c": "2019-11-05V01"
             }
           ]
         }
+      },
+      {
+        "attributes": {
+          "type": "Action__c",
+          "url": "/services/data/v42.0/sobjects/Action__c/a001F000007xT7ZQAU"
+        },
+        "Id": "a001F000007xT7ZQAU",
+        "Name": "ACT-0072",
+        "AppName__c": "ETEPL - Event Proctor Login",
+        "Command__c": "\"C:\\TH\\ETTrailheadTester\\ETTrailheadTester.exe\"",
+        "EnabledAction__c": true,
+        "ErrorMessage__c": "Unable to open application: \"ETEPL - Event Proctor Login\"",
+        "Expected__c": "Application runs with no errors",
+        "Message__c": "Opening Application: \"ETEPL - Event Proctor Login\". Was this succesful?",
+        "Operation__c": "Open Application",
+        "Order__c": 73,
+        "Count_Events__c": 1
       }
     ]
   }
