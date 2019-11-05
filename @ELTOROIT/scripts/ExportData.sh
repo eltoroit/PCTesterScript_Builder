@@ -28,14 +28,14 @@ sfdx force:user:display --json | jq -r '.result | .instanceUrl, .accessToken' | 
 # Copy files to updte repository
 echo "--- --- --- Please wait (3/5): Copying files to runtime folder"
 rm -f _OriginalScripts/Errors-*.json
-cp _OriginalScripts/* ../PCTesterScript
+cp -R _OriginalScripts/* ../PCTesterScript
 rm ../PCTesterScript/bmPretend.json
 echo "--- Scripts generated..."
 
 # Push to GitHub
 echo "--- --- --- Please wait (4/5): Push to GitHub"
 cd ../PCTesterScript
-./push.bat
+./pushFilesToGit.sh
 
 # Export for Backup
 echo "--- --- --- Please wait (5/5): Export data"
