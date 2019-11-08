@@ -17,4 +17,4 @@ sfdx force:user:permset:assign -n Script_Maker
 # sfdx force:apex:execute -f EXFiles/data/CreateUsers.txt
 echo "*** Creating data using ETCopyData plugin"
 # sfdx ETCopyData:export -c './@ELTOROIT/scripts/data'
-sfdx ETCopyData:import -c './@ELTOROIT/scripts/data' --loglevel warn
+sfdx ETCopyData:import -c './@ELTOROIT/scripts/data' --loglevel trace
