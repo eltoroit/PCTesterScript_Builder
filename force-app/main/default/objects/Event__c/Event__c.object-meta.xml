@@ -160,7 +160,7 @@
         <label>Event Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Events</pluralLabel>
+    <pluralLabel>Trailhead Events</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

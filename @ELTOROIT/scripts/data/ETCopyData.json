@@ -1,14 +1,48 @@
 {
-    "now": "2019-11-11T21:39:00.609Z",
-    "orgSource": "soVMCheck02",
-    "orgDestination": "soVMCheck02",
-    "sObjectsData": [],
-    "sObjectsMetadata": [],
-    "rootFolder": "ETCopyData",
-    "includeAllCustom": true,
-    "stopOnErrors": true,
-    "ignoreFields": "OwnerId, CreatedBy, CreatedDate, CurrencyIsoCode",
-    "maxRecordsEach": null,
-    "deleteDestination": true,
-    "pollingTimeout": 120000
+	"now": "2019-11-14T00:17:52.769Z",
+	"orgSource": "soVMCheck02",
+	"orgDestination": "soVMCheck02",
+	"sObjectsData": [
+		{
+			"name": "Action__c",
+			"ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
+			"maxRecords": -1,
+			"orderBy": null,
+			"twoPassReferenceFields": "Trailhead_Event__c",
+			"where": null
+		},
+		{
+			"name": "Event_X_Action__c",
+			"ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
+			"maxRecords": -1,
+			"orderBy": null,
+			"twoPassReferenceFields": "",
+			"where": null
+		},
+		{
+			"name": "Event__c",
+			"ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
+			"maxRecords": -1,
+			"orderBy": null,
+			"twoPassReferenceFields": "",
+			"where": null
+		},
+		{
+			"name": "JSON_Action__c",
+			"ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
+			"maxRecords": -1,
+			"orderBy": null,
+			"twoPassReferenceFields": "",
+			"where": null
+		}
+	],
+	"sObjectsMetadata": [],
+	"rootFolder": "ETCopyData",
+	"includeAllCustom": true,
+	"stopOnErrors": true,
+	"ignoreFields": "OwnerId, CreatedBy, CreatedDate, CurrencyIsoCode",
+	"twoPassReferenceFields": null,
+	"maxRecordsEach": null,
+	"deleteDestination": true,
+	"pollingTimeout": 120000
 }

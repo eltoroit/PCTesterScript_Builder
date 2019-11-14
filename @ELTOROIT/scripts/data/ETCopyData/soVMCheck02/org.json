@@ -1,5 +1,5 @@
 {
-	"now": "2019-11-11T21:39:03.586Z",
+	"now": "2019-11-14T00:17:56.416Z",
 	"alias": "soVMCheck02",
 	"importOrder": [
 		"Action__c",
@@ -40,6 +40,7 @@
 			"name": "Action__c",
 			"orderBy": null,
 			"parents": [],
+			"twoPassParents": [],
 			"parentsRequired": []
 		},
 		"Event_X_Action__c": {
@@ -65,6 +66,7 @@
 					"sObj": "Event__c"
 				}
 			],
+			"twoPassParents": [],
 			"parentsRequired": []
 		},
 		"Event__c": {
@@ -87,6 +89,7 @@
 			"name": "Event__c",
 			"orderBy": null,
 			"parents": [],
+			"twoPassParents": [],
 			"parentsRequired": []
 		},
 		"JSON_Action__c": {
@@ -110,6 +113,7 @@
 					"sObj": "Action__c"
 				}
 			],
+			"twoPassParents": [],
 			"parentsRequired": []
 		}
 	},
@@ -865,6 +869,97 @@
 	},
 	"rejected": {
 		"ADD_FIELD": {
+			"Event_X_Action__c.IsDeleted": [
+				"Must be createable"
+			],
+			"Event_X_Action__c.Name": [
+				"Can't be autoNumber",
+				"Must be createable"
+			],
+			"Event_X_Action__c.CreatedDate": [
+				"User asked for this field to be excluded",
+				"Must be createable"
+			],
+			"Event_X_Action__c.CreatedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Event_X_Action__c.LastModifiedDate": [
+				"Must be createable"
+			],
+			"Event_X_Action__c.LastModifiedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Event_X_Action__c.SystemModstamp": [
+				"Must be createable"
+			],
+			"Event_X_Action__c.ActiveEvent__c": [
+				"Can't be calculated",
+				"Must be createable"
+			],
+			"Event__c.OwnerId": [
+				"User asked for this field to be excluded",
+				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
+			],
+			"Event__c.IsDeleted": [
+				"Must be createable"
+			],
+			"Event__c.CreatedDate": [
+				"User asked for this field to be excluded",
+				"Must be createable"
+			],
+			"Event__c.CreatedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Event__c.LastModifiedDate": [
+				"Must be createable"
+			],
+			"Event__c.LastModifiedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Event__c.SystemModstamp": [
+				"Must be createable"
+			],
+			"Event__c.LastViewedDate": [
+				"Must be createable"
+			],
+			"Event__c.LastReferencedDate": [
+				"Must be createable"
+			],
+			"JSON_Action__c.IsDeleted": [
+				"Must be createable"
+			],
+			"JSON_Action__c.Name": [
+				"Can't be autoNumber",
+				"Must be createable"
+			],
+			"JSON_Action__c.CreatedDate": [
+				"User asked for this field to be excluded",
+				"Must be createable"
+			],
+			"JSON_Action__c.CreatedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"JSON_Action__c.LastModifiedDate": [
+				"Must be createable"
+			],
+			"JSON_Action__c.LastModifiedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"JSON_Action__c.SystemModstamp": [
+				"Must be createable"
+			],
+			"JSON_Action__c.LastViewedDate": [
+				"Must be createable"
+			],
+			"JSON_Action__c.LastReferencedDate": [
+				"Must be createable"
+			],
 			"Action__c.OwnerId": [
 				"User asked for this field to be excluded",
 				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
@@ -903,167 +998,76 @@
 			"Action__c.Count_Events__c": [
 				"Can't be calculated",
 				"Must be createable"
-			],
-			"Event__c.OwnerId": [
-				"User asked for this field to be excluded",
-				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
-			],
-			"Event__c.IsDeleted": [
-				"Must be createable"
-			],
-			"Event__c.CreatedDate": [
-				"User asked for this field to be excluded",
-				"Must be createable"
-			],
-			"Event__c.CreatedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"Event__c.LastModifiedDate": [
-				"Must be createable"
-			],
-			"Event__c.LastModifiedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"Event__c.SystemModstamp": [
-				"Must be createable"
-			],
-			"Event__c.LastViewedDate": [
-				"Must be createable"
-			],
-			"Event__c.LastReferencedDate": [
-				"Must be createable"
-			],
-			"Event_X_Action__c.IsDeleted": [
-				"Must be createable"
-			],
-			"Event_X_Action__c.Name": [
-				"Can't be autoNumber",
-				"Must be createable"
-			],
-			"Event_X_Action__c.CreatedDate": [
-				"User asked for this field to be excluded",
-				"Must be createable"
-			],
-			"Event_X_Action__c.CreatedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"Event_X_Action__c.LastModifiedDate": [
-				"Must be createable"
-			],
-			"Event_X_Action__c.LastModifiedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"Event_X_Action__c.SystemModstamp": [
-				"Must be createable"
-			],
-			"Event_X_Action__c.ActiveEvent__c": [
-				"Can't be calculated",
-				"Must be createable"
-			],
-			"JSON_Action__c.IsDeleted": [
-				"Must be createable"
-			],
-			"JSON_Action__c.Name": [
-				"Can't be autoNumber",
-				"Must be createable"
-			],
-			"JSON_Action__c.CreatedDate": [
-				"User asked for this field to be excluded",
-				"Must be createable"
-			],
-			"JSON_Action__c.CreatedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"JSON_Action__c.LastModifiedDate": [
-				"Must be createable"
-			],
-			"JSON_Action__c.LastModifiedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"JSON_Action__c.SystemModstamp": [
-				"Must be createable"
-			],
-			"JSON_Action__c.LastViewedDate": [
-				"Must be createable"
-			],
-			"JSON_Action__c.LastReferencedDate": [
-				"Must be createable"
 			]
 		},
 		"ADD_CHILD": {
-			"Action__c.AttachedContentDocuments => AttachedContentDocument": [
+			"Event_X_Action__c.AttachedContentDocuments => AttachedContentDocument": [
 				"Child sObject [AttachedContentDocument] is not processed"
 			],
-			"Action__c.Attachments => Attachment": [
+			"Event_X_Action__c.Attachments => Attachment": [
 				"Child sObject [Attachment] is not processed"
 			],
-			"Action__c.RecordAssociatedGroups => CollaborationGroupRecord": [
+			"Event_X_Action__c.RecordAssociatedGroups => CollaborationGroupRecord": [
 				"Child sObject [CollaborationGroupRecord] is not processed"
 			],
-			"Action__c.CombinedAttachments => CombinedAttachment": [
+			"Event_X_Action__c.CombinedAttachments => CombinedAttachment": [
 				"Child sObject [CombinedAttachment] is not processed"
 			],
-			"Action__c.ContactRequests => ContactRequest": [
+			"Event_X_Action__c.ContactRequests => ContactRequest": [
 				"Child sObject [ContactRequest] is not processed"
 			],
-			"Action__c.null => ContentDistribution": [
+			"Event_X_Action__c.null => ContentDistribution": [
 				"Child sObject [ContentDistribution] is not processed"
 			],
-			"Action__c.ContentDocumentLinks => ContentDocumentLink": [
+			"Event_X_Action__c.ContentDocumentLinks => ContentDocumentLink": [
 				"Child sObject [ContentDocumentLink] is not processed"
 			],
-			"Action__c.null => ContentVersion": [
+			"Event_X_Action__c.null => ContentVersion": [
 				"Child sObject [ContentVersion] is not processed"
 			],
-			"Action__c.DuplicateRecordItems => DuplicateRecordItem": [
+			"Event_X_Action__c.DuplicateRecordItems => DuplicateRecordItem": [
 				"Child sObject [DuplicateRecordItem] is not processed"
 			],
-			"Action__c.FeedSubscriptionsForEntity => EntitySubscription": [
+			"Event_X_Action__c.FeedSubscriptionsForEntity => EntitySubscription": [
 				"Child sObject [EntitySubscription] is not processed"
 			],
-			"Action__c.null => EventChangeEvent": [
+			"Event_X_Action__c.null => EventChangeEvent": [
 				"Child sObject [EventChangeEvent] is not processed"
 			],
-			"Action__c.null => EventRelationChangeEvent": [
+			"Event_X_Action__c.null => EventRelationChangeEvent": [
 				"Child sObject [EventRelationChangeEvent] is not processed"
 			],
-			"Action__c.null => FeedComment": [
+			"Event_X_Action__c.null => FeedComment": [
 				"Child sObject [FeedComment] is not processed"
 			],
-			"Action__c.null => FeedItem": [
+			"Event_X_Action__c.null => FeedItem": [
 				"Child sObject [FeedItem] is not processed"
 			],
-			"Action__c.null => FlowRecordRelation": [
+			"Event_X_Action__c.null => FlowRecordRelation": [
 				"Child sObject [FlowRecordRelation] is not processed"
 			],
-			"Action__c.Notes => Note": [
+			"Event_X_Action__c.Notes => Note": [
 				"Child sObject [Note] is not processed"
 			],
-			"Action__c.NotesAndAttachments => NoteAndAttachment": [
+			"Event_X_Action__c.NotesAndAttachments => NoteAndAttachment": [
 				"Child sObject [NoteAndAttachment] is not processed"
 			],
-			"Action__c.ProcessInstances => ProcessInstance": [
+			"Event_X_Action__c.ProcessInstances => ProcessInstance": [
 				"Child sObject [ProcessInstance] is not processed"
 			],
-			"Action__c.ProcessSteps => ProcessInstanceHistory": [
+			"Event_X_Action__c.ProcessSteps => ProcessInstanceHistory": [
 				"Child sObject [ProcessInstanceHistory] is not processed"
 			],
-			"Action__c.RecordActions => RecordAction": [
+			"Event_X_Action__c.RecordActions => RecordAction": [
 				"Child sObject [RecordAction] is not processed"
 			],
-			"Action__c.RecordActionHistories => RecordActionHistory": [
+			"Event_X_Action__c.RecordActionHistories => RecordActionHistory": [
 				"Child sObject [RecordActionHistory] is not processed"
 			],
-			"Action__c.null => TaskChangeEvent": [
+			"Event_X_Action__c.null => TaskChangeEvent": [
 				"Child sObject [TaskChangeEvent] is not processed"
 			],
-			"Action__c.TopicAssignments => TopicAssignment": [
+			"Event_X_Action__c.TopicAssignments => TopicAssignment": [
 				"Child sObject [TopicAssignment] is not processed"
 			],
 			"Event__c.AttachedContentDocuments => AttachedContentDocument": [
@@ -1135,75 +1139,6 @@
 			"Event__c.TopicAssignments => TopicAssignment": [
 				"Child sObject [TopicAssignment] is not processed"
 			],
-			"Event_X_Action__c.AttachedContentDocuments => AttachedContentDocument": [
-				"Child sObject [AttachedContentDocument] is not processed"
-			],
-			"Event_X_Action__c.Attachments => Attachment": [
-				"Child sObject [Attachment] is not processed"
-			],
-			"Event_X_Action__c.RecordAssociatedGroups => CollaborationGroupRecord": [
-				"Child sObject [CollaborationGroupRecord] is not processed"
-			],
-			"Event_X_Action__c.CombinedAttachments => CombinedAttachment": [
-				"Child sObject [CombinedAttachment] is not processed"
-			],
-			"Event_X_Action__c.ContactRequests => ContactRequest": [
-				"Child sObject [ContactRequest] is not processed"
-			],
-			"Event_X_Action__c.null => ContentDistribution": [
-				"Child sObject [ContentDistribution] is not processed"
-			],
-			"Event_X_Action__c.ContentDocumentLinks => ContentDocumentLink": [
-				"Child sObject [ContentDocumentLink] is not processed"
-			],
-			"Event_X_Action__c.null => ContentVersion": [
-				"Child sObject [ContentVersion] is not processed"
-			],
-			"Event_X_Action__c.DuplicateRecordItems => DuplicateRecordItem": [
-				"Child sObject [DuplicateRecordItem] is not processed"
-			],
-			"Event_X_Action__c.FeedSubscriptionsForEntity => EntitySubscription": [
-				"Child sObject [EntitySubscription] is not processed"
-			],
-			"Event_X_Action__c.null => EventChangeEvent": [
-				"Child sObject [EventChangeEvent] is not processed"
-			],
-			"Event_X_Action__c.null => EventRelationChangeEvent": [
-				"Child sObject [EventRelationChangeEvent] is not processed"
-			],
-			"Event_X_Action__c.null => FeedComment": [
-				"Child sObject [FeedComment] is not processed"
-			],
-			"Event_X_Action__c.null => FeedItem": [
-				"Child sObject [FeedItem] is not processed"
-			],
-			"Event_X_Action__c.null => FlowRecordRelation": [
-				"Child sObject [FlowRecordRelation] is not processed"
-			],
-			"Event_X_Action__c.Notes => Note": [
-				"Child sObject [Note] is not processed"
-			],
-			"Event_X_Action__c.NotesAndAttachments => NoteAndAttachment": [
-				"Child sObject [NoteAndAttachment] is not processed"
-			],
-			"Event_X_Action__c.ProcessInstances => ProcessInstance": [
-				"Child sObject [ProcessInstance] is not processed"
-			],
-			"Event_X_Action__c.ProcessSteps => ProcessInstanceHistory": [
-				"Child sObject [ProcessInstanceHistory] is not processed"
-			],
-			"Event_X_Action__c.RecordActions => RecordAction": [
-				"Child sObject [RecordAction] is not processed"
-			],
-			"Event_X_Action__c.RecordActionHistories => RecordActionHistory": [
-				"Child sObject [RecordActionHistory] is not processed"
-			],
-			"Event_X_Action__c.null => TaskChangeEvent": [
-				"Child sObject [TaskChangeEvent] is not processed"
-			],
-			"Event_X_Action__c.TopicAssignments => TopicAssignment": [
-				"Child sObject [TopicAssignment] is not processed"
-			],
 			"JSON_Action__c.AttachedContentDocuments => AttachedContentDocument": [
 				"Child sObject [AttachedContentDocument] is not processed"
 			],
@@ -1272,6 +1207,75 @@
 			],
 			"JSON_Action__c.TopicAssignments => TopicAssignment": [
 				"Child sObject [TopicAssignment] is not processed"
+			],
+			"Action__c.AttachedContentDocuments => AttachedContentDocument": [
+				"Child sObject [AttachedContentDocument] is not processed"
+			],
+			"Action__c.Attachments => Attachment": [
+				"Child sObject [Attachment] is not processed"
+			],
+			"Action__c.RecordAssociatedGroups => CollaborationGroupRecord": [
+				"Child sObject [CollaborationGroupRecord] is not processed"
+			],
+			"Action__c.CombinedAttachments => CombinedAttachment": [
+				"Child sObject [CombinedAttachment] is not processed"
+			],
+			"Action__c.ContactRequests => ContactRequest": [
+				"Child sObject [ContactRequest] is not processed"
+			],
+			"Action__c.null => ContentDistribution": [
+				"Child sObject [ContentDistribution] is not processed"
+			],
+			"Action__c.ContentDocumentLinks => ContentDocumentLink": [
+				"Child sObject [ContentDocumentLink] is not processed"
+			],
+			"Action__c.null => ContentVersion": [
+				"Child sObject [ContentVersion] is not processed"
+			],
+			"Action__c.DuplicateRecordItems => DuplicateRecordItem": [
+				"Child sObject [DuplicateRecordItem] is not processed"
+			],
+			"Action__c.FeedSubscriptionsForEntity => EntitySubscription": [
+				"Child sObject [EntitySubscription] is not processed"
+			],
+			"Action__c.null => EventChangeEvent": [
+				"Child sObject [EventChangeEvent] is not processed"
+			],
+			"Action__c.null => EventRelationChangeEvent": [
+				"Child sObject [EventRelationChangeEvent] is not processed"
+			],
+			"Action__c.null => FeedComment": [
+				"Child sObject [FeedComment] is not processed"
+			],
+			"Action__c.null => FeedItem": [
+				"Child sObject [FeedItem] is not processed"
+			],
+			"Action__c.null => FlowRecordRelation": [
+				"Child sObject [FlowRecordRelation] is not processed"
+			],
+			"Action__c.Notes => Note": [
+				"Child sObject [Note] is not processed"
+			],
+			"Action__c.NotesAndAttachments => NoteAndAttachment": [
+				"Child sObject [NoteAndAttachment] is not processed"
+			],
+			"Action__c.ProcessInstances => ProcessInstance": [
+				"Child sObject [ProcessInstance] is not processed"
+			],
+			"Action__c.ProcessSteps => ProcessInstanceHistory": [
+				"Child sObject [ProcessInstanceHistory] is not processed"
+			],
+			"Action__c.RecordActions => RecordAction": [
+				"Child sObject [RecordAction] is not processed"
+			],
+			"Action__c.RecordActionHistories => RecordActionHistory": [
+				"Child sObject [RecordActionHistory] is not processed"
+			],
+			"Action__c.null => TaskChangeEvent": [
+				"Child sObject [TaskChangeEvent] is not processed"
+			],
+			"Action__c.TopicAssignments => TopicAssignment": [
+				"Child sObject [TopicAssignment] is not processed"
 			]
 		},
 		"ADD_SOBJECT": {
@@ -1279,8 +1283,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1292,21 +1294,15 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AccountCleanInfo": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AccountContactRole": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AccountContactRoleChangeEvent": [
@@ -1314,30 +1310,22 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AccountFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AccountHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AccountPartner": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1345,21 +1333,15 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ActionLinkGroupTemplate": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ActionLinkTemplate": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Action__ChangeEvent": [
@@ -1367,8 +1349,6 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1378,13 +1358,10 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AdditionalNumber": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"Address": [
@@ -1396,39 +1373,29 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Announcement": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ApexClass": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApexComponent": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApexEmailNotification": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApexLog": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ApexPage": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApexPageInfo": [
@@ -1436,44 +1403,31 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ApexTestQueueItem": [
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApexTestResult": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApexTestResultLimits": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApexTestRunResult": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApexTestSuite": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApexTrigger": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ApiEvent": [
@@ -1481,8 +1435,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1492,13 +1444,10 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AppAnalyticsQueryRequest": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"AppDefinition": [
@@ -1506,22 +1455,16 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AppExtension": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AppMenuItem": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AppTabMember": [
@@ -1529,8 +1472,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1538,8 +1479,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1551,23 +1490,17 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AssetFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AssetHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1576,16 +1509,12 @@
 			],
 			"AssetRelationshipFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AssetRelationshipHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1593,8 +1522,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1604,19 +1531,14 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AssignedResource": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"AssignedResourceFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1624,19 +1546,15 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AssociatedLocation": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"AssociatedLocationHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1644,8 +1562,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1655,8 +1571,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1666,8 +1580,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1677,8 +1589,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1687,14 +1597,10 @@
 			],
 			"AuraDefinition": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AuraDefinitionBundle": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AuraDefinitionBundleInfo": [
@@ -1702,8 +1608,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1712,8 +1616,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1721,8 +1623,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1730,22 +1630,16 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AuthProvider": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AuthSession": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1760,23 +1654,17 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AuthorizationFormConsentHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AuthorizationFormConsentShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AuthorizationFormDataUse": [
@@ -1785,29 +1673,21 @@
 			"AuthorizationFormDataUseHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AuthorizationFormDataUseShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AuthorizationFormHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"AuthorizationFormShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"AuthorizationFormText": [
@@ -1816,16 +1696,12 @@
 			"AuthorizationFormTextHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"BackgroundOperation": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1835,51 +1711,37 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"BrandTemplate": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"BrandingSet": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"BrandingSetProperty": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"BusinessHours": [
 				"Must be deletable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"BusinessProcess": [
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Calendar": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CallCenter": [
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1891,29 +1753,21 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CampaignFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CampaignHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CampaignMember": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CampaignMemberChangeEvent": [
@@ -1921,14 +1775,10 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CampaignMemberStatus": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CampaignMemberStatusChangeEvent": [
@@ -1936,8 +1786,6 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1945,8 +1793,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1958,8 +1804,6 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1967,22 +1811,16 @@
 				"Was Not requested"
 			],
 			"CaseContactRole": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CaseFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CaseHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -1990,14 +1828,10 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CaseSolution": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2005,107 +1839,73 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CaseTeamMember": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CaseTeamRole": [
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CaseTeamTemplate": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CaseTeamTemplateMember": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CaseTeamTemplateRecord": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CategoryData": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CategoryNode": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ChatterActivity": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ChatterExtension": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ChatterExtensionConfig": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ClientBrowser": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CollaborationGroup": [
 				"Must be replicateable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CollaborationGroupFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CollaborationGroupMember": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CollaborationGroupMemberRequest": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CollaborationGroupRecord": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"CollaborationInvitation": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2114,8 +1914,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2125,8 +1923,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2134,8 +1930,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2143,21 +1937,15 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ConsumptionRate": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ConsumptionRateHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2166,23 +1954,17 @@
 			],
 			"ConsumptionScheduleFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ConsumptionScheduleHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ConsumptionScheduleShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Contact": [
@@ -2193,30 +1975,22 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContactCleanInfo": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContactFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContactHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2228,48 +2002,35 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContactPointTypeConsentHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContactPointTypeConsentShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContactRequest": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ContactRequestShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContactShare": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentAsset": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContentBody": [
@@ -2278,21 +2039,16 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentDistribution": [
 				"Must be replicateable",
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ContentDistributionView": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContentDocument": [
@@ -2302,43 +2058,32 @@
 			],
 			"ContentDocumentFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentDocumentHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentDocumentLink": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContentDocumentSubscription": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentFolder": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ContentFolderItem": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2346,16 +2091,12 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentFolderMember": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContentHubItem": [
@@ -2363,7 +2104,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2371,94 +2111,69 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentNotification": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentTagSubscription": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentUserSubscription": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentVersion": [
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContentVersionComment": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentVersionHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentVersionRating": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContentWorkspace": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContentWorkspaceDoc": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContentWorkspaceMember": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContentWorkspacePermission": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContentWorkspaceSubscription": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2470,28 +2185,20 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContractContactRole": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ContractFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ContractHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2499,23 +2206,17 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CorsWhitelistEntry": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CronJobDetail": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2523,63 +2224,45 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CspTrustedSite": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CustomBrand": [
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CustomBrandAsset": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CustomHelpMenuItem": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CustomHelpMenuSection": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CustomHttpHeader": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"CustomNotificationType": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"CustomObjectUserLicenseMetrics": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2587,8 +2270,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2596,8 +2277,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2608,7 +2287,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2616,46 +2294,34 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DashboardComponentFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DashboardFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DataAssessmentFieldMetric": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DataAssessmentMetric": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DataAssessmentValueMetric": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2664,8 +2330,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2674,8 +2338,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2685,15 +2347,11 @@
 			"DataUseLegalBasisHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DataUseLegalBasisShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"DataUsePurpose": [
@@ -2702,15 +2360,11 @@
 			"DataUsePurposeHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DataUsePurposeShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"DatacloudAddress": [
@@ -2718,8 +2372,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2728,8 +2380,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2738,8 +2388,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2748,24 +2396,18 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DatacloudOwnedEntity": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DatacloudPurchaseUsage": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2773,8 +2415,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2784,8 +2424,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2793,8 +2431,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2802,13 +2438,10 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DigitalSignature": [
-				"Must be searchable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2818,16 +2451,12 @@
 			"DocumentAttachmentMap": [
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Domain": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2835,67 +2464,48 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"DuplicateRecordItem": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"DuplicateRecordSet": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"DuplicateRule": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"EmailCapture": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"EmailDomainFilter": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"EmailDomainKey": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"EmailMessage": [
 				"Was Not requested"
 			],
 			"EmailMessageRelation": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"EmailRelay": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"EmailServicesAddress": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"EmailServicesFunction": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"EmailStatus": [
@@ -2904,13 +2514,10 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"EmailTemplate": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"EmbeddedServiceDetail": [
@@ -2918,8 +2525,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2928,8 +2533,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2938,8 +2541,6 @@
 			],
 			"EnhancedLetterheadFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2948,7 +2549,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2957,14 +2557,10 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"EntitySubscription": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2976,8 +2572,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -2986,15 +2580,11 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"EventFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3002,14 +2592,10 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"EventRelation": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"EventRelationChangeEvent": [
@@ -3017,8 +2603,6 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3027,8 +2611,6 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3037,54 +2619,40 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ExpressionFilter": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ExpressionFilterCriteria": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ExternalDataSource": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ExternalDataUserAuth": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"FeedAttachment": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"FeedComment": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"FeedItem": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"FeedLike": [
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3092,8 +2660,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3101,16 +2667,12 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"FeedRevision": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3118,8 +2680,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3129,8 +2689,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3139,44 +2697,33 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"FieldPermissions": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"FieldSecurityClassification": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"FieldServiceMobileSettings": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"FileSearchActivity": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"FiscalYearSettings": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3185,8 +2732,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3195,8 +2740,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3206,31 +2749,23 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"FlowInterview": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"FlowInterviewShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"FlowRecordRelation": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"FlowStageRelation": [
 				"Must be createable",
-				"Must be searchable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3239,8 +2774,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3249,13 +2782,10 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Folder": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"FolderedContentDocument": [
@@ -3264,8 +2794,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3273,15 +2801,11 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ForecastingShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"FormulaFunction": [
@@ -3289,8 +2813,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3299,8 +2821,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3308,24 +2828,17 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Group": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"GroupMember": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Holiday": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"IconDefinition": [
@@ -3333,8 +2846,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3349,8 +2860,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3358,15 +2867,11 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"IframeWhiteListUrl": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Image": [
@@ -3374,8 +2879,6 @@
 			],
 			"ImageShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Individual": [
@@ -3386,30 +2889,22 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"IndividualHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"IndividualShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"InstalledMobileApp": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3419,8 +2914,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3429,8 +2922,6 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3439,31 +2930,23 @@
 			],
 			"JobProfileFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"JobProfileHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"JobProfileShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"KnowledgeableUser": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3475,30 +2958,22 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"LeadCleanInfo": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"LeadFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"LeadHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3506,8 +2981,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3515,21 +2988,15 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"LightningExperienceTheme": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"LightningOnboardingConfig": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"LightningUriEvent": [
@@ -3537,8 +3004,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3548,8 +3013,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3561,37 +3024,28 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ListEmailIndividualRecipient": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ListEmailRecipientSource": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ListEmailShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ListView": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ListViewChart": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ListViewChartInstance": [
@@ -3599,8 +3053,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3609,8 +3061,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3620,8 +3070,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3630,23 +3078,17 @@
 			],
 			"LocationFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"LocationHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"LocationShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"LoginAsEvent": [
@@ -3654,8 +3096,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3665,8 +3105,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3675,8 +3113,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3686,8 +3122,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3695,8 +3129,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3704,16 +3136,12 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"LoginIp": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3722,8 +3150,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3733,8 +3159,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3744,8 +3168,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3755,55 +3177,40 @@
 			"MacroHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"MacroInstruction": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"MacroShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"MacroUsage": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"MacroUsageShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"MailmergeTemplate": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"MaintenanceAsset": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"MaintenanceAssetFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"MaintenanceAssetHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3812,31 +3219,23 @@
 			],
 			"MaintenancePlanFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"MaintenancePlanHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"MaintenancePlanShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"MatchingRule": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3844,34 +3243,24 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"MobileApplicationDetail": [
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"MobileSettingsAssignment": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"MutingPermissionSet": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"MyDomainDiscoverableLogin": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Name": [
@@ -3880,8 +3269,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3889,8 +3276,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3903,15 +3288,11 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OauthCustomScope": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"OauthToken": [
@@ -3919,21 +3300,15 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ObjectPermissions": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"OnboardingMetrics": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"OpenActivity": [
@@ -3942,8 +3317,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3952,8 +3325,6 @@
 			],
 			"OperatingHoursFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -3965,19 +3336,13 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OpportunityCompetitor": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"OpportunityContactRole": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"OpportunityContactRoleChangeEvent": [
@@ -3985,43 +3350,31 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OpportunityFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OpportunityFieldHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OpportunityHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OpportunityLineItem": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"OpportunityPartner": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4029,8 +3382,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4038,8 +3389,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4051,29 +3400,21 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OrderFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OrderHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OrderItem": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"OrderItemChangeEvent": [
@@ -4081,23 +3422,17 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OrderItemFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OrderItemHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4105,8 +3440,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4114,8 +3447,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4125,29 +3456,21 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"OrgWideEmailAddress": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Organization": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"OutgoingEmail": [
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4155,8 +3478,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4166,8 +3487,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4176,8 +3495,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4185,14 +3502,10 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Partner": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4200,41 +3513,30 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Period": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"PermissionSet": [
 				"Must be replicateable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"PermissionSetAssignment": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"PermissionSetGroup": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"PermissionSetGroupComponent": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4242,22 +3544,16 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"PermissionSetLicenseAssign": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"PermissionSetTabSetting": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"PicklistValueInfo": [
@@ -4265,8 +3561,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4275,21 +3569,15 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"PlatformCachePartition": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"PlatformCachePartitionType": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"PlatformStatusAlertEvent": [
@@ -4298,15 +3586,11 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"PortalDelegablePermissionSet": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Pricebook2": [
@@ -4315,21 +3599,15 @@
 			"Pricebook2History": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"PricebookEntry": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"PricebookEntryHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4337,7 +3615,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4345,8 +3622,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4356,16 +3631,12 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProcessInstanceNode": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4373,24 +3644,18 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProcessInstanceWorkitem": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ProcessNode": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4402,23 +3667,17 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Product2Feed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Product2History": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4427,22 +3686,16 @@
 			],
 			"ProductConsumedFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductConsumedHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductConsumptionSchedule": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ProductItem": [
@@ -4450,43 +3703,31 @@
 			],
 			"ProductItemFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductItemHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductItemShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ProductItemTransaction": [
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ProductItemTransactionFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductItemTransactionHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4495,16 +3736,12 @@
 			],
 			"ProductRequestFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductRequestHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4513,41 +3750,30 @@
 			],
 			"ProductRequestLineItemFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductRequestLineItemHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductRequestShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ProductRequired": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ProductRequiredFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductRequiredHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4556,51 +3782,36 @@
 			],
 			"ProductTransferFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductTransferHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ProductTransferShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Profile": [
 				"Must be createable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Prompt": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"PromptAction": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"PromptActionShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"PromptVersion": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Publisher": [
@@ -4608,20 +3819,14 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"PushTopic": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"QueueSobject": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4631,29 +3836,21 @@
 			"QuickTextHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"QuickTextShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"QuickTextUsage": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"QuickTextUsageShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"QuoteTemplateRichTextData": [
@@ -4661,8 +3858,6 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4671,31 +3866,23 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Recommendation": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"RecordAction": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"RecordActionHistory": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"RecordType": [
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"RelationshipDomain": [
@@ -4703,8 +3890,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4713,8 +3898,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4724,8 +3907,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4733,7 +3914,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4742,8 +3922,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4753,54 +3931,39 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ReportFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ResourceAbsence": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ResourceAbsenceFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ResourceAbsenceHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ResourcePreference": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ResourcePreferenceFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ResourcePreferenceHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4809,16 +3972,12 @@
 			],
 			"ReturnOrderFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ReturnOrderHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4827,50 +3986,37 @@
 			],
 			"ReturnOrderLineItemFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ReturnOrderLineItemHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ReturnOrderShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"RevenueElement": [
 				"Must be deletable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"SamlSsoConfig": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Scontrol": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"SearchActivity": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4879,21 +4025,16 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"SearchPromotionRule": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"SecureAgent": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4901,8 +4042,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4910,8 +4049,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4919,15 +4056,11 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"SecurityCustomBaseline": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ServiceAppointment": [
@@ -4936,53 +4069,39 @@
 			"ServiceAppointmentCapacityUsage": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceAppointmentCapacityUsageFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceAppointmentCapacityUsageHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceAppointmentFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceAppointmentHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceAppointmentShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ServiceAppointmentStatus": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -4991,16 +4110,12 @@
 			],
 			"ServiceCrewFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceCrewHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5009,35 +4124,26 @@
 			],
 			"ServiceCrewMemberFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceCrewMemberHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceCrewShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ServiceReport": [
-				"Must be searchable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceReportHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5045,72 +4151,53 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceResource": [
 				"Must be deletable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ServiceResourceCapacity": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ServiceResourceCapacityFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceResourceCapacityHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceResourceFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceResourceHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceResourceShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ServiceResourceSkill": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ServiceResourceSkillFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceResourceSkillHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5119,69 +4206,51 @@
 			],
 			"ServiceTerritoryFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceTerritoryHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceTerritoryLocation": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"ServiceTerritoryLocationFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceTerritoryLocationHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceTerritoryMember": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ServiceTerritoryMemberFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceTerritoryMemberHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ServiceTerritoryShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"SessionPermSetActivation": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5189,15 +4258,11 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"SetupEntityAccess": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5206,31 +4271,23 @@
 			],
 			"ShiftFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ShiftHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ShiftShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ShiftStatus": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5239,31 +4296,23 @@
 			],
 			"ShipmentFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ShipmentHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"ShipmentShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Site": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5272,55 +4321,40 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"SiteFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"SiteHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"SiteIframeWhiteListUrl": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Skill": [
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"SkillRequirement": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"SkillRequirementFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"SkillRequirementHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5329,16 +4363,12 @@
 			],
 			"SolutionFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"SolutionHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5346,8 +4376,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5357,8 +4385,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5366,8 +4392,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5375,23 +4399,17 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"StaticResource": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"StreamingChannel": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"StreamingChannelShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"TabDefinition": [
@@ -5399,7 +4417,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5411,15 +4428,11 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"TaskFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5427,8 +4440,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5436,8 +4447,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5445,15 +4454,11 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"TestSuiteMembership": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"ThirdPartyAccountLink": [
@@ -5461,8 +4466,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5474,92 +4477,66 @@
 			],
 			"TimeSheetEntryFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"TimeSheetEntryHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"TimeSheetFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"TimeSheetHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"TimeSheetShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"TimeSlot": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"TodayGoal": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"TodayGoalShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Topic": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"TopicAssignment": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"TopicFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"TopicUserEvent": [
 				"Must be createable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"TransactionSecurityPolicy": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"Translation": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5567,8 +4544,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5576,8 +4551,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5585,8 +4558,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5595,8 +4566,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5606,28 +4575,21 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"User": [
 				"Must be deletable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserAppInfo": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"UserAppMenuCustomization": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"UserAppMenuCustomizationShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserAppMenuItem": [
@@ -5635,7 +4597,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5644,19 +4605,14 @@
 				"Must be deletable",
 				"Must be queryable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"UserEmailPreferredPerson": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserEmailPreferredPersonShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserEntityAccess": [
@@ -5664,15 +4620,11 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"UserFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5681,8 +4633,6 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5690,35 +4640,25 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"UserListView": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserListViewCriterion": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserLogin": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserPackageLicense": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5727,47 +4667,34 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"UserPreference": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserProvAccount": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"UserProvAccountStaging": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"UserProvMockTarget": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"UserProvisioningConfig": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserProvisioningLog": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"UserProvisioningRequest": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"UserProvisioningRequestShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserRecordAccess": [
@@ -5775,27 +4702,20 @@
 				"Must be deletable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"UserRole": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"UserShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"VerificationHistory": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5805,8 +4725,6 @@
 				"Must be queryable",
 				"Must be replicateable",
 				"Must be retrieveable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5814,40 +4732,29 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"Vote": [
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"WaveAutoInstallRequest": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"WaveCompatibilityCheckItem": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WebLink": [
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"WorkAccess": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"WorkAccessShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"WorkBadge": [
@@ -5858,23 +4765,17 @@
 			],
 			"WorkBadgeDefinitionFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkBadgeDefinitionHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkBadgeDefinitionShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"WorkCapacityLimit": [
@@ -5882,43 +4783,32 @@
 			],
 			"WorkCapacityLimitFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkCapacityLimitHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkCapacityLimitShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"WorkCapacityUsage": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"WorkCapacityUsageFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkCapacityUsageHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5927,16 +4817,12 @@
 			],
 			"WorkOrderFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkOrderHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5945,16 +4831,12 @@
 			],
 			"WorkOrderLineItemFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkOrderLineItemHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -5962,34 +4844,25 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkOrderShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"WorkOrderStatus": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkThanks": [
-				"Must be searchable",
 				"Was Not requested"
 			],
 			"WorkThanksShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"WorkType": [
@@ -5997,8 +4870,6 @@
 			],
 			"WorkTypeFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -6007,16 +4878,12 @@
 			],
 			"WorkTypeGroupFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkTypeGroupHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -6025,37 +4892,27 @@
 			],
 			"WorkTypeGroupMemberFeed": [
 				"Must be createable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkTypeGroupMemberHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkTypeGroupShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			],
 			"WorkTypeHistory": [
 				"Must be createable",
 				"Must be deletable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
 			"WorkTypeShare": [
 				"Must be replicateable",
-				"Must be searchable",
-				"Must be undeletable",
 				"Was Not requested"
 			]
 		},

@@ -10,20 +10,6 @@ public class Util {
         }
         UPDATE actions;
     }
-    public static List<Action__c> findActions(String criteriaSOQL, Event__c event) {
-        String SOQL;
-        String eventId = event.Id;
-
-        SOQL = 'SELECT Id, Name, ';
-        SOQL += getFieldsCustom('Action__c') + ', ';
-        SOQL += '(SELECT ID, Name, ' + getFieldsCustom('JSON_Action__c') + ' FROM JSON_Actions__r) ';
-        SOQL += 'FROM Action__c WHERE EnabledAction__c = true ';
-        if (criteriaSOQL != null)  SOQL += 'AND (' + criteriaSOQL + ') ';
-        SOQL += 'AND Id IN (SELECT Action__c FROM Event_X_Action__c WHERE Event__c = :eventId) ';
-        SOQL += 'ORDER BY Order__c ASC ';
-        System.debug(SOQL); 
-        return  Database.query(SOQL);
-    }
 
     // public static void SOQLsToBackup() {
     //     Map<String, String> SOQLs = new Map<String, String>();
