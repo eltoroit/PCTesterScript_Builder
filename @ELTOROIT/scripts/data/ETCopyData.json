@@ -1,5 +1,5 @@
 {
-    "now": "2019-11-14T01:48:39.382Z",
+    "now": "2019-11-14T03:28:43.044Z",
     "orgSource": "soVMCheck02",
     "orgDestination": "soVMCheck02",
     "sObjectsData": [
@@ -8,7 +8,7 @@
             "ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
             "maxRecords": -1,
             "orderBy": null,
-            "twoPassReferenceFields": "Trailhead_Event__c",
+            "twoPassReferenceFields": "",
             "where": null
         },
         {
