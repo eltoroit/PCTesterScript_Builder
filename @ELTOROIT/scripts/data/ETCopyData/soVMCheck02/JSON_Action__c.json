@@ -4,61 +4,61 @@
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031D000002w0bzQAA"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a0354000002RPNJAA4"
 			},
-			"Action__c": "a001D0000034CFcQAM",
-			"Id": "a031D000002w0bzQAA",
+			"Action__c": "a0054000003b7kJAAQ",
+			"Id": "a0354000002RPNJAA4",
 			"Key__c": "production",
 			"Path__c": "pages:servers",
-			"UniqueAction__c": "a001D0000034CFcQAM",
+			"UniqueAction__c": "a0054000003b7kJAAQ",
 			"Value__c": "https://et-epl.herokuapp.com"
 		},
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031D000002w0c0QAA"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a0354000002RPNKAA4"
 			},
-			"Action__c": "a001D0000034CF6QAM",
-			"Id": "a031D000002w0c0QAA",
+			"Action__c": "a0054000003b7kGAAQ",
+			"Id": "a0354000002RPNKAA4",
 			"Key__c": "salesforcedx-vscode-apex.java.home",
 			"Path__c": ":",
-			"UniqueAction__c": "a001D0000034CF6QAM",
+			"UniqueAction__c": "a0054000003b7kGAAQ",
 			"Value__c": "C:\\Program Files\\java\\jdk1.8.0_162"
 		},
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031D000002w0c2QAA"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a0354000002RPNLAA4"
 			},
-			"Action__c": "a001D0000034CFdQAM",
-			"Id": "a031D000002w0c2QAA",
+			"Action__c": "a0054000003b7kKAAQ",
+			"Id": "a0354000002RPNLAA4",
 			"Key__c": "pingServer",
 			"Path__c": "pages",
-			"UniqueAction__c": "a001D0000034CFdQAM",
+			"UniqueAction__c": "a0054000003b7kKAAQ",
 			"Value__c": "https://et-epl.herokuapp.com"
 		},
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031D000002w0c3QAA"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a0354000002RPNMAA4"
 			},
-			"Action__c": "a001D0000034CFeQAM",
-			"Id": "a031D000002w0c3QAA",
+			"Action__c": "a0054000003b7kLAAQ",
+			"Id": "a0354000002RPNMAA4",
 			"Key__c": "version",
 			"Path__c": ":",
-			"UniqueAction__c": "a001D0000034CFeQAM",
+			"UniqueAction__c": "a0054000003b7kLAAQ",
 			"Value__c": "2019-11-11V02"
 		},
 		{
 			"attributes": {
 				"type": "JSON_Action__c",
-				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a031D000002w0c1QAA"
+				"url": "/services/data/v47.0/sobjects/JSON_Action__c/a0354000002RPNNAA4"
 			},
-			"Action__c": "a001D0000034CF5QAM",
-			"Id": "a031D000002w0c1QAA",
+			"Action__c": "a0054000003b7kFAAQ",
+			"Id": "a0354000002RPNNAA4",
 			"Key__c": "terminal.integrated.shell.windows",
 			"Path__c": ":",
-			"UniqueAction__c": "a001D0000034CF5QAM",
+			"UniqueAction__c": "a0054000003b7kFAAQ",
 			"Value__c": "C:\\Program Files\\Git\\bin\\bash.exe"
 		}
 	],

@@ -11,6 +11,11 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Clear</fullName>
+                <default>false</default>
+                <label>Clear</label>
+            </value>
+            <value>
                 <fullName>Check Contains</fullName>
                 <default>false</default>
                 <label>Check Contains</label>
@@ -41,11 +46,6 @@
                 <label>Bookmark</label>
             </value>
             <value>
-                <fullName>Clear</fullName>
-                <default>false</default>
-                <label>Clear</label>
-            </value>
-            <value>
                 <fullName>JSON File - Check</fullName>
                 <default>false</default>
                 <label>JSON File - Check</label>
@@ -69,6 +69,11 @@
                 <fullName>Write</fullName>
                 <default>false</default>
                 <label>Write</label>
+            </value>
+            <value>
+                <fullName>Include Event</fullName>
+                <default>false</default>
+                <label>Include Event</label>
             </value>
         </valueSetDefinition>
     </valueSet>

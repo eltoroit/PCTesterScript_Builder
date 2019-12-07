@@ -1,9 +1,9 @@
 {
-	"now": "2019-12-06T23:31:40.810Z",
+	"now": "2019-12-07T18:56:44.759Z",
 	"alias": "soVMCheck02",
 	"importOrder": [
-		"Action__c",
 		"Event__c",
+		"Action__c",
 		"Event_X_Action__c",
 		"JSON_Action__c"
 	],
@@ -33,13 +33,19 @@
 				"Id",
 				"Message__c",
 				"Operation__c",
-				"Order__c"
+				"Order__c",
+				"Trailhead_Event__c"
 			],
 			"keyPrefix": "a00",
 			"label": "Action",
 			"name": "Action__c",
 			"orderBy": null,
-			"parents": [],
+			"parents": [
+				{
+					"parentId": "Trailhead_Event__c",
+					"sObj": "Event__c"
+				}
+			],
 			"twoPassParents": [],
 			"parentsRequired": []
 		},
@@ -71,6 +77,11 @@
 		},
 		"Event__c": {
 			"children": [
+				{
+					"children": "Actions__r",
+					"parentId": "Trailhead_Event__c",
+					"sObj": "Action__c"
+				},
 				{
 					"children": "Events_X_Actions__r",
 					"parentId": "Event__c",
@@ -152,7 +163,8 @@
 			"Operation__c",
 			"Order__c",
 			"OwnerId",
-			"SystemModstamp"
+			"SystemModstamp",
+			"Trailhead_Event__c"
 		],
 		"ActivityHistory": [],
 		"AdditionalNumber": [],

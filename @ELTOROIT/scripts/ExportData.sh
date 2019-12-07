@@ -29,7 +29,7 @@ sfdx force:user:display --json | jq -r '.result | .instanceUrl, .accessToken' | 
 echo "--- --- --- Please wait (3/5): Copying files to runtime folder"
 rm -f _OriginalScripts/Errors-*.json
 cp -R _OriginalScripts/* ../PCTesterScript
-rm ../PCTesterScript/bmPretend.json
+rm -f ../PCTesterScript/bmPretend.json
 echo "--- Scripts generated..."
 
 # Push to GitHub
