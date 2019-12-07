@@ -1,6 +1,26 @@
 {
-	"fetched": 10,
+	"fetched": 13,
 	"records": [
+		{
+			"attributes": {
+				"type": "Event__c",
+				"url": "/services/data/v47.0/sobjects/Event__c/a025400000Ffv9TAAR"
+			},
+			"ActiveEvent__c": false,
+			"Id": "a025400000Ffv9TAAR",
+			"Name": "_Manual Checks_",
+			"Order__c": 23
+		},
+		{
+			"attributes": {
+				"type": "Event__c",
+				"url": "/services/data/v47.0/sobjects/Event__c/a025400000Ffv9dAAB"
+			},
+			"ActiveEvent__c": true,
+			"Id": "a025400000Ffv9dAAB",
+			"Name": "_Salesforce Development (SFDX, VS Code, etc)_",
+			"Order__c": 24
+		},
 		{
 			"attributes": {
 				"type": "Event__c",
@@ -18,7 +38,7 @@
 			},
 			"ActiveEvent__c": false,
 			"Id": "a025400000Ffv90AAB",
-			"Name": "Install VS Code Extensions",
+			"Name": "_Install VS Code Extensions_",
 			"Order__c": 21
 		},
 		{
@@ -39,7 +59,7 @@
 			"ActiveEvent__c": false,
 			"Id": "a025400000Ffv92AAB",
 			"Name": "DO NOT USE -- Kill Event Proctor Login",
-			"Order__c": 22
+			"Order__c": 99
 		},
 		{
 			"attributes": {
@@ -48,7 +68,7 @@
 			},
 			"ActiveEvent__c": false,
 			"Id": "a025400000Ffv93AAB",
-			"Name": "Re-Install Event Proctor Login",
+			"Name": "_Re-Install Event Proctor Login_",
 			"Order__c": 20
 		},
 		{
@@ -100,7 +120,17 @@
 			"Id": "a025400000Ffv98AAB",
 			"Name": "OLD ACTIONS",
 			"Order__c": 102
+		},
+		{
+			"attributes": {
+				"type": "Event__c",
+				"url": "/services/data/v47.0/sobjects/Event__c/a025400000Ffv9iAAB"
+			},
+			"ActiveEvent__c": true,
+			"Id": "a025400000Ffv9iAAB",
+			"Name": "_Salesforce Fonts_",
+			"Order__c": 22
 		}
 	],
-	"total": 10
+	"total": 13
 }
