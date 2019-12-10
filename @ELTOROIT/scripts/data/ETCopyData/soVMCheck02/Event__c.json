@@ -1,5 +1,5 @@
 {
-	"fetched": 13,
+	"fetched": 12,
 	"records": [
 		{
 			"attributes": {
@@ -30,16 +30,6 @@
 			"Id": "a025400000Ffv8zAAB",
 			"Name": "KILL ETEPL",
 			"Order__c": 3
-		},
-		{
-			"attributes": {
-				"type": "Event__c",
-				"url": "/services/data/v47.0/sobjects/Event__c/a025400000Ffv90AAB"
-			},
-			"ActiveEvent__c": false,
-			"Id": "a025400000Ffv90AAB",
-			"Name": "_Install VS Code Extensions_",
-			"Order__c": 21
 		},
 		{
 			"attributes": {
@@ -132,5 +122,5 @@
 			"Order__c": 22
 		}
 	],
-	"total": 13
+	"total": 12
 }

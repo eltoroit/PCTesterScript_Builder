@@ -1,5 +1,5 @@
 {
-	"fetched": 86,
+	"fetched": 85,
 	"records": [
 		{
 			"attributes": {
@@ -185,25 +185,8 @@
 			"Id": "a0054000003b7kdAAA",
 			"Message__c": "Validating: VSCode - Prettier - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\PCTesterScript\\copy\\ext\\esbenp.prettier-vscode-3.6.0\" \"C:\\users\\student\\.vscode\\extensions\\esbenp.prettier-vscode-3.6.0\\\")",
 			"Operation__c": "Check Contains",
-			"Order__c": 81,
+			"Order__c": 80,
 			"Trailhead_Event__c": null
-		},
-		{
-			"attributes": {
-				"type": "Action__c",
-				"url": "/services/data/v47.0/sobjects/Action__c/a0054000003b7jJAAQ"
-			},
-			"AppName__c": "### INCLUDE _Install VS Code Extensions_",
-			"Command__c": "### INCLUDE _Install VS Code Extensions_",
-			"EnabledAction__c": true,
-			"ErrorMessage__c": "### INCLUDE _Install VS Code Extensions_",
-			"Expected__c": "### INCLUDE _Install VS Code Extensions_",
-			"Fix__c": "### INCLUDE _Install VS Code Extensions_",
-			"Id": "a0054000003b7jJAAQ",
-			"Message__c": "### INCLUDE _Install VS Code Extensions_",
-			"Operation__c": "Include Event",
-			"Order__c": 22,
-			"Trailhead_Event__c": "a025400000Ffv90AAB"
 		},
 		{
 			"attributes": {
@@ -219,7 +202,7 @@
 			"Id": "a0054000003b7jKAAQ",
 			"Message__c": "Validating: StartOnReboot Shortcut - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\ETTrailheadTester\\restart2\\RestartOnCrash.exe - Shortcut.lnk\" \"C:\\Users\\student\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\\")",
 			"Operation__c": "Check Contains",
-			"Order__c": 85,
+			"Order__c": 84,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -236,7 +219,7 @@
 			"Id": "a0054000003b7jLAAQ",
 			"Message__c": "Validating: ETEPL - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\PCTesterScript\\copy\\src\" \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
 			"Operation__c": "Execute",
-			"Order__c": 83,
+			"Order__c": 82,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -253,7 +236,7 @@
 			"Id": "a0054000003b7jMAAQ",
 			"Message__c": "Validating: VSCode - XML - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\PCTesterScript\\copy\\ext\\dotjoshjohnson.xml-2.5.0\" \"C:\\users\\student\\.vscode\\extensions\\dotjoshjohnson.xml-2.5.0\\\")",
 			"Operation__c": "Check Contains",
-			"Order__c": 82,
+			"Order__c": 81,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -287,7 +270,7 @@
 			"Id": "a0054000003b7jOAAQ",
 			"Message__c": "Validating: StartOnReboot - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\PCTesterScript\\copy\\start\" \"C:\\TH\\ETTrailheadTester\\restart2\\\")",
 			"Operation__c": "Check Contains",
-			"Order__c": 84,
+			"Order__c": 83,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -304,7 +287,7 @@
 			"Id": "a0054000003b7jPAAQ",
 			"Message__c": "Opening Application: \"ETEPL (+Reboot) - Ensure ETEPL starts on reboot\". Was this succesful?",
 			"Operation__c": "Open Application",
-			"Order__c": 86,
+			"Order__c": 85,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -355,7 +338,7 @@
 			"Id": "a0054000003b7jSAAQ",
 			"Message__c": "Validating: Git config email (git config --global user.email \"you@example.com\")",
 			"Operation__c": "Check Contains",
-			"Order__c": 47,
+			"Order__c": 46,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -372,7 +355,7 @@
 			"Id": "a0054000003b7jTAAQ",
 			"Message__c": "Validating: Git config name (git config --global user.name \"Your Name\")",
 			"Operation__c": "Check Contains",
-			"Order__c": 48,
+			"Order__c": 47,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -389,7 +372,7 @@
 			"Id": "a0054000003b7jUAAQ",
 			"Message__c": "Validating: 7-Zip (\"C:\\Program Files\\7-Zip\\7z.exe\" -version)",
 			"Operation__c": "Check Contains",
-			"Order__c": 49,
+			"Order__c": 48,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -406,7 +389,7 @@
 			"Id": "a0054000003b7jVAAQ",
 			"Message__c": "Checking exact: node --version",
 			"Operation__c": "Check Exact",
-			"Order__c": 50,
+			"Order__c": 49,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -423,7 +406,7 @@
 			"Id": "a0054000003b7jWAAQ",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Bold.ttf\"",
 			"Operation__c": "Check Path",
-			"Order__c": 53,
+			"Order__c": 52,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -440,7 +423,7 @@
 			"Id": "a0054000003b7jXAAQ",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-BoldItalic.ttf\"",
 			"Operation__c": "Check Path",
-			"Order__c": 54,
+			"Order__c": 53,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -457,7 +440,7 @@
 			"Id": "a0054000003b7jYAAQ",
 			"Message__c": "Validating: Checking all bookmarks",
 			"Operation__c": "Bookmark",
-			"Order__c": 52,
+			"Order__c": 51,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -474,7 +457,7 @@
 			"Id": "a0054000003b7jZAAQ",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Italic.ttf\"",
 			"Operation__c": "Check Path",
-			"Order__c": 55,
+			"Order__c": 54,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -491,7 +474,7 @@
 			"Id": "a0054000003b7jaAAA",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Light.ttf\"",
 			"Operation__c": "Check Path",
-			"Order__c": 56,
+			"Order__c": 55,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -508,7 +491,7 @@
 			"Id": "a0054000003b7jbAAA",
 			"Message__c": "Checking path: C:\\Users\\student\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-47.*",
 			"Operation__c": "Check Path",
-			"Order__c": 39,
+			"Order__c": 38,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -525,7 +508,7 @@
 			"Id": "a0054000003b7jcAAA",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-LightItalic.ttf\"",
 			"Operation__c": "Check Path",
-			"Order__c": 57,
+			"Order__c": 56,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -542,7 +525,7 @@
 			"Id": "a0054000003b7jdAAA",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Regular.ttf\"",
 			"Operation__c": "Check Path",
-			"Order__c": 58,
+			"Order__c": 57,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -559,7 +542,7 @@
 			"Id": "a0054000003b7jeAAA",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-Thin.ttf\"",
 			"Operation__c": "Check Path",
-			"Order__c": 59,
+			"Order__c": 58,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -576,7 +559,7 @@
 			"Id": "a0054000003b7jfAAA",
 			"Message__c": "Checking path: \"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\Windows\\Fonts\\SalesforceSans-ThinItalic.ttf\"",
 			"Operation__c": "Check Path",
-			"Order__c": 60,
+			"Order__c": 59,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -593,7 +576,7 @@
 			"Id": "a0054000003b7jgAAA",
 			"Message__c": "Validating: Logout SFDX (sfdx force:auth:logout --all --noprompt)",
 			"Operation__c": "Check Contains",
-			"Order__c": 61,
+			"Order__c": 60,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -610,7 +593,7 @@
 			"Id": "a0054000003b7jhAAA",
 			"Message__c": "Validating: Logout Heroku (heroku logout)",
 			"Operation__c": "Check Contains",
-			"Order__c": 62,
+			"Order__c": 61,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -627,7 +610,7 @@
 			"Id": "a0054000003b7jiAAA",
 			"Message__c": "Checking path: C:\\Users\\Admin\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1\\Extensions\\bkpenclhmiealbebdopglffmfdiilejc\\2.3.3_0\\package.json",
 			"Operation__c": "Check Path",
-			"Order__c": 23,
+			"Order__c": 22,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -644,7 +627,7 @@
 			"Id": "a0054000003b7jjAAA",
 			"Message__c": "Validating: Check Java version (java -version)",
 			"Operation__c": "Check Contains",
-			"Order__c": 24,
+			"Order__c": 23,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -661,7 +644,7 @@
 			"Id": "a0054000003b7jkAAA",
 			"Message__c": "Checking path: C:\\Program Files\\Zulu\\zulu-8\\jre\\bin\\java.exe*",
 			"Operation__c": "Check Path",
-			"Order__c": 25,
+			"Order__c": 24,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -678,7 +661,7 @@
 			"Id": "a0054000003b7jlAAA",
 			"Message__c": "Checking path: C:\\Program Files\\Zulu\\zulu-11\\bin\\java.exe*",
 			"Operation__c": "Check Path",
-			"Order__c": 26,
+			"Order__c": 25,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -695,7 +678,7 @@
 			"Id": "a0054000003b7jmAAA",
 			"Message__c": "Checking path: C:\\Windows\\Notepad.exe",
 			"Operation__c": "Check Path",
-			"Order__c": 27,
+			"Order__c": 26,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -712,7 +695,7 @@
 			"Id": "a0054000003b7jnAAA",
 			"Message__c": "Checking path: C:\\Users\\Admin\\Documents\\ntoforall*",
 			"Operation__c": "Check Path",
-			"Order__c": 28,
+			"Order__c": 27,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -729,7 +712,7 @@
 			"Id": "a0054000003b7joAAA",
 			"Message__c": "Checking path: C:\\Users\\Admin\\tdxworkspace\\.metadata\\version.ini",
 			"Operation__c": "Check Path",
-			"Order__c": 29,
+			"Order__c": 28,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -746,7 +729,7 @@
 			"Id": "a0054000003b7jpAAA",
 			"Message__c": "Checking path: C:\\Users\\Admin\\AppData\\Local\\Postman\\Update.exe",
 			"Operation__c": "Check Path",
-			"Order__c": 30,
+			"Order__c": 29,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -763,7 +746,7 @@
 			"Id": "a0054000003b7jqAAA",
 			"Message__c": "Checking path: C:\\Program Files (x86)\\SmartBear\\SoapUI-5.5.0\\bin\\SoapUI-5.5.0.exe",
 			"Operation__c": "Check Path",
-			"Order__c": 31,
+			"Order__c": 30,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -780,7 +763,7 @@
 			"Id": "a0054000003b7jrAAA",
 			"Message__c": "Validating: SFDX Update (sfdx update)",
 			"Operation__c": "Check Contains",
-			"Order__c": 32,
+			"Order__c": 31,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -797,7 +780,7 @@
 			"Id": "a0054000003b7jsAAA",
 			"Message__c": "Validating: VS Code Version (code --version)",
 			"Operation__c": "Check Contains",
-			"Order__c": 33,
+			"Order__c": 32,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -814,7 +797,7 @@
 			"Id": "a0054000003b7jtAAA",
 			"Message__c": "Validating: Check Curl version (curl --version)",
 			"Operation__c": "Check Contains",
-			"Order__c": 63,
+			"Order__c": 62,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -831,7 +814,7 @@
 			"Id": "a0054000003b7juAAA",
 			"Message__c": "Checking exact: ruby --version",
 			"Operation__c": "Check Exact",
-			"Order__c": 64,
+			"Order__c": 63,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -848,7 +831,7 @@
 			"Id": "a0054000003b7jwAAA",
 			"Message__c": "Validating: Python (python --version)",
 			"Operation__c": "Check Contains",
-			"Order__c": 66,
+			"Order__c": 65,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -865,7 +848,7 @@
 			"Id": "a0054000003b7jxAAA",
 			"Message__c": "Opening Application: \"Internet Explorer + Salesforce is homepage\". Was this succesful?",
 			"Operation__c": "Open Application",
-			"Order__c": 67,
+			"Order__c": 66,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -882,7 +865,7 @@
 			"Id": "a0054000003b7jyAAA",
 			"Message__c": "Checking path: C:\\Users\\Admin\\DigitalServerConnect*",
 			"Operation__c": "Check Path",
-			"Order__c": 68,
+			"Order__c": 67,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -899,7 +882,7 @@
 			"Id": "a0054000003b7jzAAA",
 			"Message__c": "Checking path: C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Word 2016.lnk",
 			"Operation__c": "Check Path",
-			"Order__c": 69,
+			"Order__c": 68,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -916,7 +899,7 @@
 			"Id": "a0054000003b7k0AAA",
 			"Message__c": "Validating: ETEPL - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\PCTesterScript\\copy\\src\" \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
 			"Operation__c": "Execute",
-			"Order__c": 70,
+			"Order__c": 69,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -933,7 +916,7 @@
 			"Id": "a0054000003b7k1AAA",
 			"Message__c": "Checking path: C:\\TH\\ETTrailheadTester\\resources\\app\\src\\elMain.js",
 			"Operation__c": "Check Path",
-			"Order__c": 71,
+			"Order__c": 70,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -950,7 +933,7 @@
 			"Id": "a0054000003b7k2AAA",
 			"Message__c": "Checking path: C:\\Users\\Student\\.vscode\\extensions\\salesforce.salesforcedx-vscode-47.*",
 			"Operation__c": "Check Path",
-			"Order__c": 34,
+			"Order__c": 33,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -967,7 +950,7 @@
 			"Id": "a0054000003b7k3AAA",
 			"Message__c": "Checking path: C:\\Users\\student\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-47.*",
 			"Operation__c": "Check Path",
-			"Order__c": 35,
+			"Order__c": 34,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -984,7 +967,7 @@
 			"Id": "a0054000003b7k4AAA",
 			"Message__c": "Checking path: C:\\Users\\student\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-debugger-47.*",
 			"Operation__c": "Check Path",
-			"Order__c": 36,
+			"Order__c": 35,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1001,7 +984,7 @@
 			"Id": "a0054000003b7k5AAA",
 			"Message__c": "Checking path: C:\\Users\\student\\.vscode\\extensions\\salesforce.salesforcedx-vscode-core-47.*",
 			"Operation__c": "Check Path",
-			"Order__c": 37,
+			"Order__c": 36,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1018,7 +1001,7 @@
 			"Id": "a0054000003b7k6AAA",
 			"Message__c": "Validating: ETEPL - Delete folder (DEL /F /S /Q \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
 			"Operation__c": "Execute",
-			"Order__c": 72,
+			"Order__c": 71,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1035,7 +1018,7 @@
 			"Id": "a0054000003b7k7AAA",
 			"Message__c": "Validating: ETEPL - Remove Directory (RD /Q /S \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
 			"Operation__c": "Execute",
-			"Order__c": 73,
+			"Order__c": 72,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1052,7 +1035,7 @@
 			"Id": "a0054000003b7k8AAA",
 			"Message__c": "Validating: ETEPL - Remove Directory (2) (IF EXIST \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\" \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
 			"Operation__c": "Execute",
-			"Order__c": 74,
+			"Order__c": 73,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1069,7 +1052,7 @@
 			"Id": "a0054000003b7k9AAA",
 			"Message__c": "Validating: ETEPL - Make Directory (MKDIR \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
 			"Operation__c": "Execute",
-			"Order__c": 75,
+			"Order__c": 74,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1086,7 +1069,7 @@
 			"Id": "a0054000003b7kAAAQ",
 			"Message__c": "Checking path: C:\\Users\\student\\.vscode\\extensions\\salesforce.salesforcedx-vscode-apex-replay-debugger-47.*",
 			"Operation__c": "Check Path",
-			"Order__c": 40,
+			"Order__c": 39,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1103,7 +1086,7 @@
 			"Id": "a0054000003b7jvAAA",
 			"Message__c": "Checking exact: travis version",
 			"Operation__c": "Check Exact",
-			"Order__c": 65,
+			"Order__c": 64,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1120,7 +1103,7 @@
 			"Id": "a0054000003b7kBAAQ",
 			"Message__c": "Checking path: C:\\Users\\student\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-47.*",
 			"Operation__c": "Check Path",
-			"Order__c": 41,
+			"Order__c": 40,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1137,7 +1120,7 @@
 			"Id": "a0054000003b7kCAAQ",
 			"Message__c": "Checking path: C:\\Users\\student\\.vscode\\extensions\\dbaeumer.vscode-eslint-1.9.1*",
 			"Operation__c": "Check Path",
-			"Order__c": 42,
+			"Order__c": 41,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1154,7 +1137,7 @@
 			"Id": "a0054000003b7kDAAQ",
 			"Message__c": "Checking path: C:\\Users\\student\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lightning-47.*",
 			"Operation__c": "Check Path",
-			"Order__c": 38,
+			"Order__c": 37,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1171,7 +1154,7 @@
 			"Id": "a0054000003b7kEAAQ",
 			"Message__c": "Checking path: C:\\Users\\student\\.vscode\\extensions\\eamodio.gitlens-10.*",
 			"Operation__c": "Check Path",
-			"Order__c": 43,
+			"Order__c": 42,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1188,7 +1171,7 @@
 			"Id": "a0054000003b7kFAAQ",
 			"Message__c": "Checking path: C:\\Users\\Client\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-42*",
 			"Operation__c": "JSON File - Edit",
-			"Order__c": 44,
+			"Order__c": 43,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1205,7 +1188,7 @@
 			"Id": "a0054000003b7kGAAQ",
 			"Message__c": "Checking path: C:\\Users\\Client\\.vscode\\extensions\\salesforce.salesforcedx-vscode-visualforce-42*",
 			"Operation__c": "JSON File - Edit",
-			"Order__c": 45,
+			"Order__c": 44,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1222,7 +1205,7 @@
 			"Id": "a0054000003b7kHAAQ",
 			"Message__c": "Validating: Git 2.23 (git --version)",
 			"Operation__c": "Check Contains",
-			"Order__c": 46,
+			"Order__c": 45,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1239,7 +1222,7 @@
 			"Id": "a0054000003b7kIAAQ",
 			"Message__c": "Validating: ETEPL - XCopy (XCOPY /v /q /s /e /y \"C:\\TH\\PCTesterScript\\copy\\src\" \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
 			"Operation__c": "Check Contains",
-			"Order__c": 76,
+			"Order__c": 75,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1256,7 +1239,7 @@
 			"Id": "a0054000003b7kJAAQ",
 			"Message__c": null,
 			"Operation__c": "JSON File - Check",
-			"Order__c": 77,
+			"Order__c": 76,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1273,7 +1256,7 @@
 			"Id": "a0054000003b7kKAAQ",
 			"Message__c": null,
 			"Operation__c": "JSON File - Check",
-			"Order__c": 78,
+			"Order__c": 77,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1290,7 +1273,7 @@
 			"Id": "a0054000003b7kLAAQ",
 			"Message__c": null,
 			"Operation__c": "JSON File - Check",
-			"Order__c": 79,
+			"Order__c": 78,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1307,7 +1290,7 @@
 			"Id": "a0054000003b7kMAAQ",
 			"Message__c": "Opening Application: \"ETEPL - Configuring computer room and number\". Was this succesful?",
 			"Operation__c": "Open Application",
-			"Order__c": 80,
+			"Order__c": 79,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1460,9 +1443,9 @@
 			"Id": "a0054000003b7owAAA",
 			"Message__c": "### INCLUDE _Salesforce Fonts_",
 			"Operation__c": "Include Event",
-			"Order__c": 51,
+			"Order__c": 50,
 			"Trailhead_Event__c": "a025400000Ffv9iAAB"
 		}
 	],
-	"total": 86
+	"total": 85
 }
