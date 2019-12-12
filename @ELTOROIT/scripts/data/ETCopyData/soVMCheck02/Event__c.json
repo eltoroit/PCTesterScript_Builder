@@ -16,7 +16,7 @@
 				"type": "Event__c",
 				"url": "/services/data/v47.0/sobjects/Event__c/a025400000Ffv9dAAB"
 			},
-			"ActiveEvent__c": true,
+			"ActiveEvent__c": false,
 			"Id": "a025400000Ffv9dAAB",
 			"Name": "_Salesforce Development (SFDX, VS Code, etc)_",
 			"Order__c": 24
@@ -68,7 +68,7 @@
 			},
 			"ActiveEvent__c": true,
 			"Id": "a025400000Ffv94AAB",
-			"Name": "Dreamforce '19",
+			"Name": "India TDX '19",
 			"Order__c": 1
 		},
 		{
@@ -116,7 +116,7 @@
 				"type": "Event__c",
 				"url": "/services/data/v47.0/sobjects/Event__c/a025400000Ffv9iAAB"
 			},
-			"ActiveEvent__c": true,
+			"ActiveEvent__c": false,
 			"Id": "a025400000Ffv9iAAB",
 			"Name": "_Salesforce Fonts_",
 			"Order__c": 22

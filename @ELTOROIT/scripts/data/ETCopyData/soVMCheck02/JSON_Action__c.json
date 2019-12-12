@@ -35,7 +35,7 @@
 			"Key__c": "pingServer",
 			"Path__c": "pages",
 			"UniqueAction__c": "a0054000003b7kKAAQ",
-			"Value__c": "https://et-epl.herokuapp.com"
+			"Value__c": "https://et-epl-stage.herokuapp.com"
 		},
 		{
 			"attributes": {
@@ -47,7 +47,7 @@
 			"Key__c": "version",
 			"Path__c": ":",
 			"UniqueAction__c": "a0054000003b7kLAAQ",
-			"Value__c": "2019-11-11V02"
+			"Value__c": "2019-12-11V01"
 		},
 		{
 			"attributes": {
