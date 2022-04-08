@@ -1,14 +1,1 @@
-# SFDX  App
-
-## Dev, Build and Test
-
-
-## Resources
-
-
-## Description of Files and Directories
-
-
-## Issues
-
-
+TrailblazerDX 22 @ San Francisco April 2022
