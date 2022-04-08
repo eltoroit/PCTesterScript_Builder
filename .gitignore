@@ -2,3 +2,4 @@
 .sfdx/*
 _OriginalScripts/Errors-*.json
 node_modules/*
+@ELTOROIT/scripts/log

@@ -1,21 +1,58 @@
-# TeamViewer
+# New Notes
+
+-   Updated for TrailbrazerDX 22
+
+## Steps
+
+All the changes to the code are done in this file, because the export script overrides the other repo files!
+
+### Mac
+
+1. Create scratch org `./@ELTOROIT/scripts/CreateOrg.sh`
+2. Create new event record (https://flow-inspiration-27-dev-ed.lightning.force.com/lightning/o/Event__c/list)
+3. Manually create/clone actions from previous event
+4. Clean data
+5. Export data `./@ELTOROIT/scripts/ExportData.sh`
+6. Once script runs on the VM, it creates one file with the bookmarks (bmDump.json). Use that to generate (bmCheck.json) which is used to validate the bookmarks (see below for more information).
+    1. `cat ./_OriginalScripts/bmDump.json | jq 'del(.[].urlChrome)' | jq 'del(.[].urlFirefox)' > ./_OriginalScripts/bmCheck.json`
+
+### VM
+
+1. Ensure files are located at the correct locations
+    1. C:\Users\Admin\t.bat
+    2. C:\TH\test.bat
+2. Execute normal operation
+    1. Open CMD
+    2. Type `t` and hit enter
+3. Quick tests
+    1. Execute normal operation
+    2. Stop bt CTR+C
+    3. run tt.bat
+4. Execute in debug mode
+    1. cd C:\TH\PCTesterScript>
+    2. node --inspect-brk tester.js -test -run=1
+5.
+
+# OLd Notes
+
+## TeamViewer
 
 -   Update file: C:\TH\test.bat
 -   Update file: C:\Users\Admin\t.bat
 
-# Create Org
+## Create Org
 
 ```
 ./@ELTOROIT/scripts/CreateOrg.sh
 ```
 
-# Export data
+## Export data
 
 ```
 ./@ELTOROIT/scripts/ExportData.sh
 ```
 
-# Bookmarks files
+## Bookmarks files
 
 -   **bmCheck.txt**
     -   This file indicates what needs to be tested.
@@ -33,7 +70,7 @@
     -   Because I write the code in a computer that is not the PCs to be tested (PCs are Windows and I write the code in Mac) I need to have the data so I can write the scripts.
     -   **THIS FILE SHOULD NOT EXIST WHEN TESTING THE MACHINES.**
 
-# How to create the bmCheck.txt from the bmDump.txt?
+## How to create the bmCheck.txt from the bmDump.txt?
 
 ```
 cat ./_OriginalScripts/bmDump.json | jq 'del(.[].urlChrome)' | jq 'del(.[].urlFirefox)' > ./_OriginalScripts/bmCheck.json

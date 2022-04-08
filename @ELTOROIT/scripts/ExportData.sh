@@ -7,7 +7,8 @@
 
 # Prepare data
 echo "--- --- --- Please wait (1/5): Renumbering"
-sfdx force:apex:execute -f "./@ELTOROIT/scripts/Apex/ExportData.txt" > "./@ELTOROIT/scripts/Apex/ExportData.log"
+mkdir -p "./@ELTOROIT/scripts/log"
+sfdx force:apex:execute -f "./@ELTOROIT/scripts/Apex/ExportData.txt" > "./@ELTOROIT/scripts/log/ExportData.log"
 
 # Export for scripts
 echo "--- --- --- Please wait (2/5): Exporting data"
@@ -25,10 +26,10 @@ sfdx force:user:display --json | jq -r '.result | .instanceUrl, .accessToken' | 
     # cat $jsonFile 
 }
 
-# Copy files to updte repository
+# Copy files to update repository
 echo "--- --- --- Please wait (3/5): Copying files to runtime folder"
 rm -f _OriginalScripts/Errors-*.json
-cp -R _OriginalScripts/* ../PCTesterScript
+cp -R _OriginalScripts/. ../PCTesterScript
 rm -f ../PCTesterScript/bmPretend.json
 echo "--- Scripts generated..."
 
