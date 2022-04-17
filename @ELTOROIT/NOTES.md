@@ -13,8 +13,14 @@ All the changes to the code are done in this file, because the export script ove
 3. Manually create/clone actions from previous event
 4. Clean data
 5. Export data `./@ELTOROIT/scripts/ExportData.sh`
-6. Once script runs on the VM, it creates one file with the bookmarks (bmDump.json). Use that to generate (bmCheck.json) which is used to validate the bookmarks (see below for more information).
-    1. `cat ./_OriginalScripts/bmDump.json | jq 'del(.[].urlChrome)' | jq 'del(.[].urlFirefox)' > ./_OriginalScripts/bmCheck.json`
+    - This exports the data using JSON for the script
+    - Copies the files from `_OriginalScripts` to the parent folder
+    - Commits and updates the repo in Github to be run in the machines being tested
+    - Exports the data from the org using ETCopyData for backup
+6. If you want to work with the bookmarks...
+    - Once script runs on the testing machine, it creates one file with the bookmarks (bmDump.json).
+    - Use that to generate (bmCheck.json) which is used to validate the bookmarks (see below for more information).
+    - `cat ./_OriginalScripts/bmDump.json | jq 'del(.[].urlChrome)' | jq 'del(.[].urlFirefox)' > ./_OriginalScripts/bmCheck.json`
 
 ### VM
 
