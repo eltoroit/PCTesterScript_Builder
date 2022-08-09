@@ -10,8 +10,8 @@ All the changes to the code are done in this folder, because the export script o
 
 1. Create scratch org `./@ELTOROIT/scripts/shell/CreateOrg.sh`
 2. Create new event record (https://flow-inspiration-27-dev-ed.lightning.force.com/lightning/o/Event__c/list)
-3. Manually create/clone actions from previous event
-4. Clean data
+3. [optional] Clone actions from previous event by executing `./@ELTOROIT/scripts/Apex/CloneEvent.apex`
+4. Create new actions if needed
 5. Export data `./@ELTOROIT/scripts/ExportData.sh`
     - This exports the data using JSON for the script
     - Copies the files from `_OriginalScripts` to the parent folder
