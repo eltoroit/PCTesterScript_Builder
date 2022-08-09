@@ -8,4 +8,6 @@ List<Event_X_Action__c> originalExA = [
 List<Event_X_Action__c> newExA = originalExA.deepClone();
 for (Event_X_Action__c ExA : newExA) {
 	ExA.Event__c = newEvent;
+	ExA.UniqueKey__c = ExA.Action__c + '-' + newEvent;
 }
+insert newExA;
