@@ -1,5 +1,5 @@
+.sfdx
 .DS_Store
-.sfdx/*
-_OriginalScripts/Errors-*.json
-node_modules/*
+node_modules
 @ELTOROIT/scripts/log
+_OriginalScripts/Errors-*.json
