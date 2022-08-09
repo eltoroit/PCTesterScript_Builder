@@ -6,21 +6,7 @@
 		{
 			"label": "ELTOROIT Push To Salesforce",
 			"type": "shell",
-			"command": "sfdx force:source:push --json",
-			"group": "build",
-			"presentation": {
-				"reveal": "always",
-				"panel": "dedicated",
-				"clear": true,
-				"focus": false,
-				"showReuseMessage": true
-			},
-			"problemMatcher": []
-		},
-		{
-			"label": "ELTOROIT Push to Git",
-			"type": "shell",
-			"command": "./@ELTOROIT/scripts/ExportData.sh",
+			"command": "sfdx force:source:push --json --forceoverwrite && date",
 			"group": "build",
 			"presentation": {
 				"reveal": "always",
