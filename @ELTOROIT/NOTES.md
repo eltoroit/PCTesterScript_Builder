@@ -10,14 +10,42 @@ All the changes to the code are done in this folder, because the export script o
 
 1. Create scratch org `./@ELTOROIT/scripts/shell/CreateOrg.sh`
 2. Create new event record (https://flow-inspiration-27-dev-ed.lightning.force.com/lightning/o/Event__c/list)
-3. [optional] Clone actions from previous event by executing `./@ELTOROIT/scripts/Apex/CloneEvent.apex`
+3. [optional] Clone actions from previous event by executing `./@ELTOROIT/scripts/Apex/CloneEvent.apex` (Need to manually update the Ids)
 4. Create new actions if needed
-5. Export data `./@ELTOROIT/scripts/ExportData.sh`
+5. Export data `./@ELTOROIT/scripts/shell/ExportData.sh`
     - This exports the data using JSON for the script
     - Copies the files from `_OriginalScripts` to the parent folder
     - Commits and updates the repo in Github to be run in the machines being tested
     - Exports the data from the org using ETCopyData for backup
-6. If you want to work with the bookmarks...
+6. Setting a new machine? (Starting a new event)
+    - Login to TeamViewer
+        - Vendor will provide with `Teamviewer ID` (for example, 855 316 036) and a `Password`
+        - Open in Mac the `TeamViewer.app`
+        - Under `Remote Control`, on the right side the `Control Remote Computer` enter the `Partner ID` (which is the same number provided by the vendor)
+        - Click `Connect`
+        - Enter the password provided by the vendor
+        - click `Logon`
+    - Clone the repo
+        - Create a folder named `C:\TEMP`
+        - May need to install GIT from here `https://git-scm.com/download/win`
+        - Execute `git clone https://github.com/eltoroit/PCTesterScript.git`
+        - Copy file to `C:\Users\Admin\t.bat`
+        - Create a folder named `C:\TH`
+        - Copy file to `C:\TH\test.bat`
+        - Open cmd (`Start | cmd`)
+        - Type `t`
+7. Loop: Run tests, fix data in org, export data, run `t`.
+    - This can be anoying if you have to do the manual tests always :-)
+    - In that case...
+        - Quick tests
+            1. Execute normal operation
+            2. Stop bt CTR+C
+            3. run tt.bat
+        - Execute in debug mode
+            1. cd C:\TH\PCTesterScript>
+            2. node --inspect-brk tester.js -test -run=1
+    - Errors are stored in this file `C:\TH\Errors-2022-08-09T12-27-54.085Z`
+8. If you want to work with the bookmarks...
     - Once script runs on the testing machine, it creates one file with the bookmarks (bmDump.json).
     - Use that to generate (bmCheck.json) which is used to validate the bookmarks (see below for more information).
     - `cat ./_OriginalScripts/bmDump.json | jq 'del(.[].urlChrome)' | jq 'del(.[].urlFirefox)' > ./_OriginalScripts/bmCheck.json`
@@ -30,14 +58,6 @@ All the changes to the code are done in this folder, because the export script o
 2. Execute normal operation
     1. Open CMD
     2. Type `t` and hit enter
-3. Quick tests
-    1. Execute normal operation
-    2. Stop bt CTR+C
-    3. run tt.bat
-4. Execute in debug mode
-    1. cd C:\TH\PCTesterScript>
-    2. node --inspect-brk tester.js -test -run=1
-5.
 
 # OLd Notes
 
