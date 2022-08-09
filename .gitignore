@@ -4,3 +4,4 @@
 node_modules
 @ELTOROIT/scripts/log
 _OriginalScripts/Errors-*.json
+@ELTOROIT/data/ETCopyData/soVMCheck02/org.json
