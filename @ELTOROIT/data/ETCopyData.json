@@ -10,8 +10,7 @@
   "ignoreFields": "OwnerId, CreatedBy, CreatedDate, CurrencyIsoCode",
   "copyToProduction": false,
   "twoPassReferenceFields": null,
-  "maxRecordsEach": null,
   "deleteDestination": true,
   "useBulkAPI": false,
-  "pollingTimeout": 120000
+  "bulkPollingTimeout": null
 }
