@@ -1,5 +1,5 @@
 {
-	"fetched": 157,
+	"fetched": 158,
 	"records": [
 		{
 			"attributes": {
@@ -1570,7 +1570,17 @@
 			"Event__c": "a029A000001UqouQAC",
 			"Id": "a019A00000CiFluQAF",
 			"UniqueKey__c": "a029A000001UqouQAC|a009A000002ObWfQAK"
+		},
+		{
+			"attributes": {
+				"type": "Event_X_Action__c",
+				"url": "/services/data/v56.0/sobjects/Event_X_Action__c/a019A00000CiGt2QAF"
+			},
+			"Action__c": "a009A000002Obi4QAC",
+			"Event__c": "a029A000001UqouQAC",
+			"Id": "a019A00000CiGt2QAF",
+			"UniqueKey__c": "a029A000001UqouQAC|a009A000002Obi4QAC"
 		}
 	],
-	"total": 157
+	"total": 158
 }

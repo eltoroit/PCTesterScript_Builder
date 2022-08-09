@@ -1,5 +1,5 @@
 {
-	"fetched": 89,
+	"fetched": 90,
 	"records": [
 		{
 			"attributes": {
@@ -78,7 +78,7 @@
 			"Command__c": "C:\\Program Files\\SmartBear\\SoapUI-5.7.0\\bin\\SoapUI-5.7.0.exe",
 			"EnabledAction__c": true,
 			"ErrorMessage__c": "Invalid response received",
-			"Expected__c": "SoapUI-5.5.0.exe",
+			"Expected__c": "SoapUI-5.7.0.exe",
 			"Fix__c": "SoapUI is missing, install from here: https://www.soapui.org/downloads/soapui/",
 			"Id": "a009A000002ObXxQAK",
 			"Message__c": "Checking path: C:\\Program Files\\SmartBear\\SoapUI-5.7.0\\bin\\SoapUI-5.7.0.exe",
@@ -229,7 +229,7 @@
 			},
 			"AppName__c": "B2B files for TDX",
 			"Command__c": "\"C:\\TDX22\\TDX-B2B-Exercise.zip\"",
-			"EnabledAction__c": true,
+			"EnabledAction__c": false,
 			"ErrorMessage__c": "Invalid response received",
 			"Expected__c": "TDX-B2B-Exercise.zip",
 			"Fix__c": "Please copy B2B files",
@@ -1513,7 +1513,24 @@
 			"Operation__c": "Check Contains",
 			"Order__c": 61,
 			"Trailhead_Event__c": null
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v56.0/sobjects/Action__c/a009A000002Obi4QAC"
+			},
+			"AppName__c": "Certification secured browser",
+			"Command__c": "C:\\Program Files (x86)\\Respondus\\LockDown Browser OEM\\LockDownBrowserOEM.exe",
+			"EnabledAction__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Expected__c": "LockDownBrowserOEM.exe",
+			"Fix__c": "Please install the secure browser: Select: https://media.webassessor.com/respondus/windows/LockDownBrowserOEMSetup.exe",
+			"Id": "a009A000002Obi4QAC",
+			"Message__c": "Checking path: C:\\Program Files (x86)\\Respondus\\LockDown Browser OEM\\LockDownBrowserOEM.exe",
+			"Operation__c": "Check Path",
+			"Order__c": 90,
+			"Trailhead_Event__c": null
 		}
 	],
-	"total": 89
+	"total": 90
 }
