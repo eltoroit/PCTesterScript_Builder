@@ -41,9 +41,7 @@ cd ../PCTesterScript
 # Export for Backup
 echo "--- --- --- Please wait (5/5): Export data"
 cd ../PCTesterScript_Builder
-sfdx ETCopyData:export -c './@ELTOROIT/scripts/data' --loglevel warn
-
-
+sfdx ETCopyData:export -c './@ELTOROIT/data' --loglevel warn
 
 # Game Over!
 echo "--- --- --- DONE"
