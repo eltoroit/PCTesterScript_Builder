@@ -1,14 +1,14 @@
 # New Notes
 
--   Updated for TrailbrazerDX 22
+-   Updated for Dreamforce '22
 
 ## Steps
 
-All the changes to the code are done in this file, because the export script overrides the other repo files!
+All the changes to the code are done in this folder, because the export script overrides the other repo folder!
 
 ### Mac
 
-1. Create scratch org `./@ELTOROIT/scripts/CreateOrg.sh`
+1. Create scratch org `./@ELTOROIT/scripts/shell/CreateOrg.sh`
 2. Create new event record (https://flow-inspiration-27-dev-ed.lightning.force.com/lightning/o/Event__c/list)
 3. Manually create/clone actions from previous event
 4. Clean data
