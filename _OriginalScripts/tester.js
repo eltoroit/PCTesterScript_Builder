@@ -410,7 +410,10 @@ function findBookmarks_Firefox() {
 				// if (verbose) log.debug(JSON.stringify(bm, null, 4));
 
 				// Write to files
-				fs.writeFile(bmDumpPath, JSON.stringify(bm.Bar, null, 4), function (err) {
+				fs.writeFile(bmDumpPath, JSON.stringify({
+					DTTM: new Date().toJSON(),
+					bm: bm.Bar
+				}, null, 4), function (err) {
 					if (err) {
 						reportErrorMessage("Searching for Firefox bookmars");
 						reportErrorMessage(err);
@@ -733,25 +736,39 @@ function executeInstruction() {
 			promptYesNo(instruction);
 			break;
 		case "Open Application":
-			// if (executeManualChecks) {
-			instruction.callback = function (output) {
-				if (output.stderr) {
-					instruction.hasErrors = true;
-					instruction.returned = output;
-					reportError(instruction);
-					nextInstruction();
-				}
-			};
-			executeCommand(instruction);
-			setTimeout(function () {
-				if (!instruction.hasErrors) {
-					promptYesNo(instruction);
-				}
-			}, timerDelay * 10);
-			// } else {
-			// 	log.error("Manual checks are being skipped for testing! (Open application skipped)");
-			// 	nextInstruction();
-			// }
+			if (executeManualChecks) {
+				instruction.callback = function (output) {
+					if (output.stderr) {
+						instruction.hasErrors = true;
+						instruction.returned = output;
+						reportError(instruction);
+						nextInstruction();
+					}
+				};
+				executeCommand(instruction);
+				setTimeout(function () {
+					if (!instruction.hasErrors) {
+						promptYesNo(instruction);
+					}
+				}, timerDelay * 10);
+			} else {
+				let command = instruction.Command__c.replace(/"/g, "");
+				let expected = command.substring(command.lastIndexOf('\\') + 1);
+
+				log.error("Manual checks are being skipped for testing! (Open application skipped, but path checked)");
+				let newInstruction = { ...instruction };
+				newInstruction.Command__c = command;
+				newInstruction.Expected__c = expected;
+				newInstruction.Operation__c = "Open App >> Check Path";
+				newInstruction.AppName__c = `Open/Check Path: ${instruction.AppName__c}`;
+				newInstruction.ErrorMessage__c = `${instruction.ErrorMessage__c} (Checking path)`;
+
+				console.log('New instruction -- START');
+				log.debug(log.getPrettyJson(newInstruction));
+				console.log('New instruction -- END');
+
+				checkPath(newInstruction);
+			}
 			break;
 		case "Write":
 			// Force debug mode...
@@ -793,6 +810,23 @@ function executeInstruction() {
 	}
 }
 function menuChooseEvent(data) {
+	const runAutomated = (event) => {
+		debug = true;
+		verbose = true;
+		resultsTofile = true;
+		checkUrlExists = true;
+		executeManualChecks = false;
+
+		instructions = data.actionsByEvent[event.Id];
+		instructions.push({
+			AppName__c: "Done",
+			Operation__c: "Done",
+			Name: "Done"
+		});
+		idxInstructions = 0;
+		executeInstruction();
+	}
+
 	var events = data.events;
 
 	log.setDebug(debug);
@@ -803,17 +837,10 @@ function menuChooseEvent(data) {
 		log.info(i + ". " + events[i - 1].Name);
 	}
 	log.info(0 + ". Exit without testing");
+	log.info(99 + ". Run automated tests");
 
 	if (args.run) {
-		var event = events[args.run - 1];
-		instructions = data.actionsByEvent[event.Id];
-		instructions.push({
-			AppName__c: "Done",
-			Operation__c: "Done",
-			Name: "Done"
-		});
-		idxInstructions = 0;
-		executeInstruction();
+		runAutomated(events[args.run - 1]);
 	} else {
 		const inputReadLine2 = readline.createInterface({
 			input: process.stdin,
@@ -826,6 +853,8 @@ function menuChooseEvent(data) {
 			) {
 				if (answer == 0) {
 					process.exit(0);
+				} else if (answer == 99) {
+					runAutomated(events[0]);
 				} else if (answer >= 1 && answer <= events.length) {
 					inputReadLine2.close();
 					var event = events[answer - 1];

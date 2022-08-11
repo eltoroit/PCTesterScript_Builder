@@ -39,7 +39,7 @@ cd ../PCTesterScript
 ./pushFilesToGit.sh
 
 # Export for Backup
-echo "--- --- --- Please wait (5/5): Export data"
+echo "--- --- --- Please wait (5/5): Export data (Just doing backup, tests are ready)"
 cd ../PCTesterScript_Builder
 sfdx ETCopyData:export -c './@ELTOROIT/data' --loglevel warn
 
