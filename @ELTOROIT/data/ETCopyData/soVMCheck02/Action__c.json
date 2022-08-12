@@ -1,5 +1,5 @@
 {
-	"fetched": 90,
+	"fetched": 92,
 	"records": [
 		{
 			"attributes": {
@@ -1530,7 +1530,41 @@
 			"Operation__c": "Check Path",
 			"Order__c": 90,
 			"Trailhead_Event__c": null
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v56.0/sobjects/Action__c/a009A000002OeyhQAC"
+			},
+			"AppName__c": "Clone C:\\LWC_HOW",
+			"Command__c": "C:\\TH\\PCTesterScript\\LWC_HOW.bat",
+			"EnabledAction__c": true,
+			"ErrorMessage__c": "Could not validate: ETEPL - Make Directory (MKDIR \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
+			"Expected__c": null,
+			"Fix__c": null,
+			"Id": "a009A000002OeyhQAC",
+			"Message__c": "Validating: ETEPL - Make Directory (MKDIR \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
+			"Operation__c": "Execute",
+			"Order__c": 91,
+			"Trailhead_Event__c": null
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
+				"url": "/services/data/v56.0/sobjects/Action__c/a009A000002OeymQAC"
+			},
+			"AppName__c": "### INCLUDE _Install LWC_HOW",
+			"Command__c": "### INCLUDE _Install LWC_HOW",
+			"EnabledAction__c": true,
+			"ErrorMessage__c": "### INCLUDE _Install LWC_HOW",
+			"Expected__c": "### INCLUDE _Install LWC_HOW",
+			"Fix__c": "### INCLUDE _Install LWC_HOW",
+			"Id": "a009A000002OeymQAC",
+			"Message__c": "### INCLUDE _Install LWC_HOW",
+			"Operation__c": "Include Event",
+			"Order__c": 92,
+			"Trailhead_Event__c": "a029A000001Ux2hQAC"
 		}
 	],
-	"total": 90
+	"total": 92
 }

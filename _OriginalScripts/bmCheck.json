@@ -70,5 +70,59 @@
     "hasChrome": true,
     "checkFF": true,
     "checkChrome": true
+  },
+  {
+    "id": "BM_9",
+    "title": "[BAR][MuleSoft Login]",
+    "urlExpected": "https://www.mulesoft.com/",
+    "hasFF": true,
+    "hasChrome": true,
+    "checkFF": true,
+    "checkChrome": true
+  },
+  {
+    "id": "BM_10",
+    "title": "[BAR][MuleSoft Training - Training, Courses and Certifications]",
+    "urlExpected": "https://training.mulesoft.com/home",
+    "hasFF": true,
+    "hasChrome": true,
+    "checkFF": true,
+    "checkChrome": true
+  },
+  {
+    "id": "BM_11",
+    "title": "[BAR][Tableau Login]",
+    "urlExpected": "https://sso.online.tableau.com/public/idp/SSO",
+    "hasFF": true,
+    "hasChrome": true,
+    "checkFF": true,
+    "checkChrome": true
+  },
+  {
+    "id": "BM_12",
+    "title": "[BAR][Tableau Cert Account Creation]",
+    "urlExpected": "https://identity.idp.tableau.com/login",
+    "hasFF": true,
+    "hasChrome": true,
+    "checkFF": true,
+    "checkChrome": true
+  },
+  {
+    "id": "BM_13",
+    "title": "[BAR][Tableau Testing Site]",
+    "urlExpected": "https://home.pearsonvue.com/Test-takers.aspx",
+    "hasFF": true,
+    "hasChrome": true,
+    "checkFF": true,
+    "checkChrome": true
+  },
+  {
+    "id": "BM_14",
+    "title": "[BAR][MuleSoft Exam Readiness Kit – MuleSoft Training]",
+    "urlExpected": "https://help.learn.mulesoft.com/hc/en-us/articles/360057127674-MuleSoft-Exam-Readiness-Kit",
+    "hasFF": true,
+    "hasChrome": true,
+    "checkFF": true,
+    "checkChrome": true
   }
 ]
