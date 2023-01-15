@@ -1,7 +1,40 @@
 {
   "orgSource": "soVMCheck02",
   "orgDestination": "soVMCheck02",
-  "sObjectsData": [],
+  "sObjectsData": [
+    {
+      "name": "Action__c",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "",
+      "where": null,
+      "orderBy": "Order__c"
+    },
+    {
+      "name": "Event__c",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "",
+      "where": null,
+      "orderBy": "Order__c"
+    },
+    {
+      "name": "Event_X_Action__c",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "",
+      "where": null,
+      "orderBy": null
+    },
+    {
+      "name": "JSON_Action__c",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "",
+      "where": null,
+      "orderBy": "Key__c"
+    }
+  ],
   "sObjectsMetadata": [],
   "rootFolder": "ETCopyData",
   "includeAllCustom": true,

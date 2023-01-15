@@ -1,6 +1,6 @@
 # New Notes
 
--   Updated for Dreamforce '22
+-   Updated for TrailbrazerDX 23
 
 ## Steps
 
@@ -75,10 +75,16 @@ All the changes to the code are done in this folder (`./_OriginalScripts`), beca
 
 ### VM
 
-1. Ensure files are located at the correct locations
+1. Install VS Code
+   1. https://code.visualstudio.com/
+2. Install Git
+   1. https://git-scm.com/download/win
+3. Install Node
+   1. https://nodejs.org/en
+4. Ensure files are located at the correct locations
     1. C:\Users\Admin\t.bat
     2. C:\TH\test.bat
-2. Execute normal operation
+5. Execute normal operation
     1. Open CMD
     2. Type `t` and hit enter
 

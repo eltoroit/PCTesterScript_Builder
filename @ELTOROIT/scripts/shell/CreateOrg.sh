@@ -12,3 +12,5 @@ sfdx force:user:permset:assign -n Script_Maker
 echo "*** Creating data using ETCopyData plugin"
 # sfdx ETCopyData:export -c './@ELTOROIT/data' --loglevel trace --json
 sfdx ETCopyData:import -c './@ELTOROIT/data' --loglevel trace --json
+echo "*** Displaying Scratch Org User..."
+sfdx force:org:display --json
