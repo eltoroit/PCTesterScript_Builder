@@ -1,5 +1,5 @@
 {
-	"fetched": 92,
+	"fetched": 93,
 	"records": [
 		{
 			"attributes": {
@@ -1534,6 +1534,23 @@
 		{
 			"attributes": {
 				"type": "Action__c",
+				"url": "/services/data/v57.0/sobjects/Action__c/a0003000002WDNBAA4"
+			},
+			"AppName__c": "Mulesoft spreadsheet",
+			"Command__c": "C:\\Users\\Admin\\Desktop\\Global Superstore.xlsx",
+			"EnabledAction__c": true,
+			"ErrorMessage__c": "Invalid response received",
+			"Expected__c": "Global Superstore.xlsx",
+			"Fix__c": "Please install the Mulesoft spreadsheet",
+			"Id": "a0003000002WDNBAA4",
+			"Message__c": "Checking path: C:\\Users\\Admin\\Desktop\\Global Superstore.xlsx",
+			"Operation__c": "Check Path",
+			"Order__c": 91,
+			"Trailhead_Event__c": "a0203000002tNW0AAM"
+		},
+		{
+			"attributes": {
+				"type": "Action__c",
 				"url": "/services/data/v57.0/sobjects/Action__c/a0003000002WDMuAAO"
 			},
 			"AppName__c": "Clone C:\\LWC_HOW",
@@ -1545,7 +1562,7 @@
 			"Id": "a0003000002WDMuAAO",
 			"Message__c": "Validating: ETEPL - Make Directory (MKDIR \"C:\\TH\\ETTrailheadTester\\resources\\app\\src\")",
 			"Operation__c": "Execute",
-			"Order__c": 91,
+			"Order__c": 92,
 			"Trailhead_Event__c": null
 		},
 		{
@@ -1562,9 +1579,9 @@
 			"Id": "a0003000002WDMvAAO",
 			"Message__c": "### INCLUDE _Install LWC_HOW",
 			"Operation__c": "Include Event",
-			"Order__c": 92,
+			"Order__c": 93,
 			"Trailhead_Event__c": "a0203000002tNW4AAM"
 		}
 	],
-	"total": 92
+	"total": 93
 }

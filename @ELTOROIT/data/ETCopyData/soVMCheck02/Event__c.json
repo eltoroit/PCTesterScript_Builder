@@ -106,7 +106,7 @@
 				"type": "Event__c",
 				"url": "/services/data/v57.0/sobjects/Event__c/a0203000002tNWAAA2"
 			},
-			"ActiveEvent__c": true,
+			"ActiveEvent__c": false,
 			"Id": "a0203000002tNWAAA2",
 			"Name": "2019.05 - TDX '19 - HOWs",
 			"Order__c": 100
@@ -116,7 +116,7 @@
 				"type": "Event__c",
 				"url": "/services/data/v57.0/sobjects/Event__c/a0203000002tNWBAA2"
 			},
-			"ActiveEvent__c": true,
+			"ActiveEvent__c": false,
 			"Id": "a0203000002tNWBAA2",
 			"Name": "2019.05 - TDX '19 - Bootcamp",
 			"Order__c": 101
@@ -126,7 +126,7 @@
 				"type": "Event__c",
 				"url": "/services/data/v57.0/sobjects/Event__c/a0203000002tNWCAA2"
 			},
-			"ActiveEvent__c": true,
+			"ActiveEvent__c": false,
 			"Id": "a0203000002tNWCAA2",
 			"Name": "2019.12 - India TDX '19",
 			"Order__c": 102
@@ -136,7 +136,7 @@
 				"type": "Event__c",
 				"url": "/services/data/v57.0/sobjects/Event__c/a0203000002tNWDAA2"
 			},
-			"ActiveEvent__c": true,
+			"ActiveEvent__c": false,
 			"Id": "a0203000002tNWDAA2",
 			"Name": "2022.04 - TrailblazerDX 22",
 			"Order__c": 103
@@ -146,7 +146,7 @@
 				"type": "Event__c",
 				"url": "/services/data/v57.0/sobjects/Event__c/a0203000002tNWEAA2"
 			},
-			"ActiveEvent__c": true,
+			"ActiveEvent__c": false,
 			"Id": "a0203000002tNWEAA2",
 			"Name": "2022.09 - Dreamforce22",
 			"Order__c": 104
@@ -156,7 +156,7 @@
 				"type": "Event__c",
 				"url": "/services/data/v57.0/sobjects/Event__c/a0203000002tNWFAA2"
 			},
-			"ActiveEvent__c": true,
+			"ActiveEvent__c": false,
 			"Id": "a0203000002tNWFAA2",
 			"Name": "__OLD ACTIONS",
 			"Order__c": 899
