@@ -19,20 +19,39 @@ All the changes to the code are done in this folder (`./_OriginalScripts`), beca
     - Login to TeamViewer
         - Vendor will provide with `Teamviewer ID` (for example, 855 316 036) and a `Password`
         - Open in Mac the `TeamViewer.app`
+          - Salesforce does not allow for TeamViewer to run in a Salesforce provided computer
+          - I can use a VM from Cloudshare for this!
         - Under `Remote Control`, on the right side the `Control Remote Computer` enter the `Partner ID` (which is the same number provided by the vendor)
         - Click `Connect`
         - Enter the password provided by the vendor
         - click `Logon`
+    - Machine requires some software
+      - GIT (`https://git-scm.com/download/win`)
+        - `git`
+      - Node.js (`https://nodejs.org/en/`)
+        - `node`
+        - `.exit` to quit
+      - VS Code to see the logs
+        - `code`
     - Clone the repo
-        - Create a folder named `C:\TEMP`
-        - May need to install GIT from here `https://git-scm.com/download/win`
-        - Execute `git clone https://github.com/eltoroit/PCTesterScript.git`
-        - Copy file to `C:\Users\Admin\t.bat`
-        - Create a folder named `C:\TH`
-        - Copy file to `C:\TH\test.bat`
-        - Open cmd (`Start | cmd`)
-        - Type `t`
-7. Loop: Run tests, fix data in org, export data, run `t`. Repeat.
+        - Create a folder named **C:\TEMP**
+          - Windows + R
+          - `cmd`
+          - `mkdir C:\TEMP`
+        - Clone the **PCTesterScript.git** repo
+        -  `git clone https://github.com/eltoroit/PCTesterScript.git`
+        - Copy file **t.bat** to **C:\Users\Admin**
+          - `cd cd PCTesterScript`
+          - `copy t.bat C:\Users\Admin`
+        - Copy **test.bat** file to **C:\TH**
+          - `mkdir C:\TH`
+          - `copy test.bat C:\TH`
+7. Start the testing process
+   - Open command prompt
+     - Windows + R
+     - `cmd`
+   - Type `t`
+8. Loop: Run tests, fix data in org, export data, run `t`. Repeat.
     - This can be anoying if you have to do the manual tests always 😎
     - In that case...
         - Quick tests
@@ -42,10 +61,10 @@ All the changes to the code are done in this folder (`./_OriginalScripts`), beca
         - If you need to re-run it
             - Execute `tt` from the same folder where the last execution stopped
         - Execute in debug mode
-            1. `cd C:\TH\PCTesterScript`
-            2. `node --inspect-brk tester.js -test -run=1`
+            4. `cd C:\TH\PCTesterScript`
+            5. `node --inspect-brk tester.js -test -run=1`
     - Errors are stored in this file `C:\TH\Errors-2022-08-09T12-27-54.085Z` (with the most recent timestamp 😎)
-8. When the only errors left are the bookmarks...
+9. When the only errors left are the bookmarks...
     - Once script runs on the testing machine, it creates one file with the bookmarks `C:\TH\PCTesterScript\bmDump.json`.
     - Use that to generate `C:\TH\PCTesterScript\bmCheck.json` which is used to validate the bookmarks
     - Process
