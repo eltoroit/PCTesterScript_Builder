@@ -13,7 +13,7 @@ sfdx force:apex:execute -f "./@ELTOROIT/scripts/Apex/ExportData.txt" > "./@ELTOR
 # Export for scripts
 echo "--- --- --- Please wait (2/5): Exporting data"
 sfdx force:user:display --json | jq -r '.result | .instanceUrl, .accessToken' | {
-    jsonFile="_OriginalScripts/data.json"
+    jsonFile="_OriginalScripts/data/data.json"
     # echo "Writing to: $jsonFile"
     read -r instanceUrl
     # echo "Sever: $instanceUrl"
